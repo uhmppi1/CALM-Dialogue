@@ -1,0 +1,70 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1527504502298,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1527504591408,
+      "field_name": "customer-name",
+      "field_value": "Catherine Wilson"
+    },
+    {
+      "timestmamp": 1527504592323,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1527504631787,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Catherine Wilson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "13",
+    "max_price": 200,
+    "departure_airport": "OAK",
+    "departure_time": "morning",
+    "max_connections": 1,
+    "departure_day": "11",
+    "goal": "change",
+    "departure_month": "Nov",
+    "name": "Catherine Wilson",
+    "return_airport": "JFK"
+  },
+  "timestamps": [
+    1527504432,
+    1527504441,
+    1527504494,
+    1527504516,
+    1527504536,
+    1527504547,
+    1527504551,
+    1527504582,
+    1527504606,
+    1527504628
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I assist you?",
+    "customer: Actually, my friend book a flight ticket in economy class instead of business class. Can you please help me in changing of my existing reservation?",
+    "agent: Sure, may I know your good name please?",
+    "customer: Myself Catherine Wilson.",
+    "agent: Please wait for a moment.",
+    "customer: Ok.",
+    "agent: Sorry, there is no reservation found on your name in our database to change.",
+    "customer: Ok, no problem. Thank you for your information.",
+    "agent: You are most welcome."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Catherine Wilson",
+    "flight": []
+  },
+  "correct_sample": true
+}

@@ -1,0 +1,125 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1527516345795,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1527516349226,
+      "field_name": "from_city",
+      "field_value": "JFK"
+    },
+    {
+      "timestmamp": 1527516351809,
+      "field_name": "to_city",
+      "field_value": "DCA"
+    },
+    {
+      "timestmamp": 1527516394195,
+      "field_name": "customer-name",
+      "field_value": "George Carter"
+    },
+    {
+      "timestmamp": 1527516417253,
+      "field_name": "departure_day",
+      "field_value": "10/23"
+    },
+    {
+      "timestmamp": 1527516418832,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1527516420812,
+      "field_name": "return_day",
+      "field_value": "10/25"
+    },
+    {
+      "timestmamp": 1527516610321,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1527516612425,
+      "field_name": "customer-flight-number",
+      "field_value": "1008"
+    },
+    {
+      "timestmamp": 1527516660655,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "George Carter",
+    "flight": [
+      1008
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "25",
+    "max_price": 500,
+    "departure_airport": "JFK",
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "23",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "George Carter",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1527516247,
+    1527516257,
+    1527516293,
+    1527516310,
+    1527516315,
+    1527516341,
+    1527516360,
+    1527516388,
+    1527516396,
+    1527516413,
+    1527516461,
+    1527516466,
+    1527516485,
+    1527516496,
+    1527516536,
+    1527516569,
+    1527516595,
+    1527516605,
+    1527516621,
+    1527516656
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, welcome to flight ticket booking agency.",
+    "customer: Thank you.",
+    "agent: How may I help you?",
+    "customer: Can you help me in booking a flight ticket from JFK to DCA?",
+    "agent: Sure, I can reserve a flight ticket for you. Can I know your respective name please?",
+    "customer: I am George Carter.",
+    "agent: Ok, when do you want to depart from JFK and return back from DCA?",
+    "customer: I want to travel on 10/23, and return on 10/25.",
+    "agent: Ok, please let me know the connection limit preference.",
+    "customer: I need a connecting flight.",
+    "agent: There is an economy class flight in this route. Is that ok for you?",
+    "customer: Yes.",
+    "agent: If you have any other requirements that should met, please tell me?",
+    "customer: No.",
+    "agent: Ok, the flight is available in the JetBlue airlines which is departing and returning in the afternoon time and the flight ticket cost is 100. Shall I reserve the ticket?",
+    "customer: Proceed with the booking.",
+    "agent: I have confirmed your flight ticket with the service number 1008. Have  a nice and happy journey.",
+    "customer: Thanks for the assistance.",
+    "agent: That's my pleasure to assist you. Thank you for contacting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "George Carter",
+    "flight": [
+      1008,
+      1018
+    ]
+  },
+  "correct_sample": true
+}

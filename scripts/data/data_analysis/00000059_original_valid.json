@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Richard Adams",
+    "flight": [
+      1000
+    ]
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "3",
+    "max_price": 1000,
+    "departure_airport": "DCA",
+    "max_connections": 1,
+    "departure_day": "1",
+    "goal": "book",
+    "departure_month": "Mar",
+    "name": "Richard Adams",
+    "return_airport": "BOS"
+  },
+  "timestamps": [
+    1520213904,
+    1520213908,
+    1520213939,
+    1520213941,
+    1520213945,
+    1520213965,
+    1520213986,
+    1520213988,
+    1520214017,
+    1520214020,
+    1520214024,
+    1520214060,
+    1520214075,
+    1520214077,
+    1520214086,
+    1520214090
+  ],
+  "dialogue": [
+    "customer: Hello,. I am Richard Adams.",
+    "agent: Hello, how can I render you today?",
+    "customer: I would like to attend for prayers in Old North Church at Boston, BOS. Can you help me in booking with a connecting flight?",
+    "agent:  Sure, I am here to assist you.",
+    "customer: Thank you.",
+    "agent: Can you please provide your take off airport code?",
+    "customer: I want to take off from Washington, DCA.",
+    "agent: On which dates would you like me to book a flight ticket for you?",
+    "customer: I would like to travel on 03/01 and intend to return on 03/03.",
+    "agent: Ok, please wait a moment, let me search a flight for you.",
+    "customer: Sure.",
+    "agent:  Thanks for your precious time. We found Delta airline fare of 100. Shall I proceed for booking with single stopover flight?",
+    "customer: Yes, proceed with the booking.",
+    "agent: Your ticket has been confirmed with airline number 1000.",
+    "customer: Thank you for your service.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Richard Adams",
+    "flight": [
+      1000
+    ]
+  },
+  "correct_sample": true
+}

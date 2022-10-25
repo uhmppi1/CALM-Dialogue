@@ -1,0 +1,55 @@
+{
+  "action": {
+    "status": "cancel",
+    "name": "Angela Mitchell",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Feb",
+    "return_day": "23",
+    "max_price": 500,
+    "departure_airport": "LGA",
+    "return_time": "morning",
+    "departure_time": "morning",
+    "max_connections": 1,
+    "departure_day": "21",
+    "goal": "cancel",
+    "departure_month": "Feb",
+    "name": "Angela Mitchell",
+    "return_airport": "MSP"
+  },
+  "timestamps": [
+    1521687697,
+    1521687704,
+    1521687707,
+    1521687712,
+    1521687771,
+    1521687804,
+    1521687840,
+    1521687895,
+    1521687908,
+    1521687913,
+    1521687926,
+    1521687936
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello.",
+    "customer: I am Angela Mitchell.",
+    "agent: How may I serve you today?",
+    "customer: I want to cancel my recent reservation due to cancel of my event at Charlotte. Could you please help me?",
+    "agent: Please wait for a moment, I will check your reservation and revert to you.",
+    "customer: Sure, I will wait for your response.",
+    "agent: We are glad to inform you that there is a reservation found with your given name in our records. Shall I confirm your cancellation?",
+    "customer: Yes, please proceed.",
+    "agent: Your ticket has been cancelled.",
+    "customer: Thank you for your service.",
+    "agent: Thank you for connecting with us."
+  ],
+  "expected_action": {
+    "status": "cancel",
+    "name": "Angela Mitchell",
+    "flight": []
+  },
+  "correct_sample": true
+}

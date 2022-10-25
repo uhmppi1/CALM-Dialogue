@@ -1,0 +1,49 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "James Wilson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "22",
+    "max_price": 5000,
+    "departure_airport": "SFO",
+    "max_connections": 1,
+    "departure_day": "20",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "James Wilson",
+    "return_airport": "PHL"
+  },
+  "timestamps": [
+    1523369072,
+    1523369079,
+    1523369081,
+    1523369088,
+    1523369103,
+    1523369115,
+    1523369144,
+    1523369240,
+    1523369280,
+    1523369300
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello.",
+    "customer: I am James Wilson.",
+    "agent: How may I help you?",
+    "customer: Ia m planning to travel from SFO to PHL, can you help me in booking?",
+    "agent: May I know your travel dates?",
+    "customer: my travelling dates are 06/20 to 06/22.",
+    "agent: Sorry, there is no flight found basis on your details.",
+    "customer: Ok, fine thank  you for checking.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "James Wilson",
+    "flight": []
+  },
+  "correct_sample": true
+}

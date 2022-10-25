@@ -1,0 +1,59 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Betty Lewis",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Feb",
+    "return_day": "29",
+    "max_price": 5000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "27",
+    "goal": "book",
+    "departure_month": "Feb",
+    "name": "Betty Lewis",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1520226025,
+    1520226036,
+    1520226067,
+    1520226191,
+    1520226250,
+    1520226254,
+    1520226291,
+    1520226297,
+    1520226330,
+    1520226340,
+    1520226356,
+    1520226358,
+    1520226365,
+    1520226368
+  ],
+  "dialogue": [
+    "customer: Hello, Betty Lewis is my name.",
+    "agent: Hello, how may I assist you today?",
+    "customer: Can you please book a connected flight from Minneapolis & St. Paul, MN - MSP?",
+    "agent: Sure, we will help you. Ok, please let me know your journey dates.",
+    "customer: My journey dates are 02/27 and 02/29.",
+    "agent: May I know your destination point?",
+    "customer: I want to land at New York, NY - LGA.",
+    "agent: Ok, please wait for a while.",
+    "customer: Sure.",
+    "agent: Thanks for your time, we found a direct flight based on your given data.",
+    "customer: Do not proceed for booking.",
+    "agent: Ok.",
+    "customer: Thanks for your help.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Betty Lewis",
+    "flight": [
+      1007
+    ]
+  },
+  "correct_sample": false
+}

@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Emily Green",
+    "flight": [
+      1018
+    ]
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "20",
+    "max_price": 200,
+    "departure_airport": "MSP",
+    "max_connections": 0,
+    "departure_day": "18",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Emily Green",
+    "return_airport": "BOS"
+  },
+  "timestamps": [
+    1519821958,
+    1519821963,
+    1519821980,
+    1519821983,
+    1519821998,
+    1519822000,
+    1519822007,
+    1519822008,
+    1519822015,
+    1519822020
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I guide you?",
+    "customer: I am Emily Green. I would like to book a ticket from MSP to BOS.",
+    "agent: Sure, can I know your preferable dates?",
+    "customer: I am starting on 06/18 and return back on 06/20.",
+    "agent: I found a flight 1018 of AA airlines matches with your preferences, can I proceed?",
+    "customer: Yes, pleas eproceed.",
+    "agent: Your ticket is booked.",
+    "customer: Thank you for the help.",
+    "agent: Thank you, have a good day."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Emily Green",
+    "flight": [
+      1006
+    ]
+  },
+  "correct_sample": false
+}

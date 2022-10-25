@@ -1,0 +1,122 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1530014855515,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1530014866408,
+      "field_name": "departure_day",
+      "field_value": "04/03"
+    },
+    {
+      "timestmamp": 1530014872133,
+      "field_name": "return_day",
+      "field_value": "04/05"
+    },
+    {
+      "timestmamp": 1530014875003,
+      "field_name": "from_city",
+      "field_value": "CLT"
+    },
+    {
+      "timestmamp": 1530014876803,
+      "field_name": "from_city",
+      "field_value": "ORD"
+    },
+    {
+      "timestmamp": 1530014881516,
+      "field_name": "to_city",
+      "field_value": "ATL"
+    },
+    {
+      "timestmamp": 1530014882157,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1530014912858,
+      "field_name": "customer-name",
+      "field_value": "Gary Taylor"
+    },
+    {
+      "timestmamp": 1530014914523,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1530014916732,
+      "field_name": "customer-flight-number",
+      "field_value": "1014"
+    },
+    {
+      "timestmamp": 1530015110299,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Gary Taylor",
+    "flight": [
+      1014
+    ]
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "5",
+    "max_price": 1000,
+    "departure_airport": "ORD",
+    "max_connections": 1,
+    "departure_day": "3",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Gary Taylor",
+    "return_airport": "ATL"
+  },
+  "timestamps": [
+    1530014779,
+    1530014792,
+    1530014815,
+    1530014842,
+    1530014850,
+    1530014853,
+    1530014870,
+    1530014894,
+    1530014899,
+    1530014906,
+    1530014919,
+    1530014984,
+    1530015036,
+    1530015045,
+    1530015059,
+    1530015074
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, do you need any help from us?",
+    "customer: Can you please help me in reserving my flight from ORD to reach ATL?",
+    "agent: Sure, could you please share your departure and arrival day?",
+    "customer: Thank you, my travelling dates are Apr 3rd and Apr 5th.",
+    "agent: Ok, could I have your name please?",
+    "customer: I am Gary Taylor.",
+    "agent: Ok, do you need direct or connecting flight?",
+    "customer: I prefer a single connecting flight.",
+    "agent: Ok, do you have any other specifications?",
+    "customer: I don't have any other specifications.",
+    "agent: The economy class with flight number 1014 of Frontier airline is available having fare as 200 and connection as 1, is it ok for you?",
+    "customer: Yes, please proceed by booking.",
+    "agent: Ok, your reservation is confirmed. The departure time is 6:00 hours and the arrival time is 10:00 hours.",
+    "customer: Thank you for the help.",
+    "agent: Thank you for reaching our service."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Gary Taylor",
+    "flight": [
+      1014,
+      1020,
+      1021
+    ]
+  },
+  "correct_sample": true
+}

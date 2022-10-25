@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Carolyn Lopez",
+    "flight": [
+      1015
+    ]
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "5",
+    "max_price": 500,
+    "departure_airport": "EWR",
+    "max_connections": 1,
+    "departure_day": "3",
+    "goal": "book",
+    "departure_month": "Jan",
+    "name": "Carolyn Lopez",
+    "return_airport": "PHL"
+  },
+  "timestamps": [
+    1521623972,
+    1521623974,
+    1521623980,
+    1521623984,
+    1521624026,
+    1521624032,
+    1521624054,
+    1521624060,
+    1521624074,
+    1521624092,
+    1521624103,
+    1521624158,
+    1521624162,
+    1521624177,
+    1521624181,
+    1521624188
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello,.",
+    "customer: I am Carolyn Lopez.",
+    "agent: How can I assist you?",
+    "customer: I want to attend a pagan festival at Philadelphia. Can you help me in my booking?",
+    "agent: Sure, may I know your trip dates please?",
+    "customer: My journey dates are from 01/03 to 01/05.",
+    "agent: Let me know your airport codes please?",
+    "customer: My airport codes are from EWR to PHL.",
+    "agent: Do you need any other requirements to be met?",
+    "customer: I can pay up to 500.",
+    "agent: Thanks for your details, there is a connecting flight with 1015 flight number of fare 100 from an airline UA.",
+    "customer: Proceed with my booking.",
+    "agent: Your flight ticket has been booked.",
+    "customer: Thank you for your help.",
+    "agent: Thank you."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Carolyn Lopez",
+    "flight": [
+      1015
+    ]
+  },
+  "correct_sample": true
+}

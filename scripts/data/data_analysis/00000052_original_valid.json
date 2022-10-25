@@ -1,0 +1,49 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Paul Wilson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "6",
+    "max_price": 1000,
+    "departure_airport": "IAD",
+    "max_connections": 0,
+    "departure_day": "4",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Paul Wilson",
+    "return_airport": "MSP"
+  },
+  "timestamps": [
+    1517410601,
+    1517410614,
+    1517410722,
+    1517410727,
+    1517410746,
+    1517410750,
+    1517410781,
+    1517410825,
+    1517410865,
+    1517410868
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How can I help you today?",
+    "customer: I am Paul Wilson. I am planning to travel from IAD to MSP, can you please help in that?",
+    "agent: Sure, can you please provide your travelling dates to proceed further?",
+    "customer: My date of travelling is on 06/04 to 06/06.",
+    "agent: Wait a moment please.",
+    "customer: sure, but I want to travel in direct flight.",
+    "agent: Paul Wilson, there are no direct flights available on this route.",
+    "customer: That's ok, thanks for helping me.",
+    "agent: Thank you for contacting us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Paul Wilson",
+    "flight": []
+  },
+  "correct_sample": true
+}

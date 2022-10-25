@@ -1,0 +1,58 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Linda Robinson",
+    "flight": [
+      1005
+    ]
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "10",
+    "max_price": 5000,
+    "departure_airport": "OAK",
+    "max_connections": 1,
+    "departure_day": "8",
+    "goal": "book",
+    "departure_month": "Jan",
+    "name": "Linda Robinson",
+    "return_airport": "SFO"
+  },
+  "timestamps": [
+    1520396087,
+    1520396091,
+    1520396139,
+    1520396161,
+    1520396234,
+    1520396248,
+    1520396346,
+    1520396354,
+    1520396418,
+    1520396422,
+    1520396425,
+    1520396434
+  ],
+  "dialogue": [
+    "customer: Hello, I am Linda Robinson.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to travel to SFO from OAK to celebrate flowers festivals. can you please help me to book a ticket?",
+    "agent: Sure, help me with your travelling dates?",
+    "customer: My travelling dates will be on 01/08 to 01/10.",
+    "agent: Ok, any specific requirements?",
+    "customer: I need a connecting flight.",
+    "agent:  Ok, flight- 1005, airline- Southwest, price- 200 with connection-1 matches your requested details.",
+    "customer: You can proceed to booking.",
+    "agent: Ok, your ticket has been processed.",
+    "customer: Thank you.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Linda Robinson",
+    "flight": [
+      1005,
+      1022
+    ]
+  },
+  "correct_sample": true
+}

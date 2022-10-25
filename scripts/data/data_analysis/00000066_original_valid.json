@@ -1,0 +1,70 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Eric Anderson",
+    "flight": [
+      1001
+    ]
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "5",
+    "max_price": 200,
+    "departure_airport": "ORD",
+    "max_connections": 1,
+    "departure_day": "3",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Eric Anderson",
+    "return_airport": "SFO"
+  },
+  "timestamps": [
+    1517336408,
+    1517336415,
+    1517336417,
+    1517336429,
+    1517336434,
+    1517336447,
+    1517336458,
+    1517336473,
+    1517336489,
+    1517336514,
+    1517336524,
+    1517336568,
+    1517336575,
+    1517336589,
+    1517336592,
+    1517336605,
+    1517336607
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello.",
+    "customer: Myself Eric Anderson.",
+    "agent: In which way I can assist you today?",
+    "customer: Can you please book a flight ticket from ORD to SFO?",
+    "agent: Sure, I can help you in booking flight ticket.",
+    "customer: Thank you.",
+    "agent: May I know your preferable travel dates for booking flight ticket?",
+    "customer: Sure, I need to travel on dates of 06/03 and 06/05.",
+    "agent: Ok, please wait a moment, I will check flight availability.",
+    "customer: Sure, take your time.",
+    "agent: There is a flight available in this route, airline is Spirit and flight number is 1001. Are you ok with this flight?",
+    "customer: That's fine, please proceed with booking.",
+    "agent: Your flight ticket is booked successfully.",
+    "customer: Thank you for your help.",
+    "agent: Thank you for contacting us, have a nice day.",
+    "customer: Most welcome."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Eric Anderson",
+    "flight": [
+      1001,
+      1003,
+      1013,
+      1026
+    ]
+  },
+  "correct_sample": true
+}

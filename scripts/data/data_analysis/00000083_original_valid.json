@@ -1,0 +1,45 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Catherine Robinson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "27",
+    "max_price": 1000,
+    "departure_airport": "DCA",
+    "max_connections": 1,
+    "departure_day": "25",
+    "goal": "change",
+    "departure_month": "June",
+    "name": "Catherine Robinson",
+    "return_airport": "HOU"
+  },
+  "timestamps": [
+    1519093088,
+    1519093092,
+    1519093152,
+    1519093156,
+    1519093160,
+    1519093186,
+    1519093189,
+    1519093200
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I aid you today?",
+    "customer: My name is Catherine Robinson, I want to change my existing reservation. Can you please help me with it?",
+    "agent: Sure, please wait for a while.",
+    "customer: Ok.",
+    "agent: Sorry, we couldn't find a reservation on your name.",
+    "customer: Not an issue, thank you.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Catherine Robinson",
+    "flight": []
+  },
+  "correct_sample": true
+}

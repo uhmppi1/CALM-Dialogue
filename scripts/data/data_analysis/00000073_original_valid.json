@@ -1,0 +1,226 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1532448390586,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1532448392210,
+      "field_name": "class",
+      "field_value": "economy"
+    },
+    {
+      "timestmamp": 1532448415356,
+      "field_name": "return_day",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1532448417126,
+      "field_name": "departure_day",
+      "field_value": "10/19"
+    },
+    {
+      "timestmamp": 1532448419950,
+      "field_name": "return_day",
+      "field_value": "10/21"
+    },
+    {
+      "timestmamp": 1532448444514,
+      "field_name": "from_city",
+      "field_value": "SEA"
+    },
+    {
+      "timestmamp": 1532448448169,
+      "field_name": "to_city",
+      "field_value": "PHX"
+    },
+    {
+      "timestmamp": 1532448465642,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1532448470489,
+      "field_name": "return_time",
+      "field_value": "evening"
+    },
+    {
+      "timestmamp": 1532448471849,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1532448564646,
+      "field_name": "customer-name",
+      "field_value": "David Moore"
+    },
+    {
+      "timestmamp": 1532448565909,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1532448566097,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1532448567809,
+      "field_name": "customer-flight-number",
+      "field_value": "1000"
+    },
+    {
+      "timestmamp": 1532448568065,
+      "field_name": "customer-flight-number",
+      "field_value": "1001"
+    },
+    {
+      "timestmamp": 1532448568450,
+      "field_name": "customer-flight-number",
+      "field_value": "1002"
+    },
+    {
+      "timestmamp": 1532448568722,
+      "field_name": "customer-flight-number",
+      "field_value": "1003"
+    },
+    {
+      "timestmamp": 1532448569222,
+      "field_name": "customer-flight-number",
+      "field_value": "1004"
+    },
+    {
+      "timestmamp": 1532448569251,
+      "field_name": "customer-flight-number",
+      "field_value": "1005"
+    },
+    {
+      "timestmamp": 1532448569282,
+      "field_name": "customer-flight-number",
+      "field_value": "1006"
+    },
+    {
+      "timestmamp": 1532448569312,
+      "field_name": "customer-flight-number",
+      "field_value": "1007"
+    },
+    {
+      "timestmamp": 1532448569341,
+      "field_name": "customer-flight-number",
+      "field_value": "1008"
+    },
+    {
+      "timestmamp": 1532448569373,
+      "field_name": "customer-flight-number",
+      "field_value": "1009"
+    },
+    {
+      "timestmamp": 1532448569404,
+      "field_name": "customer-flight-number",
+      "field_value": "1010"
+    },
+    {
+      "timestmamp": 1532448569435,
+      "field_name": "customer-flight-number",
+      "field_value": "1011"
+    },
+    {
+      "timestmamp": 1532448569465,
+      "field_name": "customer-flight-number",
+      "field_value": "1012"
+    },
+    {
+      "timestmamp": 1532448569497,
+      "field_name": "customer-flight-number",
+      "field_value": "1013"
+    },
+    {
+      "timestmamp": 1532448569527,
+      "field_name": "customer-flight-number",
+      "field_value": "1014"
+    },
+    {
+      "timestmamp": 1532448570033,
+      "field_name": "customer-flight-number",
+      "field_value": "1013"
+    },
+    {
+      "timestmamp": 1532448570337,
+      "field_name": "customer-flight-number",
+      "field_value": "1012"
+    },
+    {
+      "timestmamp": 1532450023887,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "David Moore",
+    "flight": [
+      1012
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "21",
+    "return_time": "evening",
+    "departure_airport": "SEA",
+    "max_price": 500,
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "David Moore",
+    "return_airport": "PHX"
+  },
+  "timestamps": [
+    1532448346,
+    1532448361,
+    1532448370,
+    1532448389,
+    1532448396,
+    1532448413,
+    1532448419,
+    1532448440,
+    1532448446,
+    1532448463,
+    1532448466,
+    1532448484,
+    1532448486,
+    1532448513,
+    1532448522,
+    1532448528,
+    1532448530,
+    1532448555
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello, how can I assist you?",
+    "customer: Could you please check the flight availability in economy class?",
+    "agent: Sure, I am here to help you. Please let me know your travelling dates.",
+    "customer: My travelling dates are Oct 19 and Oct 21.",
+    "agent: Kindly mention your respective airport codes.",
+    "customer: My source is SEA and destination is PHX.",
+    "agent: Do you prefer any break in between journey?",
+    "customer: I need a single connecting flight.",
+    "agent: Are there any other specifications for you?",
+    "customer: I want to return in the evening.",
+    "agent: May I know your good name?",
+    "customer: I am David Moore.",
+    "agent: According to your information, I have found a flight with single stop over in your journey with a minimum fare of 100 with flight number 1012. Shall I proceed with this flight?",
+    "customer: Ok, proceed.",
+    "agent: Your booking is done in United Airlines.",
+    "customer: Thank you.",
+    "agent: Thank you for availing us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "David Moore",
+    "flight": [
+      1012
+    ]
+  },
+  "correct_sample": true
+}

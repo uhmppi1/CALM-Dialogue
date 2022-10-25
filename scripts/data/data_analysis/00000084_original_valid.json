@@ -1,0 +1,49 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Katherine Baker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "3",
+    "max_price": 500,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "1",
+    "goal": "cancel",
+    "departure_month": "Mar",
+    "name": "Katherine Baker",
+    "return_airport": "ORD"
+  },
+  "timestamps": [
+    1520298382,
+    1520298402,
+    1520298413,
+    1520298506,
+    1520298511,
+    1520298522,
+    1520298527,
+    1520298587,
+    1520298604,
+    1520298620
+  ],
+  "dialogue": [
+    "customer: Hi,.",
+    "agent: Hello,. On what way, can I assist you the best today?",
+    "customer: Please cancel my recent reservation.",
+    "agent: Sure, I will help you in cancellation. To cancel your ticket, we need your name. Can you provide it?",
+    "customer: I am Katherine Baker.",
+    "agent: Thanks for the details, please wait.",
+    "customer: Sure.",
+    "agent: Thanks for your time. Sorry Katherine, Unfortunately there is no active reservation on your name to cancel it.",
+    "customer: Thank you.",
+    "agent: Thanks for choosing us for your ticket cancellation process."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Katherine Baker",
+    "flight": []
+  },
+  "correct_sample": true
+}

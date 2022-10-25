@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Gregory Allen",
+    "flight": [
+      1000
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "12",
+    "max_price": 5000,
+    "departure_airport": "ORD",
+    "max_connections": 0,
+    "departure_day": "10",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Gregory Allen",
+    "return_airport": "EWR"
+  },
+  "timestamps": [
+    1519915651,
+    1519915670,
+    1519915730,
+    1519915733,
+    1519915825,
+    1519915833,
+    1519915843,
+    1519915912,
+    1519915943,
+    1519916019,
+    1519916027
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you?",
+    "customer: I am Gregory Allen. I want to attend a live music concert in EWr, can you please find a flight from ORD?",
+    "agent: Sure, I will help you to book a flight. Can you please share me your travelling dates?",
+    "customer: I want to start my journey on 10/10 and my return will be on 10/12.",
+    "agent: Please hold on for a moment.",
+    "customer: Ok, take your time.",
+    "agent: Here, I found a flight for you with single connection. Shall I proceed for booking?",
+    "customer: Please proceed.",
+    "agent: Your ticket is booked with flight number 1000 and airline is Southwest.",
+    "customer: Thank you for booking."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Gregory Allen",
+    "flight": []
+  },
+  "correct_sample": false
+}

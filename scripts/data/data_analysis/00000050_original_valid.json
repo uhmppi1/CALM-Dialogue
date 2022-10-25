@@ -1,0 +1,65 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1533905466665,
+      "button_name": "top-cancel-reservation"
+    },
+    {
+      "timestmamp": 1533905503455,
+      "field_name": "customer-name",
+      "field_value": "Janet Perez"
+    },
+    {
+      "timestmamp": 1533905504361,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1533905542905,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Janet Perez",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "13",
+    "max_price": 5000,
+    "departure_airport": "DEN",
+    "max_connections": 1,
+    "departure_day": "11",
+    "goal": "cancel",
+    "departure_month": "Oct",
+    "name": "Janet Perez",
+    "return_airport": "OAK"
+  },
+  "timestamps": [
+    1533905429,
+    1533905445,
+    1533905450,
+    1533905464,
+    1533905475,
+    1533905488,
+    1533905502,
+    1533905510
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello, how can I assist you?",
+    "customer: I need to cancel my reservation for a client meeting but I have got a sudden call from my friend that one of my friend got met with an accident so I feel to cancel my reservation. Can you please help me out?",
+    "agent: Sure, I am here to help you with that, can I know your good name to proceed further?",
+    "customer: Janet Perez here.",
+    "agent: Sorry, we found no reservation on your given name.",
+    "customer: That's ok, thank you for your help.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Janet Perez",
+    "flight": []
+  },
+  "correct_sample": true
+}

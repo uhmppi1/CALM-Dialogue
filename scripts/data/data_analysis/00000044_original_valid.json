@@ -1,0 +1,131 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525965329719,
+      "field_name": "customer-name",
+      "field_value": "Mary Mitchell"
+    },
+    {
+      "timestmamp": 1525965358486,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1525965363302,
+      "field_name": "from_city",
+      "field_value": "DTW"
+    },
+    {
+      "timestmamp": 1525965397238,
+      "field_name": "to_city",
+      "field_value": "ORD"
+    },
+    {
+      "timestmamp": 1525965400390,
+      "field_name": "to_city",
+      "field_value": "DFW"
+    },
+    {
+      "timestmamp": 1525965403849,
+      "field_name": "departure_day",
+      "field_value": "12/26"
+    },
+    {
+      "timestmamp": 1525965406862,
+      "field_name": "return_day",
+      "field_value": "12/28"
+    },
+    {
+      "timestmamp": 1525965443510,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1525965456718,
+      "field_name": "departure_time",
+      "field_value": "morning"
+    },
+    {
+      "timestmamp": 1525965457831,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1525965497869,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1525965500798,
+      "field_name": "customer-flight-number",
+      "field_value": "1016"
+    },
+    {
+      "timestmamp": 1525965548485,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Mary Mitchell",
+    "flight": [
+      1016
+    ]
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "28",
+    "max_price": 1000,
+    "departure_airport": "DTW",
+    "departure_time": "morning",
+    "max_connections": 1,
+    "departure_day": "26",
+    "goal": "book",
+    "departure_month": "Dec",
+    "name": "Mary Mitchell",
+    "return_airport": "DFW"
+  },
+  "timestamps": [
+    1525965191,
+    1525965202,
+    1525965219,
+    1525965226,
+    1525965252,
+    1525965261,
+    1525965294,
+    1525965296,
+    1525965313,
+    1525965316,
+    1525965329,
+    1525965368,
+    1525965413,
+    1525965417,
+    1525965422,
+    1525965425
+  ],
+  "dialogue": [
+    "customer: Hello. Myself Mary Mitchell.",
+    "agent: Hello, how can I help you?",
+    "customer: I am looking for a flight from DTW to DFW, can you help me in booking?",
+    "agent: Sure, please share me your travelling dates?",
+    "customer: My planned travel dates are Dec 26 and Dec 28.",
+    "agent: Do you have any class preference?",
+    "customer: No, I am not looking for any class preferences.",
+    "agent: Do you have any connection limit?",
+    "customer: Sure, I am looking for a connecting flight.",
+    "agent: Is there any other specifications?",
+    "customer: Yes, I would like to start my journey for the morning flight.",
+    "agent: We found 1016 American airline with single connection and price of 200, shall I proceed with booking?",
+    "customer: That's fine, please proceed in booking with this flight if the depart time is for morning session.",
+    "agent: Your booking is done.",
+    "customer: Thank you for the service.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Mary Mitchell",
+    "flight": [
+      1016
+    ]
+  },
+  "correct_sample": true
+}

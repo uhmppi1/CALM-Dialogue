@@ -1,0 +1,45 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "George Moore",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "30",
+    "max_price": 1000,
+    "departure_airport": "ATL",
+    "max_connections": 1,
+    "departure_day": "28",
+    "goal": "change",
+    "departure_month": "Dec",
+    "name": "George Moore",
+    "return_airport": "DTW"
+  },
+  "timestamps": [
+    1524476837,
+    1524476843,
+    1524476880,
+    1524476914,
+    1524476923,
+    1524476949,
+    1524476961,
+    1524476972
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I aid you?",
+    "customer: I am George Moore. I had planned to go on a trip, but it was postponed. Can you change my recent reservation?",
+    "agent: Sure, I am happy to help you. Please wait, let me check your reservation status in our database.",
+    "customer: Ok, take your time.",
+    "agent: Sorry, there is no reservation under your name in our database.",
+    "customer: That's ok. Anyways, thank you for your help.",
+    "agent: You are welcome and have a nice day."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "George Moore",
+    "flight": []
+  },
+  "correct_sample": true
+}

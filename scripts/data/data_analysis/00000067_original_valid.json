@@ -1,0 +1,57 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Jason Parker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "July",
+    "return_day": "4",
+    "max_price": 200,
+    "departure_airport": "AUS",
+    "max_connections": 1,
+    "departure_day": "2",
+    "goal": "book",
+    "departure_month": "July",
+    "name": "Jason Parker",
+    "return_airport": "SEA"
+  },
+  "timestamps": [
+    1512640042,
+    1512640063,
+    1512640064,
+    1512640109,
+    1512640164,
+    1512640214,
+    1512640253,
+    1512640314,
+    1512640370,
+    1512640413,
+    1512640442,
+    1512640474,
+    1512640511,
+    1512640521
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you?",
+    "customer: I am Jason Parker.",
+    "agent: Ok.",
+    "customer: I need to attend farewell party in my college, could you please help me to book a flight ticket?",
+    "agent: Sure, will you provide your source and destination airport codes.",
+    "customer: My origin and destination airport codes are AUS and SEA.",
+    "agent: Will you provide your travelling dates?",
+    "customer: I planned to travel on 07/02 and 07/04. Please make sure that the connection is 1 and price limit is 200.",
+    "agent: Please give me a moment.",
+    "customer: Sure.",
+    "agent: Unfortunately there is no flights found under your required details.",
+    "customer: That's ok. Thank you for your information.",
+    "agent: Thank you for reaching us.Have a nice day."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Jason Parker",
+    "flight": []
+  },
+  "correct_sample": true
+}

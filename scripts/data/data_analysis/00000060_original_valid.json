@@ -1,0 +1,62 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Deborah Robinson",
+    "flight": [
+      1002
+    ]
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "21",
+    "max_price": 1000,
+    "departure_airport": "EWR",
+    "max_connections": 1,
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "Sept",
+    "name": "Deborah Robinson",
+    "return_airport": "PHL"
+  },
+  "timestamps": [
+    1520341878,
+    1520341894,
+    1520341945,
+    1520341951,
+    1520341987,
+    1520342015,
+    1520342022,
+    1520342052,
+    1520342054,
+    1520342321,
+    1520342336,
+    1520342349,
+    1520342371,
+    1520342399
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I aid you at this moment?",
+    "customer: Deborah Robinson here. I would like to visit Philadelphia for business meeting in the month of September, can you please help me out with booking of a flight ticket to go there?",
+    "agent: Sure, I will assist you with that. Can you please mention your preferable airport code names for booking flight ticket?",
+    "customer: Sure, I will prefer EWR and PHL as my origin and destination airport codes for booking.",
+    "agent: May I know your trip dates for further process?",
+    "customer: I am planning to leave on 09/19 and please book my return ticket on 09/21.",
+    "agent: Thank you for providing your travel details. I will put the conversation on hold to check the best flights available in your route.",
+    "customer: Ok, take your time.",
+    "agent: According to your information, I have found a flight with single stop over in your journey with a minimum fare of 200 is provided by Hawaiian airlines. Shall I proceed with this?",
+    "customer: That's fine for me, you can proceed with booking.",
+    "agent: Your flight ticket is booked successfully, flight number is 1002.",
+    "customer: Thank you for your kind assistance in booking of my ticket, have a nice day.",
+    "agent: Thank you for choosing us, have a nice day."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Deborah Robinson",
+    "flight": [
+      1002,
+      1025
+    ]
+  },
+  "correct_sample": true
+}

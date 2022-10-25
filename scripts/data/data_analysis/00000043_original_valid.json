@@ -1,0 +1,49 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Kimberly Hill",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "25",
+    "max_price": 200,
+    "departure_airport": "AUS",
+    "max_connections": 1,
+    "departure_day": "23",
+    "goal": "book",
+    "departure_month": "Sept",
+    "name": "Kimberly Hill",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1517389615,
+    1517389623,
+    1517389683,
+    1517389719,
+    1517389739,
+    1517389745,
+    1517389753,
+    1517389778,
+    1517389801,
+    1517389804
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, what can I do for you at this time?",
+    "customer:  I am Kimberly Hill. I want to book a ticket to NY-LGA from TX-AUS.",
+    "agent: Sure, can I know your dates?",
+    "customer: My travelling dates are 09/23 and 09/25.",
+    "agent: Just hold on for a moment.",
+    "customer: Ok.",
+    "agent: Sorry for the inconvenience, there is no flight available on your dates.",
+    "customer: Ok, thank you for you response.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Kimberly Hill",
+    "flight": []
+  },
+  "correct_sample": true
+}

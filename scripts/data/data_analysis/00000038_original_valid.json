@@ -1,0 +1,133 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1529943278687,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1529943283313,
+      "field_name": "departure_day",
+      "field_value": "03/24"
+    },
+    {
+      "timestmamp": 1529943291257,
+      "field_name": "return_day",
+      "field_value": "03/26"
+    },
+    {
+      "timestmamp": 1529943324855,
+      "field_name": "from_city",
+      "field_value": "PHX"
+    },
+    {
+      "timestmamp": 1529943327416,
+      "field_name": "to_city",
+      "field_value": "LAX"
+    },
+    {
+      "timestmamp": 1529943352799,
+      "field_name": "departure_time",
+      "field_value": "evening"
+    },
+    {
+      "timestmamp": 1529943360567,
+      "field_name": "return_time",
+      "field_value": "evening"
+    },
+    {
+      "timestmamp": 1529943363359,
+      "field_name": "departure_time",
+      "field_value": "morning"
+    },
+    {
+      "timestmamp": 1529943365543,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1529943372322,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1529943430471,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1529943436905,
+      "field_name": "customer-name",
+      "field_value": "Sharon Brown"
+    },
+    {
+      "timestmamp": 1529944870983,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Sharon Brown",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "26",
+    "return_time": "evening",
+    "departure_airport": "PHX",
+    "max_price": 500,
+    "departure_time": "morning",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "24",
+    "goal": "book",
+    "departure_month": "Mar",
+    "name": "Sharon Brown",
+    "return_airport": "LAX"
+  },
+  "timestamps": [
+    1529943191,
+    1529943202,
+    1529943233,
+    1529943254,
+    1529943257,
+    1529943268,
+    1529943272,
+    1529943290,
+    1529943319,
+    1529943321,
+    1529943324,
+    1529943340,
+    1529943360,
+    1529943396,
+    1529943403,
+    1529943410,
+    1529943413,
+    1529943418
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to meet my childhood friend after a long time in Los Angeles, so I would like to book a flight ticket. Can you help me?",
+    "agent: Sure, we are here to help you. Can you please share your travel dates?",
+    "customer: Ok, my trip dates are from Mar 24 to 26.",
+    "agent: May I know your airport codes?",
+    "customer: Sure, my locations are from PHX to LAX.",
+    "agent: Do you have any connection limit?",
+    "customer: I need a connecting flight with business class.",
+    "agent: Is there any other specification?",
+    "customer: I would like to depart in the morning and returning in the evening.",
+    "agent: Ok, please share your name.",
+    "customer: Sure, I am Sharon Brown.",
+    "agent: Please wait a moment.",
+    "customer: Sure.",
+    "agent: Sorry to say, no flights found with your requirement.",
+    "customer: It's ok, thank you.",
+    "agent: Thanks for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Sharon Brown",
+    "flight": []
+  },
+  "correct_sample": true
+}

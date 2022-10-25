@@ -1,0 +1,130 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1528971722643,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1528971728797,
+      "field_name": "from_city",
+      "field_value": "DEN"
+    },
+    {
+      "timestmamp": 1528971732107,
+      "field_name": "to_city",
+      "field_value": "PHX"
+    },
+    {
+      "timestmamp": 1528971736396,
+      "field_name": "departure_day",
+      "field_value": "08/15"
+    },
+    {
+      "timestmamp": 1528971741028,
+      "field_name": "return_day",
+      "field_value": "08/17"
+    },
+    {
+      "timestmamp": 1528971741126,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528971807027,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1528971815883,
+      "field_name": "customer-name",
+      "field_value": "Kevin Harris"
+    },
+    {
+      "timestmamp": 1528971818971,
+      "field_name": "customer-flight-number",
+      "field_value": "1026"
+    },
+    {
+      "timestmamp": 1528971834971,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528971835427,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528971835659,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528971835860,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528971836043,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528971836252,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Kevin Harris",
+    "flight": [
+      1026
+    ]
+  },
+  "intent": {
+    "return_month": "Aug",
+    "return_day": "17",
+    "max_price": 5000,
+    "departure_airport": "DEN",
+    "departure_day": "15",
+    "goal": "book",
+    "departure_month": "Aug",
+    "name": "Kevin Harris",
+    "return_airport": "PHX"
+  },
+  "timestamps": [
+    1528971632,
+    1528971639,
+    1528971661,
+    1528971671,
+    1528971678,
+    1528971694,
+    1528971700,
+    1528971719,
+    1528971723,
+    1528971793,
+    1528971810,
+    1528971822,
+    1528971827,
+    1528971829
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I help you?",
+    "customer: Can you please help me in booking a flight ticket from Denver, DEN to Phoenix, PHX?",
+    "agent: Sure, help me with the trip dates?",
+    "customer: My journey dates are from Aug 15 to Aug 17.",
+    "agent: Do you have any specifications to be met?",
+    "customer: No.",
+    "agent: May I know your name for the documentation purpose?",
+    "customer: My name is Kevin Harris.",
+    "agent: We found a flight in an airline Hawaiian with 1026 number having a single connection in an economy class. Shall I proceed to book?",
+    "customer: Sure, you can proceed for booking.",
+    "agent: Your flight ticket has been confirmed.",
+    "customer: Thanks for your help.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Kevin Harris",
+    "flight": [
+      1026
+    ]
+  },
+  "correct_sample": true
+}

@@ -1,0 +1,122 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525800177967,
+      "field_name": "customer-name",
+      "field_value": " Jacob Thomas"
+    },
+    {
+      "timestmamp": 1525800178106,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1525800180724,
+      "field_name": "to_city",
+      "field_value": "OAK"
+    },
+    {
+      "timestmamp": 1525800186780,
+      "field_name": "from_city",
+      "field_value": "DTW"
+    },
+    {
+      "timestmamp": 1525800227852,
+      "field_name": "departure_day",
+      "field_value": "11/12"
+    },
+    {
+      "timestmamp": 1525800230207,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1525800233182,
+      "field_name": "return_day",
+      "field_value": "11/14"
+    },
+    {
+      "timestmamp": 1525800263940,
+      "field_name": "departure_time",
+      "field_value": "afternoon"
+    },
+    {
+      "timestmamp": 1525800265572,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1525800353155,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1525800355611,
+      "field_name": "customer-flight-number",
+      "field_value": "1001"
+    },
+    {
+      "timestmamp": 1525800410083,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Jacob Thomas",
+    "flight": [
+      1001
+    ]
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "14",
+    "max_price": 500,
+    "departure_airport": "DTW",
+    "departure_time": "afternoon",
+    "max_connections": 1,
+    "departure_day": "12",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Jacob Thompson",
+    "return_airport": "OAK"
+  },
+  "timestamps": [
+    1525800053,
+    1525800063,
+    1525800117,
+    1525800171,
+    1525800209,
+    1525800222,
+    1525800251,
+    1525800260,
+    1525800281,
+    1525800331,
+    1525800363,
+    1525800386,
+    1525800393,
+    1525800406
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I help you?",
+    "customer: My name is Jacob Thomas, I want to book a flight from DTW to OAK to visit trade fair. Can you book a flight for me?",
+    "agent: Sure, may I know your travelling dates?",
+    "customer: I will fly on Nov 12 and return on Nov 14.",
+    "agent: Do you have any depart and return time?",
+    "customer: I will depart in afternoon.",
+    "agent: Can I know your class?",
+    "customer: Sorry there is no any class preference.",
+    "agent: There is a flight on United airline, flight number 1001 with the fare of 200 and depart is 17 PM. Can I proceed?",
+    "customer: Please proceed if it have a single connection.",
+    "agent: Your ticket has been booked.",
+    "customer: Thank you for helping me.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Jacob Thompson",
+    "flight": [
+      1001
+    ]
+  },
+  "correct_sample": false
+}

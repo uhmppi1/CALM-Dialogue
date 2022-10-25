@@ -1,0 +1,65 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525259490576,
+      "field_name": "customer-name",
+      "field_value": "Patricia Baker"
+    },
+    {
+      "timestmamp": 1525259514055,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1525259516863,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1525259589272,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Patricia Baker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "6",
+    "max_price": 5000,
+    "departure_airport": "MSP",
+    "max_connections": 0,
+    "departure_day": "4",
+    "goal": "change",
+    "departure_month": "June",
+    "name": "Patricia Baker",
+    "return_airport": "EWR"
+  },
+  "timestamps": [
+    1525259390,
+    1525259421,
+    1525259467,
+    1525259509,
+    1525259527,
+    1525259551,
+    1525259579,
+    1525259587
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How can I help you?",
+    "customer: I am Patricia Baker. I want to stay for some more days at Minneapolis, can you please help me to change my flight reservation?",
+    "agent: Please wait a moment to check the reservation status.",
+    "customer: Sure.",
+    "agent: Sorry, no reservation found by your name.",
+    "customer: Not an issue. Anyway, thank you for checking.",
+    "agent: Thanks."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Patricia Baker",
+    "flight": []
+  },
+  "correct_sample": true
+}

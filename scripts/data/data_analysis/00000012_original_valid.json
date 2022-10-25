@@ -1,0 +1,70 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1528727378330,
+      "button_name": "top-cancel-reservation"
+    },
+    {
+      "timestmamp": 1528727380162,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1528727404299,
+      "field_name": "customer-name",
+      "field_value": "Kimberly Johnson"
+    },
+    {
+      "timestmamp": 1528731430721,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Kimberly Johnson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "18",
+    "max_price": 5000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "16",
+    "goal": "cancel",
+    "departure_month": "Nov",
+    "name": "Kimberly Johnson",
+    "return_airport": "HOU"
+  },
+  "timestamps": [
+    1528727328,
+    1528727335,
+    1528727356,
+    1528727370,
+    1528727392,
+    1528727396,
+    1528727408,
+    1528727420,
+    1528727438,
+    1528727440
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to cancel my recent reservation, can you help me in that?",
+    "agent: Sure, can I have your name please?",
+    "customer: Sure, the ticket has been reserved on the name Kimberly Johnson.",
+    "agent: Ok, please hold on a moment.",
+    "customer: Sure, I will wait for your response.",
+    "agent: Thanks for waiting, there is no active reservation on your given name.",
+    "customer: That's ok, no problem. Thank you for the information.",
+    "agent: Thank you for connecting with us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Kimberly Johnson",
+    "flight": []
+  },
+  "correct_sample": true
+}

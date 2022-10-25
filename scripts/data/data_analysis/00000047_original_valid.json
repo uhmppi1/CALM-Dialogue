@@ -1,0 +1,106 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1529664617013,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1529664619149,
+      "field_name": "from_city",
+      "field_value": "HOU"
+    },
+    {
+      "timestmamp": 1529664621477,
+      "field_name": "to_city",
+      "field_value": "LGA"
+    },
+    {
+      "timestmamp": 1529664645135,
+      "field_name": "departure_day",
+      "field_value": "10/06"
+    },
+    {
+      "timestmamp": 1529664651035,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1529664653742,
+      "field_name": "return_day",
+      "field_value": "10/08"
+    },
+    {
+      "timestmamp": 1529664671494,
+      "field_name": "customer-name",
+      "field_value": "Angela Wright"
+    },
+    {
+      "timestmamp": 1529664672084,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1529664737404,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Angela Wright",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "8",
+    "max_price": 1000,
+    "departure_airport": "HOU",
+    "max_connections": 1,
+    "departure_day": "6",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Angela Wright",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1529664553,
+    1529664564,
+    1529664590,
+    1529664593,
+    1529664606,
+    1529664606,
+    1529664627,
+    1529664628,
+    1529664642,
+    1529664656,
+    1529664671,
+    1529664681,
+    1529664699,
+    1529664701,
+    1529664720,
+    1529664724
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to visit New York to meet my family, please help me in booking a ticket from HOU to LGA.",
+    "agent: Sure, we are here to help you.",
+    "customer: Thank you.",
+    "agent: Can you share me your travelling dates?",
+    "customer: My planned travel dates are on Oct 6 and Oct 8.",
+    "agent: May I know your name?",
+    "customer: My name is Angela Wright.",
+    "agent: Do you have any other specifications?",
+    "customer: I prefer a connecting flight.",
+    "agent: Ok, wait for some time.",
+    "customer: Sure.",
+    "agent: Thanks for waiting there are no flights found on your details.",
+    "customer: Ok, no issues. Thank you for your information.",
+    "agent: Thanks for approaching us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Angela Wright",
+    "flight": []
+  },
+  "correct_sample": true
+}

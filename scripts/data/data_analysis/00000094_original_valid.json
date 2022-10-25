@@ -1,0 +1,106 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526654019626,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526654022810,
+      "field_name": "from_city",
+      "field_value": "ATL"
+    },
+    {
+      "timestmamp": 1526654027410,
+      "field_name": "to_city",
+      "field_value": "LGA"
+    },
+    {
+      "timestmamp": 1526654033956,
+      "field_name": "departure_day",
+      "field_value": "12/16"
+    },
+    {
+      "timestmamp": 1526654038267,
+      "field_name": "return_day",
+      "field_value": "12/18"
+    },
+    {
+      "timestmamp": 1526654042490,
+      "field_name": "class",
+      "field_value": "business"
+    },
+    {
+      "timestmamp": 1526654043619,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526654046298,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1526654120955,
+      "field_name": "customer-name",
+      "field_value": "Dennis Phillips"
+    },
+    {
+      "timestmamp": 1526654129234,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Dennis Phillips",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "18",
+    "max_price": 5000,
+    "departure_airport": "ATL",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "16",
+    "goal": "book",
+    "departure_month": "Dec",
+    "name": "Dennis Phillips",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1526653908,
+    1526653917,
+    1526653945,
+    1526653965,
+    1526653967,
+    1526653988,
+    1526654036,
+    1526654039,
+    1526654051,
+    1526654073,
+    1526654091,
+    1526654094,
+    1526654107
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I support you?",
+    "customer: Can you please book a ticket from ATL to LGA? As I'm planning to visit Statue of Liberty.",
+    "agent: Sure, we are here to assist you. May I know your itinerary dates?",
+    "customer: Sure, my planned departure and return travel dates are 16th and 18th of December.",
+    "agent: Would you like to travel in business class or economy class?",
+    "customer: I prefer business class to travel.",
+    "agent: May I know your connection limit?",
+    "customer: My maximum connection has to be 1.",
+    "agent: Sorry to notify to you that, there are no flights available with your needs.",
+    "customer: That's ok, thank you for giving the information.",
+    "agent: For documentation, may I know your name please?",
+    "customer: Yes, my name is Dennis Phillips."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Dennis Phillips",
+    "flight": []
+  },
+  "correct_sample": true
+}

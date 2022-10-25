@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Pamela Walker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "17",
+    "max_price": 200,
+    "departure_airport": "LAS",
+    "max_connections": 1,
+    "departure_day": "15",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Pamela Walker",
+    "return_airport": "SFO"
+  },
+  "timestamps": [
+    1515638754,
+    1515638758,
+    1515638803,
+    1515638854,
+    1515638877,
+    1515638946,
+    1515638967,
+    1515638993,
+    1515639017,
+    1515639024,
+    1515639050,
+    1515639054,
+    1515639096,
+    1515639096,
+    1515639134,
+    1515639137
+  ],
+  "dialogue": [
+    "customer: Hello, I am Pamela Walker.",
+    "agent: Hello, how may I serve you now?",
+    "customer: I want to visit my brother home town in San Francisco, can you help me with reservation?",
+    "agent: Sure, I can make your reservation right now. Can you please provide me your airport codes?",
+    "customer: My origin is LAS and destination is SFO.",
+    "agent: Do you need any halt in between your journey?",
+    "customer: Yes, I need flight with single halt.",
+    "agent: May I know your travelling dates?",
+    "customer: My depart is on 04/15 and return on 04/17.",
+    "agent: Is there any price limit for you?",
+    "customer: My price limit is 200.",
+    "agent: Ok, please wait a moment.",
+    "customer: OK.",
+    "agent: Unfortunately, there is no flight found on your journey details.",
+    "customer: No problem, I will try with another airline. Thank you for the information.",
+    "agent: Thanks for approaching us and have a great day."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Pamela Walker",
+    "flight": []
+  },
+  "correct_sample": true
+}

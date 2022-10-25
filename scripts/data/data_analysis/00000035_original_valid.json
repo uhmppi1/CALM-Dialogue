@@ -1,0 +1,58 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Pamela Rodriguez",
+    "flight": [
+      1003
+    ]
+  },
+  "intent": {
+    "return_month": "Feb",
+    "return_day": "4",
+    "max_price": 500,
+    "departure_airport": "DFW",
+    "return_time": "evening",
+    "max_connections": 1,
+    "departure_day": "2",
+    "goal": "book",
+    "departure_month": "Feb",
+    "name": "Pamela Rodriguez",
+    "return_airport": "DTW"
+  },
+  "timestamps": [
+    1517543950,
+    1517543956,
+    1517544016,
+    1517544039,
+    1517544057,
+    1517544070,
+    1517544071,
+    1517544112,
+    1517544115,
+    1517544120,
+    1517544122,
+    1517544133
+  ],
+  "dialogue": [
+    "customer: Hello, I am Pamela Rodriguez.",
+    "agent: Hello, what can I do for you today?",
+    "customer: I want to reach Detroit, MI-DTW to meet my old friend to start a new business, can you help me to book a flight ticket from Dallas, TX-DFW?",
+    "agent: Sure, do you need a connection in between your journey?",
+    "customer: 02/04 and 02/04 are my planned travelling dates. I prefer one connection.",
+    "agent: Ok, please wait a minute.",
+    "customer: Ok.",
+    "agent: We found a AA airline with flight number 1003 and price is 100 available according to your requirements.",
+    "customer: That's good you can book the ticket.",
+    "agent: Your reservation is done.",
+    "customer: Thanks for your assistance.",
+    "agent: Thank you for picking us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Pamela Rodriguez",
+    "flight": [
+      1003
+    ]
+  },
+  "correct_sample": true
+}

@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Stephanie Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "19",
+    "max_price": 200,
+    "departure_airport": "LAX",
+    "max_connections": 1,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Stephanie Turner",
+    "return_airport": "IAH"
+  },
+  "timestamps": [
+    1516275945,
+    1516275966,
+    1516275992,
+    1516276022,
+    1516276028,
+    1516276034,
+    1516276076,
+    1516276093,
+    1516276119,
+    1516276161,
+    1516276180,
+    1516276184,
+    1516276188,
+    1516276210,
+    1516276216,
+    1516276225
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How may I help you?",
+    "customer: I am Stephanie Turner. Can you help me searching flights with connection 1?",
+    "agent: Yes, I can help you.",
+    "customer: Thank you.",
+    "agent: Could you tell me your dates of travel?",
+    "customer: My travelling dates are 04/17 and 04/19.",
+    "agent: Ok, can I know your nearest airport codes?",
+    "customer: My airport codes are LAX to IAH.",
+    "agent: Give me a second, I will get back to you.",
+    "customer: Sure.",
+    "agent: I have found a flight ticket for you with a price of 100 and 1 connecting flight.",
+    "customer: That's perfect, proceed to booking.",
+    "agent: Ok, your ticket is booked with JetBlue airlines.",
+    "customer: Thank you for confirming my flight ticket.",
+    "agent: Thank you for consulting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Stephanie Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "correct_sample": true
+}

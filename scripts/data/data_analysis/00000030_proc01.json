@@ -1,0 +1,554 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Laura Walker",
+    "flight": [
+      1021
+    ]
+  },
+  "dialogue": [
+    [
+      "customer",
+      "Hi. I am Laura Walker."
+    ],
+    [
+      "agent",
+      "Hello, how can I aid you today?"
+    ],
+    [
+      "customer",
+      "As I keep travelling due to the nature of my work, this time I have to travel to MCO. Please help me to book a flight from PHL."
+    ],
+    [
+      "agent",
+      "Sure, when are you planning to start and return on?"
+    ],
+    [
+      "customer",
+      "I am planning to start my journey on Nov 10th and return on Nov 12th."
+    ],
+    [
+      "agent",
+      "Do you need a connecting flight?"
+    ],
+    [
+      "customer",
+      "Yes, I need a connecting flight."
+    ],
+    [
+      "agent",
+      "What are your departure and return timings?"
+    ],
+    [
+      "customer",
+      "The return time should be afternoon."
+    ],
+    [
+      "agent",
+      "In which class do you want to fly?"
+    ],
+    [
+      "customer",
+      "I am comfortable with any class."
+    ],
+    [
+      "agent",
+      "Thank you for your details, we found a connecting flight 1021 in economy class with American Airline. Shall I proceed with afternoon flight while returning?"
+    ],
+    [
+      "customer",
+      "Please proceed."
+    ],
+    [
+      "agent",
+      "Your ticket has been confirmed."
+    ],
+    [
+      "customer",
+      "Thank you."
+    ],
+    [
+      "agent",
+      "Thank you."
+    ]
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Laura Walker",
+    "flight": [
+      1021,
+      1026
+    ]
+  },
+  "customer_state": {
+    "return_month": "Nov",
+    "return_day": "12",
+    "max_price": 5000,
+    "departure_airport": "PHL",
+    "return_time": "afternoon",
+    "max_connections": 1,
+    "departure_day": "10",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Laura Walker",
+    "return_airport": "MCO",
+    "class": "None",
+    "airline_preference": "None",
+    "departure_time": "None"
+  },
+  "agent_state": {
+    "kb": [
+      {
+        "return_airport": "PHL",
+        "airline": "Spirit",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1000,
+        "departure_month": "Nov",
+        "departure_time_num": 18,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "JetBlue",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1001,
+        "departure_month": "Nov",
+        "departure_time_num": 9,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "JetBlue",
+        "departure_day": "9",
+        "departure_airport": "MCO",
+        "flight_number": 1002,
+        "departure_month": "Nov",
+        "departure_time_num": 15,
+        "class": "economy",
+        "return_time_num": 20,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "UA",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1003,
+        "departure_month": "Nov",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 6,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Hawaiian",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1004,
+        "departure_month": "Nov",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "AA",
+        "departure_day": "9",
+        "departure_airport": "MCO",
+        "flight_number": 1005,
+        "departure_month": "Nov",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "AA",
+        "departure_day": "10",
+        "departure_airport": "MCO",
+        "flight_number": 1006,
+        "departure_month": "Nov",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "Southwest",
+        "departure_day": "10",
+        "departure_airport": "MCO",
+        "flight_number": 1007,
+        "departure_month": "Nov",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "UA",
+        "departure_day": "9",
+        "departure_airport": "SFO",
+        "flight_number": 1008,
+        "departure_month": "Nov",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 17,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 2,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Frontier",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1009,
+        "departure_month": "Nov",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "JetBlue",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1010,
+        "departure_month": "Nov",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 5,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Southwest",
+        "departure_day": "9",
+        "departure_airport": "SFO",
+        "flight_number": 1011,
+        "departure_month": "Nov",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "AA",
+        "departure_day": "9",
+        "departure_airport": "MCO",
+        "flight_number": 1012,
+        "departure_month": "Nov",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 5,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "UA",
+        "departure_day": "9",
+        "departure_airport": "SFO",
+        "flight_number": 1013,
+        "departure_month": "Nov",
+        "departure_time_num": 6,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Hawaiian",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1014,
+        "departure_month": "Nov",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 4,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "10",
+        "departure_airport": "MCO",
+        "flight_number": 1015,
+        "departure_month": "Nov",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 20,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Hawaiian",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1016,
+        "departure_month": "Nov",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Frontier",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1017,
+        "departure_month": "Nov",
+        "departure_time_num": 4,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 2,
+        "price": 100
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "Spirit",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1018,
+        "departure_month": "Nov",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "9",
+        "departure_airport": "SFO",
+        "flight_number": 1019,
+        "departure_month": "Nov",
+        "departure_time_num": 20,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 2,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Frontier",
+        "departure_day": "9",
+        "departure_airport": "SFO",
+        "flight_number": 1020,
+        "departure_month": "Nov",
+        "departure_time_num": 8,
+        "class": "business",
+        "return_time_num": 19,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 800
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "AA",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1021,
+        "departure_month": "Nov",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Spirit",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1022,
+        "departure_month": "Nov",
+        "departure_time_num": 8,
+        "class": "business",
+        "return_time_num": 17,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "10",
+        "departure_airport": "SFO",
+        "flight_number": 1023,
+        "departure_month": "Nov",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Spirit",
+        "departure_day": "9",
+        "departure_airport": "PHL",
+        "flight_number": 1024,
+        "departure_month": "Nov",
+        "departure_time_num": 20,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "AA",
+        "departure_day": "9",
+        "departure_airport": "MCO",
+        "flight_number": 1025,
+        "departure_month": "Nov",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 12,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "JetBlue",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1026,
+        "departure_month": "Nov",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "Nov",
+        "return_day": "12",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "JetBlue",
+        "departure_day": "11",
+        "departure_airport": "SFO",
+        "flight_number": 1027,
+        "departure_month": "Nov",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 12,
+        "return_month": "Nov",
+        "return_day": "13",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "Southwest",
+        "departure_day": "10",
+        "departure_airport": "PHL",
+        "flight_number": 1028,
+        "departure_month": "Nov",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SFO",
+        "airline": "Spirit",
+        "departure_day": "9",
+        "departure_airport": "PHL",
+        "flight_number": 1029,
+        "departure_month": "Nov",
+        "departure_time_num": 13,
+        "class": "economy",
+        "return_time_num": 10,
+        "return_month": "Nov",
+        "return_day": "11",
+        "num_connections": 1,
+        "price": 100
+      }
+    ],
+    "reservation": 0
+  }
+}

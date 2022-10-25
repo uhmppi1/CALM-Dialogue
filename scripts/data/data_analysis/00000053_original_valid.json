@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Mary Jones",
+    "flight": [
+      1009
+    ]
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "28",
+    "max_price": 5000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "26",
+    "goal": "book",
+    "departure_month": "Sept",
+    "name": "Mary Jones",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1516351877,
+    1516351878,
+    1516351908,
+    1516351932,
+    1516351947,
+    1516351949,
+    1516351966,
+    1516351968,
+    1516351973,
+    1516352007,
+    1516352011,
+    1516352023,
+    1516352028,
+    1516352030
+  ],
+  "dialogue": [
+    "customer: Hello, I am Mary Jones.",
+    "agent: Hello, how can I assist you?",
+    "customer: I want to attend sports festival with festival in DCA, can you help me with reservation?",
+    "agent: Sure, may I know your source code?",
+    "customer: My source is MSP.",
+    "agent: Help me with the travelling dates?",
+    "customer: My depart is on 09/26 and return on 09/28.",
+    "agent: Please be on hold.",
+    "customer: OK.",
+    "agent: We have found a flight in an airline Delta with the flight number 1009.",
+    "customer: OK, proceed with booking.",
+    "agent: Your flight ticket has been booked.",
+    "customer: Thank you for the help.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Mary Jones",
+    "flight": [
+      1009
+    ]
+  },
+  "correct_sample": true
+}

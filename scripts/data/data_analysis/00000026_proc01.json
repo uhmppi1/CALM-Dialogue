@@ -1,0 +1,566 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Joshua Phillips",
+    "flight": [
+      1005
+    ]
+  },
+  "dialogue": [
+    [
+      "customer",
+      "Hi, I am Joshua Phillips."
+    ],
+    [
+      "agent",
+      "Hello, how can I assist you?"
+    ],
+    [
+      "customer",
+      "I have heard that Orlando is the best place for site seeing. So, can you book a flight ticket from Philadelphia, PA - PHL?"
+    ],
+    [
+      "agent",
+      "Sure, we are here to help you. Can I have the exact airport code of Orlando?"
+    ],
+    [
+      "customer",
+      "Sure, my destination code is FL - MCO."
+    ],
+    [
+      "agent",
+      "How much can you afford for this trip?"
+    ],
+    [
+      "customer",
+      "I can afford up to 500."
+    ],
+    [
+      "agent",
+      "When are you planning to go Orlando?"
+    ],
+    [
+      "customer",
+      "I want to travel on 07/19."
+    ],
+    [
+      "agent",
+      "Ok, do you need a stopover in between your route?"
+    ],
+    [
+      "customer",
+      "Yes, I need a stopover."
+    ],
+    [
+      "agent",
+      "Please help me with your return date."
+    ],
+    [
+      "customer",
+      "My arrival date is on 07/21."
+    ],
+    [
+      "agent",
+      "Joshua, there is a flight from Frontier airline with fare 100 only. Shall I proceed with the booking?"
+    ],
+    [
+      "customer",
+      "You may proceed if it is a connecting flight."
+    ],
+    [
+      "agent",
+      "Yes, it is a connecting flight."
+    ],
+    [
+      "customer",
+      "Thank you for your support, regarding flight booking process."
+    ],
+    [
+      "agent",
+      "Your reservation is confirmed with flight number 1005 on your name Joshua Phillips. Thank you for consulting us."
+    ],
+    [
+      "customer",
+      "Thank you."
+    ]
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Joshua Phillips",
+    "flight": [
+      1005,
+      1028
+    ]
+  },
+  "customer_state": {
+    "return_month": "July",
+    "return_day": "21",
+    "max_price": 500,
+    "departure_airport": "PHL",
+    "max_connections": 1,
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "July",
+    "name": "Joshua Phillips",
+    "return_airport": "MCO",
+    "class": "None",
+    "airline_preference": "None",
+    "departure_time": "None",
+    "return_time": "None"
+  },
+  "agent_state": {
+    "kb": [
+      {
+        "return_airport": "PHL",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "MCO",
+        "flight_number": 1000,
+        "departure_month": "July",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "LAS",
+        "airline": "UA",
+        "departure_day": "20",
+        "departure_airport": "PHL",
+        "flight_number": 1001,
+        "departure_month": "July",
+        "departure_time_num": 0,
+        "class": "business",
+        "return_time_num": 3,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 600
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Hawaiian",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1002,
+        "departure_month": "July",
+        "departure_time_num": 15,
+        "class": "economy",
+        "return_time_num": 11,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "PHL",
+        "flight_number": 1003,
+        "departure_month": "July",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "AA",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1004,
+        "departure_month": "July",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 2,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Frontier",
+        "departure_day": "19",
+        "departure_airport": "PHL",
+        "flight_number": 1005,
+        "departure_month": "July",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1006,
+        "departure_month": "July",
+        "departure_time_num": 19,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 0,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Southwest",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1007,
+        "departure_month": "July",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 9,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Delta",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1008,
+        "departure_month": "July",
+        "departure_time_num": 6,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Spirit",
+        "departure_day": "20",
+        "departure_airport": "PHL",
+        "flight_number": 1009,
+        "departure_month": "July",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "LAS",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "MCO",
+        "flight_number": 1010,
+        "departure_month": "July",
+        "departure_time_num": 17,
+        "class": "business",
+        "return_time_num": 10,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 600
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "UA",
+        "departure_day": "20",
+        "departure_airport": "MCO",
+        "flight_number": 1011,
+        "departure_month": "July",
+        "departure_time_num": 9,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAS",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "MCO",
+        "flight_number": 1012,
+        "departure_month": "July",
+        "departure_time_num": 19,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Spirit",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1013,
+        "departure_month": "July",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 10,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1014,
+        "departure_month": "July",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "MCO",
+        "flight_number": 1015,
+        "departure_month": "July",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Delta",
+        "departure_day": "19",
+        "departure_airport": "PHL",
+        "flight_number": 1016,
+        "departure_month": "July",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 20,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Hawaiian",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1017,
+        "departure_month": "July",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "July",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "AA",
+        "departure_day": "20",
+        "departure_airport": "MCO",
+        "flight_number": 1018,
+        "departure_month": "July",
+        "departure_time_num": 15,
+        "class": "economy",
+        "return_time_num": 13,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1019,
+        "departure_month": "July",
+        "departure_time_num": 20,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "LAS",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "PHL",
+        "flight_number": 1020,
+        "departure_month": "July",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 18,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "Frontier",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1021,
+        "departure_month": "July",
+        "departure_time_num": 16,
+        "class": "business",
+        "return_time_num": 21,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 1000
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "JetBlue",
+        "departure_day": "20",
+        "departure_airport": "PHL",
+        "flight_number": 1022,
+        "departure_month": "July",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAS",
+        "airline": "AA",
+        "departure_day": "20",
+        "departure_airport": "PHL",
+        "flight_number": 1023,
+        "departure_month": "July",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 23,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1024,
+        "departure_month": "July",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1025,
+        "departure_month": "July",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 13,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1026,
+        "departure_month": "July",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 13,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "JetBlue",
+        "departure_day": "19",
+        "departure_airport": "LAS",
+        "flight_number": 1027,
+        "departure_month": "July",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MCO",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "PHL",
+        "flight_number": 1028,
+        "departure_month": "July",
+        "departure_time_num": 21,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "July",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHL",
+        "airline": "Spirit",
+        "departure_day": "20",
+        "departure_airport": "LAS",
+        "flight_number": 1029,
+        "departure_month": "July",
+        "departure_time_num": 3,
+        "class": "economy",
+        "return_time_num": 6,
+        "return_month": "July",
+        "return_day": "22",
+        "num_connections": 1,
+        "price": 200
+      }
+    ],
+    "reservation": 0
+  }
+}

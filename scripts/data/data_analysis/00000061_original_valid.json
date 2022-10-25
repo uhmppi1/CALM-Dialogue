@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Kimberly Green",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "15",
+    "max_price": 200,
+    "departure_airport": "IAH",
+    "max_connections": 1,
+    "departure_day": "13",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Kimberly Green",
+    "return_airport": "IAD"
+  },
+  "timestamps": [
+    1523901837,
+    1523901849,
+    1523901891,
+    1523901916,
+    1523901957,
+    1523901963,
+    1523901987,
+    1523902002,
+    1523902042,
+    1523902046,
+    1523902099,
+    1523902106
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I support you today?",
+    "customer: I am Kimberly Green. I want to book a flight ticket from IAH to IAD. Can you find a flight ticket for me?",
+    "agent: Sure, we are here to make a reservation for you. Please share your planned journey dates.",
+    "customer: Thank you, my itinerary dates are on 11/13 and return on 11/15.",
+    "agent: Ok, Is there any halt?",
+    "customer: Yes, I need one connecting flight.",
+    "agent: Ok, please wait.",
+    "customer: Ok, take your time.",
+    "agent: Thanks for your time, there were no flights found based on your requested dates.",
+    "customer: It's ok, not a problem with that. Anyways thank you for your help.",
+    "agent: Thank you for availing us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Kimberly Green",
+    "flight": []
+  },
+  "correct_sample": true
+}

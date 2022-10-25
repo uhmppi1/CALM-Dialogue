@@ -1,0 +1,132 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1530202384788,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1530202388620,
+      "field_name": "from_city",
+      "field_value": "OAK"
+    },
+    {
+      "timestmamp": 1530202390139,
+      "field_name": "to_city",
+      "field_value": "OAK"
+    },
+    {
+      "timestmamp": 1530202393003,
+      "field_name": "to_city",
+      "field_value": "ORD"
+    },
+    {
+      "timestmamp": 1530202440016,
+      "field_name": "departure_day",
+      "field_value": "06"
+    },
+    {
+      "timestmamp": 1530202443771,
+      "field_name": "departure_day",
+      "field_value": "0617"
+    },
+    {
+      "timestmamp": 1530202449445,
+      "field_name": "return_day",
+      "field_value": "06/"
+    },
+    {
+      "timestmamp": 1530202451827,
+      "field_name": "departure_day",
+      "field_value": "06/17"
+    },
+    {
+      "timestmamp": 1530202453827,
+      "field_name": "return_day",
+      "field_value": "06/19"
+    },
+    {
+      "timestmamp": 1530202477460,
+      "field_name": "customer-name",
+      "field_value": "Rebecca Moore "
+    },
+    {
+      "timestmamp": 1530202477549,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1530202540298,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1530202542602,
+      "field_name": "customer-flight-number",
+      "field_value": "1024"
+    },
+    {
+      "timestmamp": 1530202543554,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Rebecca Moore",
+    "flight": [
+      1024
+    ]
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "19",
+    "max_price": 500,
+    "departure_airport": "OAK",
+    "max_connections": 1,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Rebecca Moore",
+    "return_airport": "ORD"
+  },
+  "timestamps": [
+    1530202324,
+    1530202334,
+    1530202348,
+    1530202360,
+    1530202369,
+    1530202374,
+    1530202401,
+    1530202458,
+    1530202472,
+    1530202499,
+    1530202525,
+    1530202529,
+    1530202535,
+    1530202537
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How may I help you out?",
+    "customer: I need to book a flight ticket from OAK to ORD, can you help me in booking a flight ticket?",
+    "agent: Sure, I will help you in booking the ticket. May I know your travelling dates please?",
+    "customer: Sure, my journey dates are Jun 17 and Jun 19.",
+    "agent: Can I know your name please?",
+    "customer: Sure, Rebecca Moore here.",
+    "agent: Do you need any specifications?",
+    "customer: No.",
+    "agent: There is a flight with connection 1 and price 100, can I proceed?",
+    "customer: Yes, you can.",
+    "agent: Ok, your ticket has been booked with flight number 1024.",
+    "customer: Thank you for your assistance.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Rebecca Moore",
+    "flight": [
+      1024,
+      1028
+    ]
+  },
+  "correct_sample": true
+}

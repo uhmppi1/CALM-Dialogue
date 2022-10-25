@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Amy Mitchell",
+    "flight": [
+      1017
+    ]
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "26",
+    "max_price": 5000,
+    "departure_airport": "IAH",
+    "max_connections": 1,
+    "departure_day": "24",
+    "goal": "book",
+    "departure_month": "Jan",
+    "name": "Amy Mitchell",
+    "return_airport": "BOS"
+  },
+  "timestamps": [
+    1523245451,
+    1523245460,
+    1523245505,
+    1523245514,
+    1523245529,
+    1523245547,
+    1523245579,
+    1523245582,
+    1523245593,
+    1523245665,
+    1523245679,
+    1523245681,
+    1523245696,
+    1523245700
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, How can I aid you?",
+    "customer: I am Amy Mitchell want to travel to MA- BOS to enjoy beach holidays with my cousins.",
+    "agent: Ok.",
+    "customer:  Can you book a ticket from TX-IAH?",
+    "agent: Sure, I am here to help you. May I know your travelling dates?",
+    "customer: My travelling dates are 01/24 and 01/26.",
+    "agent: Please wait.",
+    "customer: Ok.",
+    "agent: Thanks for waiting. You have a single connecting flight in JetBlue airline and flight number 1017 having price 100. Shall I proceed?",
+    "customer: Ok, you can proceed.",
+    "agent: Your ticket has been booked.",
+    "customer:  Thank you for booking.",
+    "agent: Thank you."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Amy Mitchell",
+    "flight": [
+      1017
+    ]
+  },
+  "correct_sample": true
+}

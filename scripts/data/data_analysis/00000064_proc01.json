@@ -1,0 +1,553 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Stephanie Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "dialogue": [
+    [
+      "customer",
+      "Hi."
+    ],
+    [
+      "agent",
+      "Hello. How may I help you?"
+    ],
+    [
+      "customer",
+      "I am Stephanie Turner. Can you help me searching flights with connection 1?"
+    ],
+    [
+      "agent",
+      "Yes, I can help you."
+    ],
+    [
+      "customer",
+      "Thank you."
+    ],
+    [
+      "agent",
+      "Could you tell me your dates of travel?"
+    ],
+    [
+      "customer",
+      "My travelling dates are 04/17 and 04/19."
+    ],
+    [
+      "agent",
+      "Ok, can I know your nearest airport codes?"
+    ],
+    [
+      "customer",
+      "My airport codes are LAX to IAH."
+    ],
+    [
+      "agent",
+      "Give me a second, I will get back to you."
+    ],
+    [
+      "customer",
+      "Sure."
+    ],
+    [
+      "agent",
+      "I have found a flight ticket for you with a price of 100 and 1 connecting flight."
+    ],
+    [
+      "customer",
+      "That's perfect, proceed to booking."
+    ],
+    [
+      "agent",
+      "Ok, your ticket is booked with JetBlue airlines."
+    ],
+    [
+      "customer",
+      "Thank you for confirming my flight ticket."
+    ],
+    [
+      "agent",
+      "Thank you for consulting us."
+    ]
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Stephanie Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "customer_state": {
+    "return_month": "Apr",
+    "return_day": "19",
+    "max_price": 200,
+    "departure_airport": "LAX",
+    "max_connections": 1,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Stephanie Turner",
+    "return_airport": "IAH",
+    "class": "None",
+    "airline_preference": "None",
+    "departure_time": "None",
+    "return_time": "None"
+  },
+  "agent_state": {
+    "kb": [
+      {
+        "return_airport": "IAH",
+        "airline": "Spirit",
+        "departure_day": "17",
+        "departure_airport": "DCA",
+        "flight_number": 1000,
+        "departure_month": "Apr",
+        "departure_time_num": 13,
+        "class": "economy",
+        "return_time_num": 23,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Frontier",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1001,
+        "departure_month": "Apr",
+        "departure_time_num": 19,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Spirit",
+        "departure_day": "18",
+        "departure_airport": "LAX",
+        "flight_number": 1002,
+        "departure_month": "Apr",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 2,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Frontier",
+        "departure_day": "17",
+        "departure_airport": "DCA",
+        "flight_number": 1003,
+        "departure_month": "Apr",
+        "departure_time_num": 3,
+        "class": "economy",
+        "return_time_num": 11,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 400
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "Hawaiian",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1004,
+        "departure_month": "Apr",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "Delta",
+        "departure_day": "16",
+        "departure_airport": "IAH",
+        "flight_number": 1005,
+        "departure_month": "Apr",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 4,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Frontier",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1006,
+        "departure_month": "Apr",
+        "departure_time_num": 0,
+        "class": "business",
+        "return_time_num": 10,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "JetBlue",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1007,
+        "departure_month": "Apr",
+        "departure_time_num": 20,
+        "class": "economy",
+        "return_time_num": 18,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Southwest",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1008,
+        "departure_month": "Apr",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "UA",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1009,
+        "departure_month": "Apr",
+        "departure_time_num": 3,
+        "class": "economy",
+        "return_time_num": 22,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "JetBlue",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1010,
+        "departure_month": "Apr",
+        "departure_time_num": 15,
+        "class": "business",
+        "return_time_num": 14,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 500
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Frontier",
+        "departure_day": "18",
+        "departure_airport": "DCA",
+        "flight_number": 1011,
+        "departure_month": "Apr",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 4,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Hawaiian",
+        "departure_day": "16",
+        "departure_airport": "LAX",
+        "flight_number": 1012,
+        "departure_month": "Apr",
+        "departure_time_num": 12,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Spirit",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1013,
+        "departure_month": "Apr",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 23,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 2,
+        "price": 200
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Spirit",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1014,
+        "departure_month": "Apr",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 0,
+        "price": 200
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "JetBlue",
+        "departure_day": "16",
+        "departure_airport": "IAH",
+        "flight_number": 1015,
+        "departure_month": "Apr",
+        "departure_time_num": 20,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "AA",
+        "departure_day": "17",
+        "departure_airport": "DCA",
+        "flight_number": 1016,
+        "departure_month": "Apr",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "Spirit",
+        "departure_day": "16",
+        "departure_airport": "DCA",
+        "flight_number": 1017,
+        "departure_month": "Apr",
+        "departure_time_num": 13,
+        "class": "business",
+        "return_time_num": 0,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 700
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "UA",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1018,
+        "departure_month": "Apr",
+        "departure_time_num": 23,
+        "class": "economy",
+        "return_time_num": 10,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Spirit",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1019,
+        "departure_month": "Apr",
+        "departure_time_num": 11,
+        "class": "business",
+        "return_time_num": 23,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 400
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Southwest",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1020,
+        "departure_month": "Apr",
+        "departure_time_num": 11,
+        "class": "business",
+        "return_time_num": 11,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 1000
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "JetBlue",
+        "departure_day": "18",
+        "departure_airport": "LAX",
+        "flight_number": 1021,
+        "departure_month": "Apr",
+        "departure_time_num": 2,
+        "class": "business",
+        "return_time_num": 14,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 0,
+        "price": 700
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Delta",
+        "departure_day": "17",
+        "departure_airport": "IAH",
+        "flight_number": 1022,
+        "departure_month": "Apr",
+        "departure_time_num": 22,
+        "class": "business",
+        "return_time_num": 18,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "DCA",
+        "airline": "Southwest",
+        "departure_day": "18",
+        "departure_airport": "LAX",
+        "flight_number": 1023,
+        "departure_month": "Apr",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 4,
+        "return_month": "Apr",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "UA",
+        "departure_day": "18",
+        "departure_airport": "DCA",
+        "flight_number": 1024,
+        "departure_month": "Apr",
+        "departure_time_num": 9,
+        "class": "economy",
+        "return_time_num": 18,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Hawaiian",
+        "departure_day": "17",
+        "departure_airport": "DCA",
+        "flight_number": 1025,
+        "departure_month": "Apr",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Frontier",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1026,
+        "departure_month": "Apr",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 22,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "Southwest",
+        "departure_day": "16",
+        "departure_airport": "IAH",
+        "flight_number": 1027,
+        "departure_month": "Apr",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 17,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "LAX",
+        "airline": "UA",
+        "departure_day": "17",
+        "departure_airport": "DCA",
+        "flight_number": 1028,
+        "departure_month": "Apr",
+        "departure_time_num": 6,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Apr",
+        "return_day": "19",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Frontier",
+        "departure_day": "17",
+        "departure_airport": "LAX",
+        "flight_number": 1029,
+        "departure_month": "Apr",
+        "departure_time_num": 17,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Apr",
+        "return_day": "18",
+        "num_connections": 1,
+        "price": 300
+      }
+    ],
+    "reservation": 0
+  }
+}

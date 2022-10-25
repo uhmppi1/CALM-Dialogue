@@ -1,0 +1,60 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Carol Edwards",
+    "flight": [
+      1013
+    ]
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "2",
+    "max_price": 1000,
+    "departure_airport": "DTW",
+    "max_connections": 1,
+    "departure_day": "30",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Carol Edwards",
+    "return_airport": "AUS"
+  },
+  "timestamps": [
+    1523544380,
+    1523544395,
+    1523544435,
+    1523544447,
+    1523544466,
+    1523544471,
+    1523544478,
+    1523544534,
+    1523544555,
+    1523544575,
+    1523544577,
+    1523544588,
+    1523544590
+  ],
+  "dialogue": [
+    "customer: Hello. I am Carol Edwards.",
+    "agent: Hello. How can I assist you at this moment?",
+    "customer: I need some immediate assistance in my flight ticket booking from DTW to AUS, can you help me in that booking process?",
+    "agent: Sure Carol, I am ready to help you with that. Can I have your travel dates please?",
+    "customer: Thank you and my travel dates are 11/30 and back on 12/02.",
+    "agent: Ok Carol, please wait a moment to check flight availability.",
+    "customer: Sure, I can wait for your response.",
+    "agent: AA airlines running a flight in your route with connection 1 and the ticket fare is 100. Shall I proceed with booking?",
+    "customer: Yes, please go ahead and confirm my flight ticket booking.",
+    "agent: Ok Carol Edwards, your ticket booking has done and the flight number is 1013.",
+    "customer: Thank you so much for your kind service in my ticket booking.",
+    "agent: Thank you for choosing us, have a great journey.",
+    "customer: Welcome."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Carol Edwards",
+    "flight": [
+      1013,
+      1027
+    ]
+  },
+  "correct_sample": true
+}

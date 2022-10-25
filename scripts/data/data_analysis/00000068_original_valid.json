@@ -1,0 +1,74 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525885233287,
+      "field_name": "customer-name",
+      "field_value": "Stephen Lopez"
+    },
+    {
+      "timestmamp": 1525885287406,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1525885333846,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1525885353805,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Stephen Lopez",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "24",
+    "max_price": 500,
+    "departure_airport": "LAX",
+    "departure_time": "afternoon",
+    "max_connections": 1,
+    "departure_day": "22",
+    "goal": "change",
+    "departure_month": "Oct",
+    "name": "Stephen Lopez",
+    "return_airport": "HOU"
+  },
+  "timestamps": [
+    1525885211,
+    1525885215,
+    1525885221,
+    1525885226,
+    1525885248,
+    1525885262,
+    1525885267,
+    1525885283,
+    1525885286,
+    1525885321,
+    1525885337,
+    1525885341
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello.",
+    "customer: I am Stephen Lopez.",
+    "agent: How may I assist you at this moment?",
+    "customer: Owing to an emergency, I want to change my reservation. Can you please help me in that?",
+    "agent: Sure, I am glad to help you out.",
+    "customer: Thank you.",
+    "agent: Please give me a moment to check your reservation status.",
+    "customer: Ok.",
+    "agent: Sorry, we couldn't find any reservation on your name in our records.",
+    "customer: Ok, no problem. Thank you for your response.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Stephen Lopez",
+    "flight": []
+  },
+  "correct_sample": true
+}

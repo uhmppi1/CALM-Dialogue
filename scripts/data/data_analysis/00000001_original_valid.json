@@ -1,0 +1,69 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1532340320889,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1532340419156,
+      "field_name": "customer-name",
+      "field_value": "Edward hall"
+    },
+    {
+      "timestmamp": 1532340420306,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1532340422018,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Edward hall",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "13",
+    "max_price": 5000,
+    "departure_airport": "IAD",
+    "max_connections": 1,
+    "departure_day": "11",
+    "goal": "change",
+    "departure_month": "Sept",
+    "name": "Edward Hall",
+    "return_airport": "ATL"
+  },
+  "timestamps": [
+    1532340243,
+    1532340256,
+    1532340271,
+    1532340294,
+    1532340299,
+    1532340318,
+    1532340329,
+    1532340365,
+    1532340378,
+    1532340403
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How may I help you?",
+    "customer: Can you help me to change my recent reservation because my trip dates are got postponed?",
+    "agent: I will help you with that please share your name to proceed further?",
+    "customer: Edward hall here.",
+    "agent: Please wait for a while.",
+    "customer: Sure, take your own time.",
+    "agent: There is no active reservation found under your name to amend it.",
+    "customer: That's ok, thank you for checking.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Edward Hall",
+    "flight": []
+  },
+  "correct_sample": true
+}

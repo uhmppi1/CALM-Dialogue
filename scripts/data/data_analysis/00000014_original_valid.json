@@ -1,0 +1,69 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1530116384438,
+      "button_name": "top-cancel-reservation"
+    },
+    {
+      "timestmamp": 1530116399894,
+      "field_name": "customer-name",
+      "field_value": "Patrick Miller"
+    },
+    {
+      "timestmamp": 1530116460254,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1530116464510,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Patrick Miller",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "6",
+    "max_price": 1000,
+    "departure_airport": "IAH",
+    "max_connections": 1,
+    "departure_day": "4",
+    "goal": "cancel",
+    "departure_month": "Sept",
+    "name": "Patrick Miller",
+    "return_airport": "CLT"
+  },
+  "timestamps": [
+    1530116350,
+    1530116363,
+    1530116365,
+    1530116382,
+    1530116384,
+    1530116393,
+    1530116405,
+    1530116439,
+    1530116451,
+    1530116457
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I help you?",
+    "customer: Please help me to cancel my recent reservation.",
+    "agent: Sure, may I know your name please?",
+    "customer: Patrick Miller.",
+    "agent: Ok, please wait.",
+    "customer: Ok.",
+    "agent: Sorry to inform you that there is no active reservation found with your name in our records.",
+    "customer: Thank you for your information.",
+    "agent: Most welcome."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Patrick Miller",
+    "flight": []
+  },
+  "correct_sample": true
+}

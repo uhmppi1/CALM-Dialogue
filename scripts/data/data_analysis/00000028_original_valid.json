@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Patricia Smith",
+    "flight": [
+      1025
+    ]
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "10",
+    "max_price": 1000,
+    "departure_airport": "ORD",
+    "max_connections": 1,
+    "departure_day": "8",
+    "goal": "book",
+    "departure_month": "Jan",
+    "name": "Patricia Smith",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1521723467,
+    1521723483,
+    1521723500,
+    1521723505,
+    1521723518,
+    1521723521,
+    1521723534,
+    1521723536,
+    1521723539,
+    1521723603,
+    1521723645,
+    1521723653,
+    1521723655,
+    1521723661
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How can I assist you today?",
+    "customer: I am Patricia Smith, can you help me to book a flight with 1 connection?",
+    "agent: Sure, will you mention your travelling dates please?",
+    "customer: My travelling dates are 01/08 and 01/10.",
+    "agent: Please provide your airport codes that you want to travel.",
+    "customer: I would like to fly from ORD to DCA.",
+    "agent: Please give me a moment.",
+    "customer: Ok.",
+    "agent: Thanks for waiting, there is a flight with price 100 and the connections 1 is available. Shall I confirm your ticket?",
+    "customer: Proceed with booking.",
+    "agent: Your ticket is booked. The flight number is 1025 and the airline is Delta.",
+    "customer: Thank you.",
+    "agent: Welcome, have a great day."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Patricia Smith",
+    "flight": [
+      1025
+    ]
+  },
+  "correct_sample": true
+}

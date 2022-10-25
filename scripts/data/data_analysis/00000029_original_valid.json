@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Anthony Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "intent": {
+    "return_month": "Feb",
+    "return_day": "29",
+    "max_price": 500,
+    "departure_airport": "ORD",
+    "max_connections": 1,
+    "departure_day": "27",
+    "goal": "book",
+    "departure_month": "Feb",
+    "name": "Anthony Turner",
+    "return_airport": "DFW"
+  },
+  "timestamps": [
+    1521177908,
+    1521177912,
+    1521178012,
+    1521178034,
+    1521178049,
+    1521178055,
+    1521178064,
+    1521178095,
+    1521178131,
+    1521178147,
+    1521178165,
+    1521178195,
+    1521178207,
+    1521178215,
+    1521178224,
+    1521178232
+  ],
+  "dialogue": [
+    "customer: Hello, I am Anthony Turner.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to start my journey from Chicago, IL-ORD to attend my family meeting at Dallas, TX-DFW, can you help me in booking?",
+    "agent: Sure, I am here to help you.",
+    "customer: Thank you.",
+    "agent: On which dates would you like me to book a flight ticket for you?",
+    "customer: I would like to start on 02/27 and my return date will be on 02/29.",
+    "agent: Do you need a stopover in between your journey?",
+    "customer: I need a stopover in between my journey.",
+    "agent: OK, please hold on.",
+    "customer: Ok.",
+    "agent: Thanks for waiting, we found 1007 flight in UA airline with single connection and fare of 100.",
+    "customer: Ok, please book my ticket.",
+    "agent: Your ticket has been booked with your name.",
+    "customer: Thank you for helping in booking.",
+    "agent: Thank you for reaching us, have a safe journey."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Anthony Turner",
+    "flight": [
+      1007
+    ]
+  },
+  "correct_sample": true
+}

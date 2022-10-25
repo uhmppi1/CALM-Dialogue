@@ -1,0 +1,142 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526051702075,
+      "field_name": "customer-name",
+      "field_value": "Laura Walker"
+    },
+    {
+      "timestmamp": 1526051799659,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526051806395,
+      "field_name": "from_city",
+      "field_value": "PHL"
+    },
+    {
+      "timestmamp": 1526051811827,
+      "field_name": "to_city",
+      "field_value": "MCO"
+    },
+    {
+      "timestmamp": 1526051818243,
+      "field_name": "return_day",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526051823227,
+      "field_name": "departure_day",
+      "field_value": "11/10"
+    },
+    {
+      "timestmamp": 1526051827171,
+      "field_name": "return_day",
+      "field_value": "11/12"
+    },
+    {
+      "timestmamp": 1526051827310,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526051889899,
+      "field_name": "return_time",
+      "field_value": "afternoon"
+    },
+    {
+      "timestmamp": 1526051890931,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526051906252,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1526051907356,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526052025211,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1526052029035,
+      "field_name": "customer-flight-number",
+      "field_value": "1021"
+    },
+    {
+      "timestmamp": 1526052046178,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Laura Walker",
+    "flight": [
+      1021
+    ]
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "12",
+    "max_price": 5000,
+    "departure_airport": "PHL",
+    "return_time": "afternoon",
+    "max_connections": 1,
+    "departure_day": "10",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Laura Walker",
+    "return_airport": "MCO"
+  },
+  "timestamps": [
+    1526051686,
+    1526051693,
+    1526051753,
+    1526051782,
+    1526051810,
+    1526051816,
+    1526051831,
+    1526051857,
+    1526051876,
+    1526051885,
+    1526051911,
+    1526051993,
+    1526052025,
+    1526052036,
+    1526052039,
+    1526052044
+  ],
+  "dialogue": [
+    "customer: Hi. I am Laura Walker.",
+    "agent: Hello, how can I aid you today?",
+    "customer: As I keep travelling due to the nature of my work, this time I have to travel to MCO. Please help me to book a flight from PHL.",
+    "agent: Sure, when are you planning to start and return on?",
+    "customer: I am planning to start my journey on Nov 10th and return on Nov 12th.",
+    "agent: Do you need a connecting flight?",
+    "customer: Yes, I need a connecting flight.",
+    "agent: What are your departure and return timings?",
+    "customer: The return time should be afternoon.",
+    "agent: In which class do you want to fly?",
+    "customer: I am comfortable with any class.",
+    "agent: Thank you for your details, we found a connecting flight 1021 in economy class with American Airline. Shall I proceed with afternoon flight while returning?",
+    "customer: Please proceed.",
+    "agent: Your ticket has been confirmed.",
+    "customer: Thank you.",
+    "agent: Thank you."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Laura Walker",
+    "flight": [
+      1021,
+      1026
+    ]
+  },
+  "correct_sample": true
+}

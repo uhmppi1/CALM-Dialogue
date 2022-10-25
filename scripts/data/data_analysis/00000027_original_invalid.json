@@ -1,0 +1,119 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526912359814,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526912365502,
+      "field_name": "from_city",
+      "field_value": "LAX"
+    },
+    {
+      "timestmamp": 1526912441247,
+      "field_name": "departure_day",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526912445446,
+      "field_name": "to_city",
+      "field_value": "JFK"
+    },
+    {
+      "timestmamp": 1526912449441,
+      "field_name": "departure_day",
+      "field_value": "04/02"
+    },
+    {
+      "timestmamp": 1526912452194,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526912454353,
+      "field_name": "return_day",
+      "field_value": "04/04"
+    },
+    {
+      "timestmamp": 1526912461488,
+      "field_name": "customer-name",
+      "field_value": "Jessica Crown"
+    },
+    {
+      "timestmamp": 1526912557398,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1526912559535,
+      "field_name": "customer-flight-number",
+      "field_value": "1002"
+    },
+    {
+      "timestmamp": 1526912563887,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Jessica Crown",
+    "flight": [
+      1002
+    ]
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "4",
+    "max_price": 1000,
+    "departure_airport": "LAX",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "2",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Jessica Brown",
+    "return_airport": "JFK"
+  },
+  "timestamps": [
+    1526912298,
+    1526912307,
+    1526912330,
+    1526912358,
+    1526912369,
+    1526912417,
+    1526912423,
+    1526912431,
+    1526912447,
+    1526912479,
+    1526912508,
+    1526912526,
+    1526912529,
+    1526912536,
+    1526912537,
+    1526912554
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I assist you today?",
+    "customer: Could you please help me to book a business class ticket from Los Angeles to attend a business meeting in New York?",
+    "agent: Sure, may I know your travel dates?",
+    "customer: I need to depart on Apr 2nd and my return date will be on Apr 4th.",
+    "agent: Where would you like land in New York?",
+    "customer: My boarding point is LAX and my destination point is JFK.",
+    "agent: Please share me your name.",
+    "customer: I am Jessica Crown.",
+    "agent: Do you have any specifications?",
+    "customer: I need a break in between my journey.",
+    "agent: We found a economy class flight on your details with Southwest Airline, flight number: 1002. Shall I book this ticket?",
+    "customer: That's fine, you can book the ticket.",
+    "agent: Your ticket has been reserved.",
+    "customer: Thank you for your assistance in booking.",
+    "agent: Thank you so much for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Jessica Brown",
+    "flight": []
+  },
+  "correct_sample": false
+}

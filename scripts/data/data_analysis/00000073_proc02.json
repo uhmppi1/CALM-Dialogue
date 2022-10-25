@@ -1,0 +1,586 @@
+{
+  "uuid": 73,
+  "customer_scenario_uuid": 146,
+  "agent_scenario_uuid": 147,
+  "customer_scenario": {
+    "return_month": "Oct",
+    "return_day": "21",
+    "return_time": "evening",
+    "departure_airport": "SEA",
+    "max_price": 500,
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "David Moore",
+    "return_airport": "PHX",
+    "airline_preference": "None",
+    "departure_time": "None"
+  },
+  "agent_scenario": {
+    "kb": [
+      {
+        "return_airport": "IAH",
+        "airline": "Delta",
+        "departure_day": "18",
+        "departure_airport": "SEA",
+        "flight_number": 1000,
+        "departure_month": "Oct",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1001,
+        "departure_month": "Oct",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 5,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1002,
+        "departure_month": "Oct",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 2,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "JetBlue",
+        "departure_day": "18",
+        "departure_airport": "SEA",
+        "flight_number": 1003,
+        "departure_month": "Oct",
+        "departure_time_num": 22,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1004,
+        "departure_month": "Oct",
+        "departure_time_num": 18,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Frontier",
+        "departure_day": "18",
+        "departure_airport": "IAH",
+        "flight_number": 1005,
+        "departure_month": "Oct",
+        "departure_time_num": 23,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1006,
+        "departure_month": "Oct",
+        "departure_time_num": 9,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Delta",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1007,
+        "departure_month": "Oct",
+        "departure_time_num": 4,
+        "class": "economy",
+        "return_time_num": 2,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "IAH",
+        "flight_number": 1008,
+        "departure_month": "Oct",
+        "departure_time_num": 6,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1009,
+        "departure_month": "Oct",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 20,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1010,
+        "departure_month": "Oct",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 6,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1011,
+        "departure_month": "Oct",
+        "departure_time_num": 20,
+        "class": "business",
+        "return_time_num": 6,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 400
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1012,
+        "departure_month": "Oct",
+        "departure_time_num": 21,
+        "class": "economy",
+        "return_time_num": 2,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "JetBlue",
+        "departure_day": "18",
+        "departure_airport": "IAH",
+        "flight_number": 1013,
+        "departure_month": "Oct",
+        "departure_time_num": 18,
+        "class": "business",
+        "return_time_num": 4,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 1100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Hawaiian",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1014,
+        "departure_month": "Oct",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 9,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Hawaiian",
+        "departure_day": "18",
+        "departure_airport": "IAH",
+        "flight_number": 1015,
+        "departure_month": "Oct",
+        "departure_time_num": 16,
+        "class": "economy",
+        "return_time_num": 22,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Delta",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1016,
+        "departure_month": "Oct",
+        "departure_time_num": 4,
+        "class": "economy",
+        "return_time_num": 19,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "IAH",
+        "flight_number": 1017,
+        "departure_month": "Oct",
+        "departure_time_num": 11,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Spirit",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1018,
+        "departure_month": "Oct",
+        "departure_time_num": 19,
+        "class": "economy",
+        "return_time_num": 22,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "UA",
+        "departure_day": "19",
+        "departure_airport": "IAH",
+        "flight_number": 1019,
+        "departure_month": "Oct",
+        "departure_time_num": 2,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "Delta",
+        "departure_day": "19",
+        "departure_airport": "IAH",
+        "flight_number": 1020,
+        "departure_month": "Oct",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 13,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "AA",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1021,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "Delta",
+        "departure_day": "19",
+        "departure_airport": "IAH",
+        "flight_number": 1022,
+        "departure_month": "Oct",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 23,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Frontier",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1023,
+        "departure_month": "Oct",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 11,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "JetBlue",
+        "departure_day": "18",
+        "departure_airport": "SEA",
+        "flight_number": 1024,
+        "departure_month": "Oct",
+        "departure_time_num": 23,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "PHX",
+        "flight_number": 1025,
+        "departure_month": "Oct",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Delta",
+        "departure_day": "18",
+        "departure_airport": "SEA",
+        "flight_number": 1026,
+        "departure_month": "Oct",
+        "departure_time_num": 18,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "IAH",
+        "airline": "JetBlue",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1027,
+        "departure_month": "Oct",
+        "departure_time_num": 9,
+        "class": "economy",
+        "return_time_num": 20,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "PHX",
+        "airline": "Southwest",
+        "departure_day": "19",
+        "departure_airport": "SEA",
+        "flight_number": 1028,
+        "departure_month": "Oct",
+        "departure_time_num": 3,
+        "class": "economy",
+        "return_time_num": 7,
+        "return_month": "Oct",
+        "return_day": "21",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "SEA",
+        "airline": "UA",
+        "departure_day": "20",
+        "departure_airport": "PHX",
+        "flight_number": 1029,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "Oct",
+        "return_day": "20",
+        "num_connections": 1,
+        "price": 100
+      }
+    ],
+    "reservation": 0
+  },
+  "expected_action": {
+    "status": "book",
+    "name": "David Moore",
+    "flight": [
+      1012
+    ]
+  },
+  "events": [
+    {
+      "agent": "Customer",
+      "data": "Hi.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Hello, how can I assist you?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Could you please check the flight availability in economy class?",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Sure, I am here to help you. Please let me know your travelling dates.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "My travelling dates are Oct 19 and Oct 21.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Kindly mention your respective airport codes.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "My source is SEA and destination is PHX.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Do you prefer any break in between journey?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I need a single connecting flight.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Are there any other specifications for you?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I want to return in the evening.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "May I know your good name?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I am David Moore.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "According to your information, I have found a flight with single stop over in your journey with a minimum fare of 100 with flight number 1012. Shall I proceed with this flight?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Ok, proceed.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Your booking is done in United Airlines.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Thank you.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Thank you for availing us.",
+      "action": "message"
+    },
+    {
+      "agent": "Submit",
+      "data": {
+        "status": "book",
+        "name": "David Moore",
+        "flight": [
+          1012
+        ]
+      },
+      "action": "book"
+    }
+  ]
+}

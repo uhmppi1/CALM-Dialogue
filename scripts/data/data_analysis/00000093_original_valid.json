@@ -1,0 +1,59 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Linda Thomas",
+    "flight": [
+      1029
+    ]
+  },
+  "intent": {
+    "return_month": "Aug",
+    "return_day": "11",
+    "max_price": 5000,
+    "departure_airport": "PHL",
+    "max_connections": 1,
+    "departure_day": "9",
+    "goal": "book",
+    "departure_month": "Aug",
+    "name": "Linda Thomas",
+    "return_airport": "LAS"
+  },
+  "timestamps": [
+    1512741307,
+    1512741322,
+    1512741373,
+    1512741400,
+    1512741408,
+    1512741440,
+    1512741448,
+    1512741472,
+    1512741498,
+    1512741531,
+    1512741538,
+    1512741560,
+    1512741572
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you?",
+    "customer: Myself Linda Thomas. I want to visit a trip.I just want to book a ticket.",
+    "agent: Sure. Help me with the full details of journey.",
+    "customer: My airport codes are from PA-PHL to NV-LAS.",
+    "agent: May I know the dates?",
+    "customer: My dates are from 08/09 to 08/11.",
+    "agent: Sorry, there is no flight found.",
+    "customer: Ok, thank you for your help.",
+    "agent: There is a flight with connection 1 and airline is UA. Can I book it?",
+    "customer: Ok.",
+    "agent: Your ticket is booked with number 1029. Thank you.",
+    "customer: Thank you for your help."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Linda Thomas",
+    "flight": [
+      1029
+    ]
+  },
+  "correct_sample": true
+}

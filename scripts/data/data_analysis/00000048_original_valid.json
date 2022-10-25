@@ -1,0 +1,46 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Jerry Robinson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "27",
+    "max_price": 1000,
+    "departure_airport": "JFK",
+    "airline_preference": "normal-cost",
+    "max_connections": 1,
+    "departure_day": "25",
+    "goal": "cancel",
+    "departure_month": "Nov",
+    "name": "Jerry Robinson",
+    "return_airport": "MSP"
+  },
+  "timestamps": [
+    1518009409,
+    1518009423,
+    1518009461,
+    1518009476,
+    1518009492,
+    1518009510,
+    1518009537,
+    1518009540
+  ],
+  "dialogue": [
+    "customer: Hello, I am Jerry Robinson.",
+    "agent: Hello Jerry. How can I assist you?",
+    "customer: I would like to cancel my recent reservation due to postpone of my conference at Denver. Could you please help me with the cancellation?",
+    "agent: Sure, please give me a minute.",
+    "customer: Sur.",
+    "agent: Jerry, there is no reservation available on your name.",
+    "customer: That's fine, thank you for the information.",
+    "agent: You are welcome."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Jerry Robinson",
+    "flight": []
+  },
+  "correct_sample": true
+}

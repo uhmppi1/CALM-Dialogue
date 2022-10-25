@@ -1,0 +1,145 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526492739200,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526492746207,
+      "field_name": "from_city",
+      "field_value": "LAS"
+    },
+    {
+      "timestmamp": 1526492749942,
+      "field_name": "to_city",
+      "field_value": "ATL"
+    },
+    {
+      "timestmamp": 1526492768919,
+      "field_name": "departure_day",
+      "field_value": "12/23"
+    },
+    {
+      "timestmamp": 1526492772904,
+      "field_name": "return_day",
+      "field_value": "12/25"
+    },
+    {
+      "timestmamp": 1526492773023,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526492839742,
+      "field_name": "airline",
+      "field_value": "normal-cost"
+    },
+    {
+      "timestmamp": 1526492841247,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526492842390,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526492869823,
+      "field_name": "customer-name",
+      "field_value": " Jack Phillips"
+    },
+    {
+      "timestmamp": 1526492908774,
+      "field_name": "return_time",
+      "field_value": "evening"
+    },
+    {
+      "timestmamp": 1526492909838,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526492910862,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526492950341,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1526492954742,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1526492971629,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Jack Phillips",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "25",
+    "max_price": 5000,
+    "departure_airport": "LAS",
+    "airline_preference": "normal-cost",
+    "departure_time": "evening",
+    "max_connections": 1,
+    "departure_day": "23",
+    "goal": "book",
+    "departure_month": "Dec",
+    "name": "Jack Phillips",
+    "return_airport": "ATL"
+  },
+  "timestamps": [
+    1526492694,
+    1526492705,
+    1526492732,
+    1526492737,
+    1526492763,
+    1526492765,
+    1526492795,
+    1526492836,
+    1526492852,
+    1526492860,
+    1526492897,
+    1526492904,
+    1526492919,
+    1526492938,
+    1526492965,
+    1526492970
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How may I guide you today?",
+    "customer: I would like to book a ticket  from LAS to ATL to attend a meeting.",
+    "agent: Sure, I will help you with that. Can you please share your preferable journey dates?",
+    "customer: My travel dates are as follows Dec 23 and Dec 25.",
+    "agent: Do you have any airline preference?",
+    "customer: Yes, I prefer normal cost.",
+    "agent: May I know your name please?",
+    "customer: My name is Jack Phillips.",
+    "agent: Is there any connection limit?",
+    "customer: I prefer single connection flight with return in the evening.",
+    "agent: Do you have any specifications?",
+    "customer: No.",
+    "agent: I am sorry to say that there is no flight found under your details.",
+    "customer: No issue, thank you for the help.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Jack Phillips",
+    "flight": [
+      1029
+    ]
+  },
+  "correct_sample": false
+}

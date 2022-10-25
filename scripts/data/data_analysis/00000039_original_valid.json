@@ -1,0 +1,117 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526397984657,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526397988368,
+      "field_name": "return_time",
+      "field_value": "evening"
+    },
+    {
+      "timestmamp": 1526398069185,
+      "field_name": "from_city",
+      "field_value": "SFO"
+    },
+    {
+      "timestmamp": 1526398071617,
+      "field_name": "to_city",
+      "field_value": "DEN"
+    },
+    {
+      "timestmamp": 1526398099017,
+      "field_name": "max_connection",
+      "field_value": "0"
+    },
+    {
+      "timestmamp": 1526398139772,
+      "field_name": "departure_day",
+      "field_value": "08/02"
+    },
+    {
+      "timestmamp": 1526398149587,
+      "field_name": "return_day",
+      "field_value": "08/04"
+    },
+    {
+      "timestmamp": 1526398161435,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526398229926,
+      "field_name": "customer-name",
+      "field_value": "Paul Garcia"
+    },
+    {
+      "timestmamp": 1526398233818,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1526398295859,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Paul Garcia",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Aug",
+    "return_day": "4",
+    "max_price": 1000,
+    "departure_airport": "SFO",
+    "return_time": "evening",
+    "max_connections": 0,
+    "departure_day": "2",
+    "goal": "book",
+    "departure_month": "Aug",
+    "name": "Paul Garcia",
+    "return_airport": "DEN"
+  },
+  "timestamps": [
+    1526397902,
+    1526397910,
+    1526397939,
+    1526397980,
+    1526398022,
+    1526398038,
+    1526398042,
+    1526398061,
+    1526398064,
+    1526398095,
+    1526398112,
+    1526398129,
+    1526398156,
+    1526398197,
+    1526398206,
+    1526398213
+  ],
+  "dialogue": [
+    "customer: Hi, Paul Garcia here.",
+    "agent: Hello, how can I help you?",
+    "customer: Can you please reserve me a flight ticket which is having it's return time in the evening?",
+    "agent: Sure, we are happy to help you. When are you planning to make your journey?",
+    "customer: Thank you, my trip dates are 08/02 - 08/04.",
+    "agent: Please help me with your respective airport codes.",
+    "customer: My airport codes are SFO - DEN.",
+    "agent: Do you have any lay by in between journey?",
+    "customer: I need a direct flight.",
+    "agent: Is there specific depart and arrival timings for this trip?",
+    "customer: Already mentioned above.",
+    "agent: Do you have any other specifications?",
+    "customer: No, thank you for asking.",
+    "agent: Thanks for providing details, no flights are available on your journey routs.",
+    "customer: No issues, thank you.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Paul Garcia",
+    "flight": []
+  },
+  "correct_sample": true
+}

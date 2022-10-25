@@ -1,0 +1,67 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1531831189226,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1531831191186,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1531831213112,
+      "field_name": "customer-name",
+      "field_value": "Alexander Parker"
+    },
+    {
+      "timestmamp": 1531831242329,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Alexander Parker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "25",
+    "max_price": 500,
+    "departure_airport": "MSP",
+    "return_time": "afternoon",
+    "departure_time": "evening",
+    "max_connections": 1,
+    "departure_day": "23",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Alexander Parker",
+    "return_airport": "EWR"
+  },
+  "timestamps": [
+    1531831171,
+    1531831179,
+    1531831181,
+    1531831187,
+    1531831199,
+    1531831203,
+    1531831224,
+    1531831236
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I help you today?",
+    "customer: Due to sudden change of my business meeting because of some technical problem, I need to change my reservation so can you help me with that?",
+    "agent: Let me know your name to check your reservation?",
+    "customer: I am Alexander Parker.",
+    "agent:  I have checked in reservation list to change your ticket, but could not find any reservation with your name.",
+    "customer: No problem, thank you for the information.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Alexander Parker",
+    "flight": []
+  },
+  "correct_sample": false
+}

@@ -1,0 +1,47 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Matthew Parker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "11",
+    "max_price": 5000,
+    "departure_airport": "MCO",
+    "max_connections": 1,
+    "departure_day": "9",
+    "goal": "change",
+    "departure_month": "Oct",
+    "name": "Matthew Parker",
+    "return_airport": "MSP"
+  },
+  "timestamps": [
+    1513778713,
+    1513778724,
+    1513778728,
+    1513778749,
+    1513778775,
+    1513778824,
+    1513778838,
+    1513778847,
+    1513778849
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How may I help you?",
+    "customer: I am Matthew Parker.",
+    "agent: Matthew nice to meet you.",
+    "customer: Due to some reasons, my trip has been postponed. Can you change my reservation.",
+    "agent: Actually, there is no previous reservation found on your name.",
+    "customer: It's ok.",
+    "agent: Thank you for reaching us.",
+    "customer: Thank you for your help."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Matthew Parker",
+    "flight": []
+  },
+  "correct_sample": true
+}

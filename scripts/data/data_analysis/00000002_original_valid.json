@@ -1,0 +1,66 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Stephen Evans",
+    "flight": [
+      1006
+    ]
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "5",
+    "max_price": 1000,
+    "departure_airport": "HOU",
+    "max_connections": 1,
+    "departure_day": "3",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "Stephen Evans",
+    "return_airport": "LAS"
+  },
+  "timestamps": [
+    1518078655,
+    1518078670,
+    1518078716,
+    1518078717,
+    1518078742,
+    1518078746,
+    1518078759,
+    1518078772,
+    1518078787,
+    1518078789,
+    1518078792,
+    1518078827,
+    1518078837,
+    1518078846,
+    1518078847,
+    1518078857
+  ],
+  "dialogue": [
+    "customer: HI.",
+    "agent: Hello. How may I be of your address?",
+    "customer: I want to book a flight ticket to Las Vegas with price under 1000. Can you please help me with it?",
+    "agent: Sure, can I know your connection limit?",
+    "customer: I need a single connection.",
+    "agent: Please let me know your boarding and landing points.",
+    "customer: Airport codes are HOU-LAS.",
+    "agent: Kindly share your planned travelling dates to proceed further.",
+    "customer: Travel dates are 04/03 and 04/05.",
+    "agent: Please wait a while.",
+    "customer: Ok.",
+    "agent: We found a Frontier airline matching your essential details with one connection and the flight number-1006.",
+    "customer: Please proceed booking with the name Stephen Evans.",
+    "agent: Your booking has been processed successfully.",
+    "customer: Thanks for the help.",
+    "agent: You're welcome. Happy journey."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Stephen Evans",
+    "flight": [
+      1006,
+      1017
+    ]
+  },
+  "correct_sample": true
+}

@@ -1,0 +1,49 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Nancy Jones",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "8",
+    "max_price": 200,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "6",
+    "goal": "change",
+    "departure_month": "Oct",
+    "name": "Nancy Jones",
+    "return_airport": "SFO"
+  },
+  "timestamps": [
+    1522727255,
+    1522727278,
+    1522727296,
+    1522727305,
+    1522727312,
+    1522727313,
+    1522727315,
+    1522727335,
+    1522727362,
+    1522727364
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you now?",
+    "customer: I am Nancy Jones, I want to change my recent reservation. Can you please help me with it?",
+    "agent: Sure, I can help you in that.",
+    "customer: Thank you.",
+    "agent: Please wait for a while.",
+    "customer: Sure.",
+    "agent: Sorry Nancy Jones, there is no active reservation on your name to change it.",
+    "customer: No issues, thank you for your assistance.",
+    "agent: Thanks for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Nancy Jones",
+    "flight": []
+  },
+  "correct_sample": true
+}

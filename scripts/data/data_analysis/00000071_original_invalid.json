@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Margaret Smith",
+    "flight": [
+      1004
+    ]
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "22",
+    "max_price": 5000,
+    "departure_airport": "EWR",
+    "max_connections": 1,
+    "departure_day": "20",
+    "goal": "book",
+    "departure_month": "Nov",
+    "name": "Margaret Smith",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1520590419,
+    1520590424,
+    1520590428,
+    1520590432,
+    1520590463,
+    1520590474,
+    1520590484,
+    1520590501,
+    1520590516,
+    1520590584,
+    1520590603,
+    1520590629,
+    1520590633,
+    1520590645
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello.",
+    "customer: My name is Margaret Smith.",
+    "agent: How can I aid you?",
+    "customer: Can you please book me a flight ticket to LGA from EWR?",
+    "agent: Sure, may I know your preferable journey dates please?",
+    "customer: Sure, my trip dates are from 11/20 to 11/22.",
+    "agent: Wait for a while please.",
+    "customer: Ok, take your time.",
+    "agent: Hawaiian airlines is available in your route with the ticket fare of 100, shall I proceed with the booking?",
+    "customer: Ok, please confirm my reservation.",
+    "agent: Your ticket is booked with the flight-1004.",
+    "customer: Thank you.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Margaret Smith",
+    "flight": [
+      1005
+    ]
+  },
+  "correct_sample": false
+}

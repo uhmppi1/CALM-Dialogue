@@ -1,0 +1,55 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Ronald Davis",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "24",
+    "max_price": 1000,
+    "departure_airport": "BOS",
+    "max_connections": 1,
+    "departure_day": "22",
+    "goal": "cancel",
+    "departure_month": "June",
+    "name": "Ronald Davis",
+    "return_airport": "SEA"
+  },
+  "timestamps": [
+    1524062653,
+    1524062669,
+    1524062684,
+    1524062689,
+    1524062705,
+    1524062725,
+    1524062762,
+    1524062765,
+    1524062778,
+    1524062790,
+    1524062798,
+    1524062810,
+    1524062811
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How may I guide you today?",
+    "customer: I want to cancel my reservation which is done recently due to some problems, can you please help me?",
+    "agent: Sure, I will help you with that.",
+    "customer: Thank you.",
+    "agent: May I know your name please?",
+    "customer: Sure, my name is Ronald Davis.",
+    "agent: Please wait for a minute.",
+    "customer: Sure.",
+    "agent: I am sorry to say that there is no reservation found under your name.",
+    "customer: Ok, no problem.",
+    "agent: Thank you for reaching us.",
+    "customer: Thank you for your service."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Ronald Davis",
+    "flight": []
+  },
+  "correct_sample": true
+}

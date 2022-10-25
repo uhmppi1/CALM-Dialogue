@@ -1,0 +1,51 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Pamela Baker",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "19",
+    "max_price": 1000,
+    "departure_airport": "DCA",
+    "max_connections": 1,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "Dec",
+    "name": "Pamela Baker",
+    "return_airport": "LAS"
+  },
+  "timestamps": [
+    1520527826,
+    1520527827,
+    1520527843,
+    1520527852,
+    1520527854,
+    1520527857,
+    1520527861,
+    1520527919,
+    1520527930,
+    1520527931
+  ],
+  "dialogue": [
+    "customer: Hello, Pamela Baker here.",
+    "agent: Hello, how may I guide you?",
+    "customer: I would like to play poker at Las Vegas. Can you help me in booking a ticket from DCA to LAS?",
+    "agent: Sure, may I know your journey dates please?",
+    "customer: My planned journey dates are 12/17 and 12/19.",
+    "agent: Please wait a moment.",
+    "customer: Ok, take your time.",
+    "agent: Pamela, no flights has been found on your journey dates.",
+    "customer: Its ok, thank you for the information.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Pamela Baker",
+    "flight": [
+      1025
+    ]
+  },
+  "correct_sample": false
+}

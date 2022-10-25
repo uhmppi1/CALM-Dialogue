@@ -1,0 +1,112 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1528206938498,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1528206941274,
+      "field_name": "from_city",
+      "field_value": "JFK"
+    },
+    {
+      "timestmamp": 1528206944185,
+      "field_name": "to_city",
+      "field_value": "DFW"
+    },
+    {
+      "timestmamp": 1528206975667,
+      "field_name": "departure_day",
+      "field_value": "03/10"
+    },
+    {
+      "timestmamp": 1528206978269,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528206979909,
+      "field_name": "return_day",
+      "field_value": "03/12"
+    },
+    {
+      "timestmamp": 1528206980617,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1528206982058,
+      "field_name": "customer-flight-number",
+      "field_value": "1002"
+    },
+    {
+      "timestmamp": 1528207060298,
+      "field_name": "customer-name",
+      "field_value": "Barbara Martinez"
+    },
+    {
+      "timestmamp": 1528207060393,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Barbara Martinez",
+    "flight": [
+      1002
+    ]
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "12",
+    "max_price": 500,
+    "departure_airport": "JFK",
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "10",
+    "goal": "book",
+    "departure_month": "Mar",
+    "name": "Barbara Martinez",
+    "return_airport": "DFW"
+  },
+  "timestamps": [
+    1528206889,
+    1528206893,
+    1528206933,
+    1528206936,
+    1528206964,
+    1528206967,
+    1528206983,
+    1528206986,
+    1528207002,
+    1528207018,
+    1528207026,
+    1528207045,
+    1528207049,
+    1528207051
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I aid you?",
+    "customer: I have planned to visit DFW from JFK, please assist me in booking.",
+    "agent: Sure, can you share your trip dates?",
+    "customer: My preferred dates are Mar 10th and return Mar 12th.",
+    "agent: Do you have any preferences?",
+    "customer: Yes, I need economy class.",
+    "agent: May I know your name?",
+    "customer: Barbara Martinez.",
+    "agent: There is a connecting flight with number 1002 in airline Spirit, the fare is 100 in economy class. Can I book it?",
+    "customer: Proceed.",
+    "agent: Your ticket is reserved, the depart time is 23:00 hours and return time is 13:00 hours.",
+    "customer: Thank you for booking.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Barbara Martinez",
+    "flight": [
+      1002
+    ]
+  },
+  "correct_sample": true
+}

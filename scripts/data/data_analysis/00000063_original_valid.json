@@ -1,0 +1,51 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Stephanie Carter",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "11",
+    "max_price": 500,
+    "departure_airport": "ORD",
+    "max_connections": 1,
+    "departure_day": "9",
+    "goal": "change",
+    "departure_month": "Sept",
+    "name": "Stephanie Carter",
+    "return_airport": "EWR"
+  },
+  "timestamps": [
+    1516683128,
+    1516683137,
+    1516683206,
+    1516683210,
+    1516683235,
+    1516683236,
+    1516683260,
+    1516683265,
+    1516683276,
+    1516683280,
+    1516683288
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello, how can I assist you?",
+    "customer: Owing to emergency, my planned trip to New York to attend a workshop on SAP has been postponed. So I want you to change my existing reservation?",
+    "agent: May I know your name?",
+    "customer: Sure, I had a reservation with name Stephanie Carter.",
+    "agent: Please wait a moment.",
+    "customer: Sure.",
+    "agent: Sorry, there is no reservation found on your name.",
+    "customer: Ok, no worries at all.",
+    "agent: Thank you for choosing us.",
+    "customer: Thanks for your kind service."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Stephanie Carter",
+    "flight": []
+  },
+  "correct_sample": true
+}

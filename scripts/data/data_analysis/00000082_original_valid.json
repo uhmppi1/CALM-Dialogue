@@ -1,0 +1,47 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Jacob Allen",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "14",
+    "return_time": "afternoon",
+    "departure_airport": "CLT",
+    "max_price": 500,
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "12",
+    "goal": "cancel",
+    "departure_month": "Apr",
+    "name": "Jacob Allen",
+    "return_airport": "DTW"
+  },
+  "timestamps": [
+    1517478398,
+    1517478426,
+    1517478469,
+    1517478530,
+    1517478535,
+    1517478608,
+    1517478643,
+    1517478647
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How may I assist you?",
+    "customer: I want to cancel my reservation due to heavy snowfall in my region.",
+    "agent: Sure, I will help you. May I know your name please to check your reservation status?",
+    "customer: Sure, my name is Jacob Allen.",
+    "agent: Jacob, no reservation has been found on your name.",
+    "customer: No problem, thank you for checking.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Jacob Allen",
+    "flight": []
+  },
+  "correct_sample": true
+}

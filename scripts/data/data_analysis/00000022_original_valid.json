@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Jacob Anderson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "May",
+    "return_day": "22",
+    "max_price": 200,
+    "departure_airport": "DFW",
+    "max_connections": 0,
+    "departure_day": "20",
+    "goal": "book",
+    "departure_month": "May",
+    "name": "Jacob Anderson",
+    "return_airport": "IAH"
+  },
+  "timestamps": [
+    1512669285,
+    1512669305,
+    1512669401,
+    1512669438,
+    1512669510,
+    1512669543,
+    1512669548,
+    1512669599,
+    1512669640,
+    1512669773,
+    1512669792,
+    1512669798
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How may I help you today?",
+    "customer: I'm Jacob Anderson here, and my planning is to travel from DFW to IAH to meet my cousin at Houston.",
+    "agent: That's good, let me know your journey dates?",
+    "customer: Sure, my dates of journey is from 05/20 to 05/22. My connections limit is 0.",
+    "agent: Thank you for your information. Let me check. Thank you for waiting.",
+    "customer: Do you have any ticket for me?",
+    "agent: Sorry, there is flight with 0 connection limit. Thank for reaching us, have a nice day.",
+    "customer: Is there any flight is available?",
+    "agent: Sorry, there is no flight for your information.",
+    "customer: Thank you, for your information.",
+    "agent: Welcome."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Jacob Anderson",
+    "flight": []
+  },
+  "correct_sample": true
+}

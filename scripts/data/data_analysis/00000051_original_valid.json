@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Mary Walker",
+    "flight": [
+      1024
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "31",
+    "max_price": 200,
+    "departure_airport": "PHX",
+    "max_connections": 1,
+    "departure_day": "29",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Mary Walker",
+    "return_airport": "MCO"
+  },
+  "timestamps": [
+    1515140179,
+    1515140193,
+    1515140324,
+    1515140356,
+    1515140388,
+    1515140394,
+    1515140410,
+    1515140437,
+    1515140445,
+    1515140495,
+    1515140505,
+    1515140544,
+    1515140546,
+    1515140557
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I help you?",
+    "customer: I am Mary Walker. I want to visit Titanic the aircraft exhibition at MCO, can you please book a ticket for me?",
+    "agent: Sure, we are here to help you. May I know your planned dates of travelling?",
+    "customer: My trip dates are 10/29 to 10/31.",
+    "agent: May I Know your boarding point?",
+    "customer: Source: PHX.",
+    "agent: Thank you for the details. Please be on hold.",
+    "customer: Sure.",
+    "agent: I found a flight with number 1024 and Delta airline. Shall I proceed?",
+    "customer: You can proceed.",
+    "agent: Your flight ticket has been booked with single connection and fare of 200.",
+    "customer: Thank you.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Mary Walker",
+    "flight": [
+      1024
+    ]
+  },
+  "correct_sample": true
+}

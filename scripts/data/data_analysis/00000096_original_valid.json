@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Christine Adams",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Aug",
+    "return_day": "10",
+    "max_price": 5000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "8",
+    "goal": "book",
+    "departure_month": "Aug",
+    "name": "Christine Adams",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1513221613,
+    1513221637,
+    1513221731,
+    1513221839,
+    1513221844,
+    1513221866,
+    1513221869,
+    1513221945,
+    1513221974,
+    1513222021,
+    1513222057,
+    1513222063
+  ],
+  "dialogue": [
+    "customer: Hello,.",
+    "agent: Hello, how can I assist you today?",
+    "customer: I want to attend a press conference in the capital city of United States, DC- DCA>.",
+    "agent: Sure, Can you please provide your source and travelling dates?",
+    "customer: My depart date is 08/08 and return date is 08/10 and I want to fly from Minneapolis, MN- MSP.",
+    "agent: Ok, please wait for a while.",
+    "customer: Ok.",
+    "agent: Thank you for waiting, No flights were found with your given details.",
+    "customer: Its ok, Thank you for the information.",
+    "agent: May I know your name?",
+    "customer: I am Christine Adams.",
+    "agent: Ok, Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Christine Adams",
+    "flight": []
+  },
+  "correct_sample": true
+}

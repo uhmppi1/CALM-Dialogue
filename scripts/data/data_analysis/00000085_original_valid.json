@@ -1,0 +1,78 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Margaret Wright",
+    "flight": [
+      1006
+    ]
+  },
+  "intent": {
+    "return_month": "July",
+    "return_day": "3",
+    "max_price": 1000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "1",
+    "goal": "book",
+    "departure_month": "July",
+    "name": "Margaret Wright",
+    "return_airport": "BOS"
+  },
+  "timestamps": [
+    1522213333,
+    1522213345,
+    1522213394,
+    1522213416,
+    1522213425,
+    1522213438,
+    1522213466,
+    1522213513,
+    1522213532,
+    1522213598,
+    1522213634,
+    1522213646,
+    1522213672,
+    1522213687,
+    1522213693,
+    1522213741,
+    1522213768,
+    1522213781,
+    1522213799,
+    1522213809,
+    1522213816,
+    1522213820
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I assist you today?",
+    "customer: Would you please confirm a seat in flight which is heading to Boston, BOS?",
+    "agent: Sure, we will help you.",
+    "customer: Thank you.",
+    "agent: Can you please share your connection limit?",
+    "customer: Yes, I need to halt in between my journey.",
+    "agent: May I know your landing point?",
+    "customer: It's BOS, Boston.",
+    "agent: When you are planning to make your journey?",
+    "customer: I planned my journey on 07/01 to 07/03.",
+    "agent: Can you please let me know your take off airport?",
+    "customer: Origin point is Minneapolis, MSP.",
+    "agent: Ok, please be on hold.",
+    "customer: Sure.",
+    "agent: We found a connecting flight with Delta airlines, flight number 1006 and the fare of 100.",
+    "customer: Ok, you can confirm a seat.",
+    "agent: To proceed further, may I know your name please?",
+    "customer: I am Margaret Wright.",
+    "agent: Ok, your ticket has been confirmed with the name of Margaret Wright.",
+    "customer: Ok, Thank you.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Margaret Wright",
+    "flight": [
+      1006,
+      1008
+    ]
+  },
+  "correct_sample": true
+}

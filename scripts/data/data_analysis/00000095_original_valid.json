@@ -1,0 +1,62 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Ruth Campbell",
+    "flight": [
+      1003
+    ]
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "8",
+    "max_price": 1000,
+    "departure_airport": "HOU",
+    "max_connections": 1,
+    "departure_day": "6",
+    "goal": "book",
+    "departure_month": "Sept",
+    "name": "Ruth Campbell",
+    "return_airport": "DEN"
+  },
+  "timestamps": [
+    1514891586,
+    1514891604,
+    1514891612,
+    1514891646,
+    1514891683,
+    1514891746,
+    1514891752,
+    1514891795,
+    1514891810,
+    1514891893,
+    1514891906,
+    1514891945,
+    1514891965,
+    1514891980
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I assist you?",
+    "customer: Is this Travel leaders agency?",
+    "agent: Yes.",
+    "customer: I am Ruth Campbell, I am planning to travel from Houston to Denver to meet my friends after a long time.",
+    "agent: Sure, I will help you to travel. May I know your airport codes?",
+    "customer: I am departing from HOU and my destination airport is DEN.",
+    "agent: Ok, can you please provide me your travelling dates?",
+    "customer: My departure from Houston is on 09/06 and return from Denver on 09/08.",
+    "agent: I am happy to say you this, I found a flight for you with 1 connection. Shall I proceed for booking?",
+    "customer: Yes, please proceed for booking.",
+    "agent: Your ticket is reserved with flight number 1003 and airline is Southwest.",
+    "customer: Thanks for your assistance.",
+    "agent: Thank you for choosing us. Welcome."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Ruth Campbell",
+    "flight": [
+      1003,
+      1026
+    ]
+  },
+  "correct_sample": true
+}

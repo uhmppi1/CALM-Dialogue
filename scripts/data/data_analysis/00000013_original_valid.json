@@ -1,0 +1,118 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1526922476437,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1526922479757,
+      "field_name": "from_city",
+      "field_value": "LGA"
+    },
+    {
+      "timestmamp": 1526922482652,
+      "field_name": "to_city",
+      "field_value": "CLT"
+    },
+    {
+      "timestmamp": 1526922534176,
+      "field_name": "departure_day",
+      "field_value": "10/20"
+    },
+    {
+      "timestmamp": 1526922537063,
+      "field_name": "return_day",
+      "field_value": "10/22"
+    },
+    {
+      "timestmamp": 1526922607099,
+      "field_name": "class",
+      "field_value": "business"
+    },
+    {
+      "timestmamp": 1526922609854,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1526922740039,
+      "field_name": "customer-name",
+      "field_value": "Ronald Brown."
+    },
+    {
+      "timestmamp": 1526922740964,
+      "field_name": "customer-final-action",
+      "field_value": "no_flight"
+    },
+    {
+      "timestmamp": 1526923788416,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_flight",
+    "name": "Ronald Brown",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "22",
+    "max_price": 1000,
+    "departure_airport": "LGA",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "20",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Ronald Brown",
+    "return_airport": "CLT"
+  },
+  "timestamps": [
+    1526922435,
+    1526922449,
+    1526922461,
+    1526922474,
+    1526922523,
+    1526922530,
+    1526922542,
+    1526922559,
+    1526922594,
+    1526922604,
+    1526922629,
+    1526922630,
+    1526922673,
+    1526922677,
+    1526922698,
+    1526922712,
+    1526922729,
+    1526922733,
+    1526922743
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I help you today?",
+    "customer: Can you aid me in booking a flight ticket from LGA to CLT?",
+    "agent: Sure, may I know your planned trip dates?",
+    "customer: Sure, I would like to go on Oct 20th and return back on Oct 22nd.",
+    "agent: Do you have any connection limit?",
+    "customer: Ensure it is a single connecting flight.",
+    "agent: Is there any class preference?",
+    "customer: Ensure it is in the business class.",
+    "agent: May I know your arrival and depart timings?",
+    "customer: No, I don't have any specific timings.",
+    "agent: Do you have any other specifications?",
+    "customer: No, I don't have any other specifications.",
+    "agent: Please forward your name.",
+    "customer: Myself Ronald Brown.",
+    "agent: Sorry, there are no flights found on your specified routes.",
+    "customer: That's ok, thank you for checking.",
+    "agent: Thank you for availing us.",
+    "customer: Welcome."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Ronald Brown",
+    "flight": []
+  },
+  "correct_sample": true
+}

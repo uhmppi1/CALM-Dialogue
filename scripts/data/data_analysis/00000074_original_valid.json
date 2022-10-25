@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Brandon Lee",
+    "flight": [
+      1027
+    ]
+  },
+  "intent": {
+    "return_month": "July",
+    "return_day": "31",
+    "max_price": 1000,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "29",
+    "goal": "book",
+    "departure_month": "July",
+    "name": "Brandon Lee",
+    "return_airport": "ORD"
+  },
+  "timestamps": [
+    1521183546,
+    1521183551,
+    1521183657,
+    1521183669,
+    1521183675,
+    1521183695,
+    1521183736,
+    1521183750,
+    1521183773,
+    1521183799,
+    1521183805,
+    1521183836,
+    1521183857,
+    1521183870,
+    1521183873,
+    1521183877
+  ],
+  "dialogue": [
+    "customer: Hi, I am Brandon Lee.",
+    "agent: Hello, how may I serve you today?",
+    "customer: I am planning to conduct an woman empowerment event at Chicago, can you help me in booking a ticket with single connection?",
+    "agent: Sure, I will help you.",
+    "customer: Thank you.",
+    "agent: Can I know your source and destination airport codes?",
+    "customer: My source and destination airport codes are Minneapolis, MN-MSP and Chicago, IL-ORD.",
+    "agent: On which dates are you going to travel?",
+    "customer: My travel dates are from 07/29 to 07/31.",
+    "agent: Ok, wait a minute.",
+    "customer: Ok.",
+    "agent: We found a flight on UA airline, flight number as 1027 with the fare of 100.",
+    "customer: Please proceed for booking.",
+    "agent: Your ticket has been booked.",
+    "customer: Thank you for your service.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Brandon Lee",
+    "flight": [
+      1027
+    ]
+  },
+  "correct_sample": true
+}

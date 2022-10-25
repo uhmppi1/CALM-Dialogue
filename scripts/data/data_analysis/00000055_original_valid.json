@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "James Robinson",
+    "flight": [
+      1020
+    ]
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "16",
+    "max_price": 200,
+    "departure_airport": "DCA",
+    "max_connections": 1,
+    "departure_day": "14",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "James Robinson",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1516374934,
+    1516374936,
+    1516374949,
+    1516374950,
+    1516375004,
+    1516375023,
+    1516375033,
+    1516375037,
+    1516375043,
+    1516375057,
+    1516375081,
+    1516375084,
+    1516375094,
+    1516375098
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello.",
+    "customer: I am James Robinson.",
+    "agent: How can I assist you?",
+    "customer: I am planning to attend a meeting. Can you please book a ticket from DCA to DCA?",
+    "agent: Sure, help me with the travelling dates?",
+    "customer: My travelling dates are 06/14 and return on 06/16.",
+    "agent: Give me a minute.",
+    "customer: Sure.",
+    "agent: There is a flight with number 1020 in airline Frontier.",
+    "customer: Yes, you can book it.",
+    "agent: Your ticket is confirmed, happy journey.",
+    "customer: Thank you for your help.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "James Robinson",
+    "flight": [
+      1020
+    ]
+  },
+  "correct_sample": true
+}

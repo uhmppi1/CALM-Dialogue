@@ -1,0 +1,65 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Donald Lopez",
+    "flight": [
+      1024
+    ]
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "17",
+    "max_price": 1000,
+    "departure_airport": "LGA",
+    "max_connections": 1,
+    "departure_day": "15",
+    "goal": "book",
+    "departure_month": "Sept",
+    "name": "Donald Lopez",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1522071538,
+    1522071568,
+    1522071605,
+    1522071656,
+    1522071679,
+    1522071803,
+    1522071813,
+    1522071822,
+    1522071835,
+    1522071844,
+    1522071872,
+    1522071903,
+    1522071914,
+    1522071935,
+    1522071938,
+    1522071958
+  ],
+  "dialogue": [
+    "customer: Hello. Donald Lopez here.",
+    "agent: Hello, how can I be in your service?",
+    "customer: I wan to attend a Seminar in Washington. Can you please help me for booking the flight ticket?",
+    "agent: Ok, I will be glad to assist you with that. May I know the airport codes to check?",
+    "customer: My airport codes are from LGA to DCA.",
+    "agent: Ok, please can you let me know your travel dates too?",
+    "customer: My travelling dates are from 09/15 to 09/17.",
+    "agent: Ok, please wait a moment.",
+    "customer: Make sure my connections limit is 1.",
+    "agent: Ok, I will check.",
+    "customer: Ok.",
+    "agent: Thank you for waiting, there is a flight with airfare 100 and the airlines is JetBlue. Can I book it?",
+    "customer: Please proceed for booking the flight ticket.",
+    "agent: Ok, the flight is been booked with 1 connecting flight limit as you needed.",
+    "customer: Thanks for helping me.",
+    "agent: Thank you for choosing our agency."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Donald Lopez",
+    "flight": [
+      1024
+    ]
+  },
+  "correct_sample": true
+}

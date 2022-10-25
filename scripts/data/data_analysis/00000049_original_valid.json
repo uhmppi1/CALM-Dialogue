@@ -1,0 +1,67 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525445637746,
+      "button_name": "top-cancel-reservation"
+    },
+    {
+      "timestmamp": 1525445648698,
+      "field_name": "customer-name",
+      "field_value": "Andrew Robinson"
+    },
+    {
+      "timestmamp": 1525445693058,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1525445922130,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Andrew Robinson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Sept",
+    "return_day": "16",
+    "max_price": 1000,
+    "departure_airport": "ORD",
+    "airline_preference": "normal-cost",
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "14",
+    "goal": "cancel",
+    "departure_month": "Sept",
+    "name": "Andrew Robinson",
+    "return_airport": "PHX"
+  },
+  "timestamps": [
+    1525445486,
+    1525445502,
+    1525445547,
+    1525445633,
+    1525445637,
+    1525445676,
+    1525445714,
+    1525445718
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you today?",
+    "customer: My holiday trip has been cancelled, could you please help me with cancelling my recent reservation?",
+    "agent: Sure, I am glad to help you with that. May I know your name?",
+    "customer: My reservation was done under the name Andrew Robinson.",
+    "agent: Sorry, no reservation found on your name to cancel your reservation.",
+    "customer: Ok, not an issue. Anyways, thank you for the information.",
+    "agent: Thank you for reaching us, have a great day."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Andrew Robinson",
+    "flight": []
+  },
+  "correct_sample": true
+}

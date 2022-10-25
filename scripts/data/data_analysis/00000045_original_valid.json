@@ -1,0 +1,158 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1528467188209,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1528467190457,
+      "field_name": "to_city",
+      "field_value": "HOU"
+    },
+    {
+      "timestmamp": 1528467194368,
+      "field_name": "from_city",
+      "field_value": "DEN"
+    },
+    {
+      "timestmamp": 1528467202484,
+      "field_name": "departure_day",
+      "field_value": "10/07"
+    },
+    {
+      "timestmamp": 1528467204645,
+      "field_name": "return_day",
+      "field_value": "10/09"
+    },
+    {
+      "timestmamp": 1528467206603,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467245176,
+      "field_name": "departure_time",
+      "field_value": "morning"
+    },
+    {
+      "timestmamp": 1528467245833,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467246025,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467246193,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467246369,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467246553,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467246729,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528467288994,
+      "field_name": "customer-name",
+      "field_value": " Emma Scott"
+    },
+    {
+      "timestmamp": 1528467327240,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1528467329311,
+      "field_name": "customer-flight-number",
+      "field_value": "1005"
+    },
+    {
+      "timestmamp": 1528467341839,
+      "button_name": "agent-end-conversation"
+    },
+    {
+      "timestmamp": 1528467343655,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Emma Scott",
+    "flight": [
+      1005
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "9",
+    "max_price": 500,
+    "departure_airport": "DEN",
+    "departure_time": "morning",
+    "departure_day": "7",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Emma Scott",
+    "return_airport": "HOU"
+  },
+  "timestamps": [
+    1528467101,
+    1528467108,
+    1528467136,
+    1528467140,
+    1528467167,
+    1528467169,
+    1528467190,
+    1528467197,
+    1528467213,
+    1528467217,
+    1528467238,
+    1528467241,
+    1528467286,
+    1528467296,
+    1528467314,
+    1528467316,
+    1528467318,
+    1528467323
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, what kind of service your looking for?",
+    "customer: I want to attend an interview in Houston, HOU. Can you please book a ticket from DEN?",
+    "agent: Sure, please share me your trip dates.",
+    "customer: My travelling dates are Oct 7 and Oct 9.",
+    "agent: For booking, we need your good name. Please mention it.",
+    "customer: Sure, I am Emma Scott.",
+    "agent: May I know your class preferences?",
+    "customer: I am comfortable with any class.",
+    "agent: Is there any time concern for you?",
+    "customer: My depart time is morning.",
+    "agent: Do you need direct flight or connecting flight?",
+    "customer: I am comfortable with both flights.",
+    "agent: We found a Delta airline and 1005 is flight number with a fare of 200. Shall I proceed?",
+    "customer: Yes, please proceed for booking.",
+    "agent: Your ticket is confirmed with an economy class.",
+    "customer: Thank you.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Emma Scott",
+    "flight": [
+      1005
+    ]
+  },
+  "correct_sample": true
+}

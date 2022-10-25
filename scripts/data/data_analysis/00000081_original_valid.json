@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Edward Young",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Aug",
+    "return_day": "15",
+    "max_price": 5000,
+    "departure_airport": "LAX",
+    "max_connections": 1,
+    "departure_day": "13",
+    "goal": "book",
+    "departure_month": "Aug",
+    "name": "Edward Young",
+    "return_airport": "OAK"
+  },
+  "timestamps": [
+    1520387039,
+    1520387046,
+    1520387142,
+    1520387148,
+    1520387224,
+    1520387248,
+    1520387271,
+    1520387297,
+    1520387332,
+    1520387373,
+    1520387391,
+    1520387395
+  ],
+  "dialogue": [
+    "customer: Hello. My name is Edward Young.",
+    "agent: Hello, how can I serve you today?",
+    "customer: I would like to attend Environmental Science Conferences in Lawrence Hall of Science at Oakland, OAK. So, please help me with booking a connecting flight ticket.",
+    "agent: Sure, may I know your journey dates?",
+    "customer: I will depart on 08/13 and intend to back on 08/15.",
+    "agent: May I know your source point?",
+    "customer: I will board at LAX.",
+    "agent: Do you need a halt in between your journey?",
+    "customer: Yes, I need a halt.",
+    "agent: Sorry to say that, no flights were found with your given details.",
+    "customer: Not an issue, thank you.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Edward Young",
+    "flight": []
+  },
+  "correct_sample": true
+}

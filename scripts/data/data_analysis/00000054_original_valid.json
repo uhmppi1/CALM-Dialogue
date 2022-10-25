@@ -1,0 +1,70 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1527160315548,
+      "field_name": "customer-name",
+      "field_value": "Anna Young"
+    },
+    {
+      "timestmamp": 1527160316680,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1527160351968,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1527161772257,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Anna Young",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "May",
+    "return_day": "31",
+    "max_price": 500,
+    "departure_airport": "CLT",
+    "max_connections": 0,
+    "class": "business",
+    "departure_day": "29",
+    "goal": "change",
+    "departure_month": "May",
+    "name": "Anna Young",
+    "return_airport": "ATL"
+  },
+  "timestamps": [
+    1527160214,
+    1527160227,
+    1527160272,
+    1527160291,
+    1527160305,
+    1527160311,
+    1527160319,
+    1527160337,
+    1527160356,
+    1527160360
+  ],
+  "dialogue": [
+    "customer: Hi.",
+    "agent: Hello. How may I assist you?",
+    "customer: Owing to an emergency I had to request for this change reservation.",
+    "agent: Ok, I will help you with that. Can I have your name , please?",
+    "customer: My name is Anna Young.",
+    "agent: Hold on a moment.",
+    "customer: Sure.",
+    "agent: I am sorry, there is no reservation found on your name to change.",
+    "customer: Thank you.",
+    "agent: Thank you for availing us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Anna Young",
+    "flight": []
+  },
+  "correct_sample": true
+}

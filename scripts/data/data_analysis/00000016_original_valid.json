@@ -1,0 +1,53 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Daniel Brown",
+    "flight": [
+      1005
+    ]
+  },
+  "intent": {
+    "return_month": "May",
+    "return_day": "7",
+    "max_price": 500,
+    "departure_airport": "MSP",
+    "max_connections": 1,
+    "departure_day": "5",
+    "goal": "book",
+    "departure_month": "May",
+    "name": "Daniel Brown",
+    "return_airport": "SFO"
+  },
+  "timestamps": [
+    1514914543,
+    1514914559,
+    1514914613,
+    1514914630,
+    1514914694,
+    1514914734,
+    1514914742,
+    1514914756,
+    1514914765,
+    1514914776
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I aid you?",
+    "customer: Myself Daniel Brown. I would like to attend seminar, so can you help me booking flight from MSP to SFO?",
+    "agent: can I know your travel dates?",
+    "customer: My travel starts from 05/05 to 05/07. Provide flight with connection 1.",
+    "agent: Basing on your details, I got a flight with flight number 1005 with price 100 and connection limit 1. Can I proceed?",
+    "customer: Ok, proceed to booking.",
+    "agent: Your booking is done.",
+    "customer: Thank you for your services.",
+    "agent: Most welcome."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Daniel Brown",
+    "flight": [
+      1005
+    ]
+  },
+  "correct_sample": true
+}

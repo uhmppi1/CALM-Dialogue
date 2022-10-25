@@ -1,0 +1,47 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Alexander Scott",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "12",
+    "return_time": "afternoon",
+    "departure_airport": "EWR",
+    "max_price": 200,
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "10",
+    "goal": "change",
+    "departure_month": "Mar",
+    "name": "Alexander Scott",
+    "return_airport": "CLT"
+  },
+  "timestamps": [
+    1517461128,
+    1517461130,
+    1517461165,
+    1517461184,
+    1517461201,
+    1517461202,
+    1517461212,
+    1517461216
+  ],
+  "dialogue": [
+    "customer: Hello, I am Alexander Scott.",
+    "agent: Hello, how can I assist you?",
+    "customer: I need to alter my reservation, as my exam scheduled has been postponed. Please help me in changing?",
+    "agent: Sure, please wait a moment.",
+    "customer: Ok.",
+    "agent: Sorry, there is no reservation found on your name.",
+    "customer: Ok, no worries. Thanks for your help.",
+    "agent: Thank  you for choosing us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Alexander Scott",
+    "flight": []
+  },
+  "correct_sample": true
+}

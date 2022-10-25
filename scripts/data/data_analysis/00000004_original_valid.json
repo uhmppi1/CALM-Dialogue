@@ -1,0 +1,116 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1528211747101,
+      "field_name": "customer-name",
+      "field_value": "Donna Evans"
+    },
+    {
+      "timestmamp": 1528211831285,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1528211833236,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1528211847733,
+      "field_name": "departure_day",
+      "field_value": "02/01"
+    },
+    {
+      "timestmamp": 1528211850581,
+      "field_name": "return_day",
+      "field_value": "02/03"
+    },
+    {
+      "timestmamp": 1528211872844,
+      "field_name": "to_city",
+      "field_value": "OAK"
+    },
+    {
+      "timestmamp": 1528211876500,
+      "field_name": "from_city",
+      "field_value": "PHL"
+    },
+    {
+      "timestmamp": 1528211883973,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1528211933476,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1528211936636,
+      "field_name": "customer-flight-number",
+      "field_value": "1018"
+    },
+    {
+      "timestmamp": 1528211972428,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Donna Evans",
+    "flight": [
+      1018
+    ]
+  },
+  "intent": {
+    "return_month": "Feb",
+    "return_day": "3",
+    "max_price": 1000,
+    "departure_airport": "PHL",
+    "max_connections": 1,
+    "departure_day": "1",
+    "goal": "book",
+    "departure_month": "Feb",
+    "name": "Donna Evans",
+    "return_airport": "OAK"
+  },
+  "timestamps": [
+    1528211735,
+    1528211740,
+    1528211814,
+    1528211822,
+    1528211838,
+    1528211854,
+    1528211870,
+    1528211881,
+    1528211897,
+    1528211919,
+    1528211947,
+    1528211956,
+    1528211957,
+    1528211971
+  ],
+  "dialogue": [
+    "customer: Hi. Donna Evans here.",
+    "agent: Hello, how can I help you today?",
+    "customer: I would like to prefer a flight with lay-by option for my business trip to Oakland. Can you book a flight ticket?",
+    "agent: Sure, let me know your travel dates please?",
+    "customer: The trip dates are from 01 Feb to 03 Feb.",
+    "agent: Can I know your airport codes?",
+    "customer: The airport codes are from PHL to OAK.",
+    "agent: Any preferences you have?",
+    "customer: No, that is it.",
+    "agent: Spirit Airlines has a connecting flight with number 1018 for fare 200, shall I proceed?",
+    "customer: I am fine with the airlines. You can book the flight ticket.",
+    "agent: Your ticket is reserved in economy class.",
+    "customer: Thank you.",
+    "agent: Thank you for opting us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Donna Evans",
+    "flight": [
+      1018
+    ]
+  },
+  "correct_sample": true
+}

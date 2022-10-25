@@ -1,0 +1,54 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Sarah Robinson",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "19",
+    "max_price": 1000,
+    "departure_airport": "EWR",
+    "departure_time": "evening",
+    "max_connections": 0,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Sarah Robinson",
+    "return_airport": "JFK"
+  },
+  "timestamps": [
+    1517330272,
+    1517330286,
+    1517330293,
+    1517330313,
+    1517330350,
+    1517330357,
+    1517330398,
+    1517330402,
+    1517330418,
+    1517330472,
+    1517330481,
+    1517330492
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I assist you today?",
+    "customer: I am Sarah Robinson.",
+    "agent: Nice to meet you.",
+    "customer: I want to go New York next for my film shooting purpose, can you please book a flight ticket from EWR to JFK?",
+    "agent: Sure, will you mention your travelling dates please?",
+    "customer: My departure date is 06/17 and please book my return ticket also on 06/19.",
+    "agent: Please give me a moment.",
+    "customer: I want a direct flight to New York.",
+    "agent: Thank you for waiting. There is no flights found under your preferable journey details.",
+    "customer: Oh! It's ok no problem, I will go with another airline. Thank you for your information.",
+    "agent: Welcome, have a great day."
+  ],
+  "expected_action": {
+    "status": "no_flight",
+    "name": "Sarah Robinson",
+    "flight": []
+  },
+  "correct_sample": true
+}

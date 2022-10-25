@@ -1,0 +1,57 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Margaret King",
+    "flight": [
+      1012
+    ]
+  },
+  "intent": {
+    "return_month": "Mar",
+    "return_day": "19",
+    "max_price": 200,
+    "departure_airport": "LAS",
+    "max_connections": 1,
+    "departure_day": "17",
+    "goal": "book",
+    "departure_month": "Mar",
+    "name": "Margaret King",
+    "return_airport": "PHL"
+  },
+  "timestamps": [
+    1517312563,
+    1517312575,
+    1517312610,
+    1517312631,
+    1517312638,
+    1517312655,
+    1517312665,
+    1517312705,
+    1517312734,
+    1517312757,
+    1517312767,
+    1517312788
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you?",
+    "customer: I am planning to visit Philadelphia, can you please book me a ticket from LAS to PHL?",
+    "agent: Sure, I will help you. Can you please share your travel dates?",
+    "customer: My preferable journey dates are from 03/17 to 03/19.",
+    "agent: Please wait a moment.",
+    "customer: Sure.",
+    "agent: Hawaiian airlines are providing service on your route with 1 connection and fare is 100. Can I proceed?",
+    "customer: Please book my ticket with the name Margaret King.",
+    "agent: Ok. Your booking is done with flight 1012.",
+    "customer: Thank you for booking my ticket.",
+    "agent: Thank you for choosing us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Margaret King",
+    "flight": [
+      1012
+    ]
+  },
+  "correct_sample": true
+}

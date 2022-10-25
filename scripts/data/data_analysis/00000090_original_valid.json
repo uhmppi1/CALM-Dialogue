@@ -1,0 +1,63 @@
+{
+  "action": {
+    "status": "book",
+    "name": "Michelle Thompson",
+    "flight": [
+      1000
+    ]
+  },
+  "intent": {
+    "return_month": "Dec",
+    "return_day": "13",
+    "max_price": 5000,
+    "departure_airport": "EWR",
+    "max_connections": 1,
+    "departure_day": "11",
+    "goal": "book",
+    "departure_month": "Dec",
+    "name": "Michelle Thompson",
+    "return_airport": "IAH"
+  },
+  "timestamps": [
+    1519791314,
+    1519791323,
+    1519791399,
+    1519791451,
+    1519791492,
+    1519791494,
+    1519791525,
+    1519791528,
+    1519791542,
+    1519791587,
+    1519791598,
+    1519791620,
+    1519791622,
+    1519791637
+  ],
+  "dialogue": [
+    "customer: Hi. I am Michelle Thompson.",
+    "agent: Hello, how may I guide you today?",
+    "customer: I have to submit my research record at Houston university with my college friend from New York. Will you please help me in making an airline reservation?",
+    "agent: Sure, I will help you. Could you please provide me your airport codes?",
+    "customer: My source code is NY-EWR and destination code is TX-IAH.",
+    "agent: When you have planned to travel?",
+    "customer: My planned dates are 12/11 and 12/13.",
+    "agent: Kindly mention your fare limit?",
+    "customer: Fare limit is under 5000.",
+    "agent: We found a flight with Southwest airline and 1000 flight with fare 100 having a lay by.",
+    "customer: You can continue with booking.",
+    "agent: Your ticked has been confirmed.",
+    "customer: Thank you for your kind service.",
+    "agent: Thank you for picking us, have a great day."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Michelle Thompson",
+    "flight": [
+      1000,
+      1015,
+      1027
+    ]
+  },
+  "correct_sample": true
+}

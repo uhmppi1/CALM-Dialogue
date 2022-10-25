@@ -1,0 +1,120 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1530265468834,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1530265471873,
+      "field_name": "from_city",
+      "field_value": "CLT"
+    },
+    {
+      "timestmamp": 1530265475049,
+      "field_name": "to_city",
+      "field_value": "DEN"
+    },
+    {
+      "timestmamp": 1530265483252,
+      "field_name": "return_day",
+      "field_value": "10/11"
+    },
+    {
+      "timestmamp": 1530265486155,
+      "field_name": "departure_day",
+      "field_value": "10/09"
+    },
+    {
+      "timestmamp": 1530265521139,
+      "field_name": "customer-name",
+      "field_value": "James Jackson"
+    },
+    {
+      "timestmamp": 1530265547602,
+      "field_name": "max_connection",
+      "field_value": "1"
+    },
+    {
+      "timestmamp": 1530265554693,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1530265679588,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1530265681140,
+      "field_name": "customer-flight-number",
+      "field_value": "1000"
+    },
+    {
+      "timestmamp": 1530265688820,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "James Jackson",
+    "flight": [
+      1000
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "11",
+    "max_price": 1000,
+    "departure_airport": "CLT",
+    "max_connections": 1,
+    "departure_day": "9",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "James Jackson",
+    "return_airport": "DEN"
+  },
+  "timestamps": [
+    1530265400,
+    1530265412,
+    1530265427,
+    1530265448,
+    1530265460,
+    1530265466,
+    1530265479,
+    1530265505,
+    1530265526,
+    1530265540,
+    1530265549,
+    1530265587,
+    1530265599,
+    1530265603,
+    1530265606,
+    1530265676
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how may I help you today?",
+    "customer: Please help me in booking a flight ticket from CLT to DEN.",
+    "agent: Sure, can you please help me with your dates of journey?",
+    "customer: Oct, 9 and Oct, 11 are my journey dates.",
+    "agent: May I know your name please?",
+    "customer: James Jackson here.",
+    "agent: Are you looking for any other help from my side please?",
+    "customer: I am looking for connecting flight.",
+    "agent: Ok, wait for a mean while please.",
+    "customer: Sure.",
+    "agent: I found a connecting flight of fare 100 with the Hawaiian airline, are you ok with this ticket booking?",
+    "customer: Yes, please book.",
+    "agent: Ok, I have reserved your ticket with the flight number 1000.",
+    "customer: Thank you.",
+    "agent: You are welcome, have a safe flight."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "James Jackson",
+    "flight": [
+      1000
+    ]
+  },
+  "correct_sample": true
+}

@@ -1,0 +1,116 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1530023050731,
+      "button_name": "top-book-flight"
+    },
+    {
+      "timestmamp": 1530023055212,
+      "field_name": "from_city",
+      "field_value": "PHX"
+    },
+    {
+      "timestmamp": 1530023056970,
+      "field_name": "to_city",
+      "field_value": "BOS"
+    },
+    {
+      "timestmamp": 1530023083459,
+      "field_name": "departure_day",
+      "field_value": "10/19"
+    },
+    {
+      "timestmamp": 1530023086275,
+      "field_name": "return_day",
+      "field_value": "10/21"
+    },
+    {
+      "timestmamp": 1530023086349,
+      "field_name": "flight_search_submit",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1530023236003,
+      "field_name": "customer-name",
+      "field_value": "Brian Lewis"
+    },
+    {
+      "timestmamp": 1530023237298,
+      "field_name": "customer-final-action",
+      "field_value": "book"
+    },
+    {
+      "timestmamp": 1530023238986,
+      "field_name": "customer-flight-number",
+      "field_value": "1001"
+    },
+    {
+      "timestmamp": 1530023240698,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "book",
+    "name": "Brian Lewis",
+    "flight": [
+      1001
+    ]
+  },
+  "intent": {
+    "return_month": "Oct",
+    "return_day": "21",
+    "max_price": 500,
+    "departure_airport": "PHX",
+    "max_connections": 1,
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Brian Lewis",
+    "return_airport": "BOS"
+  },
+  "timestamps": [
+    1530023042,
+    1530023061,
+    1530023105,
+    1530023109,
+    1530023137,
+    1530023141,
+    1530023161,
+    1530023166,
+    1530023185,
+    1530023187,
+    1530023212,
+    1530023224,
+    1530023247,
+    1530023259,
+    1530023262,
+    1530023283
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, how can I aid you?",
+    "customer: I would like to meet my school friend at Boston, please help me in booking a ticket from PHX to BOS.",
+    "agent: Sure, can you please let me know your trip dates?",
+    "customer: My planned trip dates are on Oct 19 and Oct 21.",
+    "agent: Do you have any connection limit preference?",
+    "customer: I need a flight with single connection.",
+    "agent: Do you have any other specifications?",
+    "customer: No, thank you for asking.",
+    "agent: Could you help me with your name please?",
+    "customer: My name is Brian Lewis.",
+    "agent: American Airlines is having a single stopover with 1001 flight number and airfare is 200. Shall I proceed with this flight?",
+    "customer: Ok, please proceed for booking.",
+    "agent: For a economy class your ticket is booked.",
+    "customer: Thank you for your services.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Brian Lewis",
+    "flight": [
+      1001,
+      1012
+    ]
+  },
+  "correct_sample": true
+}

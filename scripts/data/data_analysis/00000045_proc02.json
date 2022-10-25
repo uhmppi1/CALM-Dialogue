@@ -1,0 +1,586 @@
+{
+  "uuid": 45,
+  "customer_scenario_uuid": 90,
+  "agent_scenario_uuid": 91,
+  "customer_scenario": {
+    "return_month": "Oct",
+    "return_day": "9",
+    "max_price": 500,
+    "departure_airport": "DEN",
+    "departure_time": "morning",
+    "departure_day": "7",
+    "goal": "book",
+    "departure_month": "Oct",
+    "name": "Emma Scott",
+    "return_airport": "HOU",
+    "max_connections": "None",
+    "class": "None",
+    "airline_preference": "None",
+    "return_time": "None"
+  },
+  "agent_scenario": {
+    "kb": [
+      {
+        "return_airport": "DEN",
+        "airline": "Frontier",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1000,
+        "departure_month": "Oct",
+        "departure_time_num": 23,
+        "class": "economy",
+        "return_time_num": 6,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "UA",
+        "departure_day": "6",
+        "departure_airport": "HOU",
+        "flight_number": 1001,
+        "departure_month": "Oct",
+        "departure_time_num": 13,
+        "class": "economy",
+        "return_time_num": 3,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "Southwest",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1002,
+        "departure_month": "Oct",
+        "departure_time_num": 2,
+        "class": "business",
+        "return_time_num": 20,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 700
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "UA",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1003,
+        "departure_month": "Oct",
+        "departure_time_num": 13,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 0,
+        "price": 300
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "Spirit",
+        "departure_day": "8",
+        "departure_airport": "MSP",
+        "flight_number": 1004,
+        "departure_month": "Oct",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 5,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 2,
+        "price": 300
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Delta",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1005,
+        "departure_month": "Oct",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 10,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "JetBlue",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1006,
+        "departure_month": "Oct",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "AA",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1007,
+        "departure_month": "Oct",
+        "departure_time_num": 8,
+        "class": "economy",
+        "return_time_num": 12,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Spirit",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1008,
+        "departure_month": "Oct",
+        "departure_time_num": 21,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "AA",
+        "departure_day": "7",
+        "departure_airport": "HOU",
+        "flight_number": 1009,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 13,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "Spirit",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1010,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "JetBlue",
+        "departure_day": "7",
+        "departure_airport": "HOU",
+        "flight_number": 1011,
+        "departure_month": "Oct",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Oct",
+        "return_day": "8",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Hawaiian",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1012,
+        "departure_month": "Oct",
+        "departure_time_num": 23,
+        "class": "business",
+        "return_time_num": 0,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 1000
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "UA",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1013,
+        "departure_month": "Oct",
+        "departure_time_num": 15,
+        "class": "economy",
+        "return_time_num": 9,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "AA",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1014,
+        "departure_month": "Oct",
+        "departure_time_num": 2,
+        "class": "business",
+        "return_time_num": 9,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 700
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "Hawaiian",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1015,
+        "departure_month": "Oct",
+        "departure_time_num": 5,
+        "class": "business",
+        "return_time_num": 8,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 500
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Hawaiian",
+        "departure_day": "8",
+        "departure_airport": "DEN",
+        "flight_number": 1016,
+        "departure_month": "Oct",
+        "departure_time_num": 5,
+        "class": "economy",
+        "return_time_num": 0,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "AA",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1017,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 21,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 0,
+        "price": 100
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "UA",
+        "departure_day": "6",
+        "departure_airport": "MSP",
+        "flight_number": 1018,
+        "departure_month": "Oct",
+        "departure_time_num": 14,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Hawaiian",
+        "departure_day": "8",
+        "departure_airport": "DEN",
+        "flight_number": 1019,
+        "departure_month": "Oct",
+        "departure_time_num": 1,
+        "class": "economy",
+        "return_time_num": 2,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "AA",
+        "departure_day": "6",
+        "departure_airport": "DEN",
+        "flight_number": 1020,
+        "departure_month": "Oct",
+        "departure_time_num": 7,
+        "class": "economy",
+        "return_time_num": 16,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Delta",
+        "departure_day": "6",
+        "departure_airport": "MSP",
+        "flight_number": 1021,
+        "departure_month": "Oct",
+        "departure_time_num": 19,
+        "class": "economy",
+        "return_time_num": 14,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "UA",
+        "departure_day": "7",
+        "departure_airport": "HOU",
+        "flight_number": 1022,
+        "departure_month": "Oct",
+        "departure_time_num": 18,
+        "class": "business",
+        "return_time_num": 12,
+        "return_month": "Oct",
+        "return_day": "8",
+        "num_connections": 1,
+        "price": 400
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Southwest",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1023,
+        "departure_month": "Oct",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 1,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Southwest",
+        "departure_day": "7",
+        "departure_airport": "DEN",
+        "flight_number": 1024,
+        "departure_month": "Oct",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 8,
+        "return_month": "Oct",
+        "return_day": "10",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "Delta",
+        "departure_day": "7",
+        "departure_airport": "HOU",
+        "flight_number": 1025,
+        "departure_month": "Oct",
+        "departure_time_num": 12,
+        "class": "economy",
+        "return_time_num": 4,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 100
+      },
+      {
+        "return_airport": "HOU",
+        "airline": "Southwest",
+        "departure_day": "7",
+        "departure_airport": "MSP",
+        "flight_number": 1026,
+        "departure_month": "Oct",
+        "departure_time_num": 12,
+        "class": "business",
+        "return_time_num": 8,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 1200
+      },
+      {
+        "return_airport": "DEN",
+        "airline": "Frontier",
+        "departure_day": "8",
+        "departure_airport": "MSP",
+        "flight_number": 1027,
+        "departure_month": "Oct",
+        "departure_time_num": 0,
+        "class": "economy",
+        "return_time_num": 17,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 200
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "Delta",
+        "departure_day": "8",
+        "departure_airport": "HOU",
+        "flight_number": 1028,
+        "departure_month": "Oct",
+        "departure_time_num": 4,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 1,
+        "price": 300
+      },
+      {
+        "return_airport": "MSP",
+        "airline": "AA",
+        "departure_day": "6",
+        "departure_airport": "HOU",
+        "flight_number": 1029,
+        "departure_month": "Oct",
+        "departure_time_num": 10,
+        "class": "economy",
+        "return_time_num": 15,
+        "return_month": "Oct",
+        "return_day": "9",
+        "num_connections": 0,
+        "price": 300
+      }
+    ],
+    "reservation": 0
+  },
+  "expected_action": {
+    "status": "book",
+    "name": "Emma Scott",
+    "flight": [
+      1005
+    ]
+  },
+  "events": [
+    {
+      "agent": "Customer",
+      "data": "Hello.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Hello, what kind of service your looking for?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I want to attend an interview in Houston, HOU. Can you please book a ticket from DEN?",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Sure, please share me your trip dates.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "My travelling dates are Oct 7 and Oct 9.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "For booking, we need your good name. Please mention it.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Sure, I am Emma Scott.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "May I know your class preferences?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I am comfortable with any class.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Is there any time concern for you?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "My depart time is morning.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Do you need direct flight or connecting flight?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "I am comfortable with both flights.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "We found a Delta airline and 1005 is flight number with a fare of 200. Shall I proceed?",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Yes, please proceed for booking.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Your ticket is confirmed with an economy class.",
+      "action": "message"
+    },
+    {
+      "agent": "Customer",
+      "data": "Thank you.",
+      "action": "message"
+    },
+    {
+      "agent": "Agent",
+      "data": "Thank you for opting us.",
+      "action": "message"
+    },
+    {
+      "agent": "Submit",
+      "data": {
+        "status": "book",
+        "name": "Emma Scott",
+        "flight": [
+          1005
+        ]
+      },
+      "action": "book"
+    }
+  ]
+}

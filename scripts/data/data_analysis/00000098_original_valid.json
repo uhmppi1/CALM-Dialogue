@@ -1,0 +1,45 @@
+{
+  "action": {
+    "status": "no_reservation",
+    "name": "Ashley Thomas",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "31",
+    "max_price": 1000,
+    "departure_airport": "SFO",
+    "max_connections": 1,
+    "departure_day": "29",
+    "goal": "cancel",
+    "departure_month": "Jan",
+    "name": "Ashley Thomas",
+    "return_airport": "SEA"
+  },
+  "timestamps": [
+    1521681369,
+    1521681375,
+    1521681392,
+    1521681444,
+    1521681450,
+    1521681497,
+    1521681502,
+    1521681509
+  ],
+  "dialogue": [
+    "customer: Hello. Ashley Thomas here.",
+    "agent: Hello, what can I do for you now?",
+    "customer: Due to an emergency, I need to cancel my reservation. Can you please help me with it?",
+    "agent: Sure, I will help you. Wait a minute, I will check and let you know the details.",
+    "customer: Ok.",
+    "agent: Thanks for being patience. Sorry to say, no reservation was found on your name.",
+    "customer: Not an issue, thank you.",
+    "agent: Thank you for your time with us."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Ashley Thomas",
+    "flight": []
+  },
+  "correct_sample": true
+}

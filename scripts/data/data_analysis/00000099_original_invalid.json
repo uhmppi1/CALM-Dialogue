@@ -1,0 +1,64 @@
+{
+  "action": {
+    "status": "no_flight",
+    "name": "Daniel Moore",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "June",
+    "return_day": "16",
+    "max_price": 1000,
+    "departure_airport": "JFK",
+    "max_connections": 1,
+    "class": "economy",
+    "departure_day": "14",
+    "goal": "book",
+    "departure_month": "June",
+    "name": "Daniel Moore",
+    "return_airport": "CLT"
+  },
+  "timestamps": [
+    1519346135,
+    1519346139,
+    1519346174,
+    1519346200,
+    1519346211,
+    1519346214,
+    1519346242,
+    1519346262,
+    1519346293,
+    1519346319,
+    1519346361,
+    1519346372,
+    1519346383,
+    1519346409,
+    1519346442,
+    1519346446
+  ],
+  "dialogue": [
+    "customer: Hi. I am Daniel Moore.",
+    "agent: Hello, how can I help you?",
+    "customer: I want to attend a political meeting at Charlotte. Can you help me in my reservation?",
+    "agent: Sure, I will help you.",
+    "customer: Thank you.",
+    "agent: Please provide me your travelling dates?",
+    "customer: I Will start my journey on 06/14. I will return back on 06/16.",
+    "agent: Kindly mention me your airport codes?",
+    "customer: My source airport code is New York, NY - JFK. My destination airport code is Charlotte, NC - CLT.",
+    "agent: Do you have any specifications?",
+    "customer: I need a layover in my journey. I can pay up to 1000.",
+    "agent: Please wait a minute.",
+    "customer: Sure.",
+    "agent: Thanks for waiting, sorry to inform you that there are no flights with your specifications.",
+    "customer: Not an issue. Thank you for your kind information.",
+    "agent: Thank you for reaching us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "Daniel Moore",
+    "flight": [
+      1021
+    ]
+  },
+  "correct_sample": false
+}

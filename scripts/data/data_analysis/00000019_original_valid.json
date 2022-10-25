@@ -1,0 +1,75 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1527159877616,
+      "button_name": "top-change-reservation"
+    },
+    {
+      "timestmamp": 1527159880658,
+      "field_name": "customer-name",
+      "field_value": ""
+    },
+    {
+      "timestmamp": 1527159882520,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1527160053096,
+      "field_name": "customer-name",
+      "field_value": "Linda Collins"
+    },
+    {
+      "timestmamp": 1527160078032,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Linda Collins",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Jan",
+    "return_day": "22",
+    "max_price": 1000,
+    "departure_airport": "CLT",
+    "departure_time": "evening",
+    "max_connections": 1,
+    "departure_day": "20",
+    "goal": "change",
+    "departure_month": "Jan",
+    "name": "Linda Collins",
+    "return_airport": "LGA"
+  },
+  "timestamps": [
+    1527159807,
+    1527159813,
+    1527159861,
+    1527159875,
+    1527159902,
+    1527159909,
+    1527159932,
+    1527159935,
+    1527159978,
+    1527160040
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello, do you need any help from us?",
+    "customer: Please help me in changing my existing reservation, as my trip got postponed.",
+    "agent: Sure, could I have your name please?",
+    "customer: My name is Linda Collins.",
+    "agent: Ok, please allow me a moment.",
+    "customer: Ok.",
+    "agent: Sorry, there is no reservation with your name in our portal to make changes further.",
+    "customer: That's ok, thank you for the response.",
+    "agent: You are welcome, have a great day."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Linda Collins",
+    "flight": []
+  },
+  "correct_sample": true
+}

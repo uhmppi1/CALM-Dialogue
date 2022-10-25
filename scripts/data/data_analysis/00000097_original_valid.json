@@ -1,0 +1,61 @@
+{
+  "action": {
+    "status": "book",
+    "name": "William Jones",
+    "flight": [
+      1014
+    ]
+  },
+  "intent": {
+    "return_month": "Apr",
+    "return_day": "21",
+    "max_price": 500,
+    "departure_airport": "DEN",
+    "max_connections": 1,
+    "departure_day": "19",
+    "goal": "book",
+    "departure_month": "Apr",
+    "name": "William Jones",
+    "return_airport": "DCA"
+  },
+  "timestamps": [
+    1521011129,
+    1521011134,
+    1521011174,
+    1521011197,
+    1521011233,
+    1521011236,
+    1521011268,
+    1521011272,
+    1521011291,
+    1521011328,
+    1521011337,
+    1521011353,
+    1521011354,
+    1521011361
+  ],
+  "dialogue": [
+    "customer: Hello. I am William Jones.",
+    "agent: Hello, how may I help you today?",
+    "customer: Could you please help em to book a flight from DEN - DCA to meet my cousin?",
+    "agent: Sure, we are perky to help you. On which dates would you like me to book a flight ticket for you?",
+    "customer: My travel dates are 04/19 and 04/21.",
+    "agent: Do you need a lay by in between your journey?",
+    "customer: Yes, I need a halt in between the journey.",
+    "agent: Thank you for providing your details.",
+    "customer: Ok.",
+    "agent: We found a flight in UA airline has fare 100 matches given specifications. Shall I proceed for booking?",
+    "customer: Ok, please proceed.",
+    "agent: Your booking has been confirmed with flight number 1014.",
+    "customer: Thank you.",
+    "agent: Thank you for availing us."
+  ],
+  "expected_action": {
+    "status": "book",
+    "name": "William Jones",
+    "flight": [
+      1014
+    ]
+  },
+  "correct_sample": true
+}

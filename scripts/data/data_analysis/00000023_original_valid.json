@@ -1,0 +1,70 @@
+{
+  "search_info": [
+    {
+      "timestmamp": 1525436882425,
+      "field_name": "customer-name",
+      "field_value": "Alexander Mitchell "
+    },
+    {
+      "timestmamp": 1525436910872,
+      "button_name": "top-cancel-reservation"
+    },
+    {
+      "timestmamp": 1525436943640,
+      "field_name": "customer-final-action",
+      "field_value": "no_reservation"
+    },
+    {
+      "timestmamp": 1525436945223,
+      "button_name": "agent-end-conversation"
+    }
+  ],
+  "action": {
+    "status": "no_reservation",
+    "name": "Alexander Mitchell",
+    "flight": []
+  },
+  "intent": {
+    "return_month": "Nov",
+    "return_day": "1",
+    "max_price": 1000,
+    "departure_airport": "SFO",
+    "airline_preference": "normal-cost",
+    "departure_time": "morning",
+    "max_connections": 1,
+    "class": "business",
+    "departure_day": "30",
+    "goal": "cancel",
+    "departure_month": "Oct",
+    "name": "Alexander Mitchell",
+    "return_airport": "ORD"
+  },
+  "timestamps": [
+    1525436839,
+    1525436855,
+    1525436892,
+    1525436909,
+    1525436911,
+    1525436932,
+    1525436936,
+    1525436941,
+    1525436944
+  ],
+  "dialogue": [
+    "customer: Hello.",
+    "agent: Hello. How can I help you at this moment?",
+    "customer: I am Alexander Mitchell here. I need to cancel my existing reservation, which is done recently. Can you please hep me out?",
+    "agent: Sure. I will help you with that. Please wait a moment.",
+    "customer: Thank you for considering my request.",
+    "agent: There is no previous reservation available under your name.",
+    "customer: Not a big problem, anyway thank you for the information.",
+    "agent: Thank you for reaching us.",
+    "customer: Thank you for searching."
+  ],
+  "expected_action": {
+    "status": "no_reservation",
+    "name": "Alexander Mitchell",
+    "flight": []
+  },
+  "correct_sample": true
+}
