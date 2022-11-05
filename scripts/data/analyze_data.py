@@ -21,11 +21,11 @@ def make_samples(data_path, kb_path, limit=None):
     with open(data_path) as f_data, open(kb_path) as f_kb:
         for line_data, line_kb in tqdm(list(zip(f_data, f_kb))):
             line_idx += 1
-            valid_example_path = 'data_analysis/{:08d}_original_valid.json'.format(line_idx)
-            invalid_example_path = 'data_analysis/{:08d}_original_invalid.json'.format(line_idx)
-            processed_example_path = 'data_analysis/{:08d}_proc01.json'.format(line_idx)
-            event_example_path = 'data_analysis/{:08d}_proc02.json'.format(line_idx)
-            kbsample_path = 'data_analysis/{:08d}_kb.json'.format(line_idx)
+            valid_example_path = './../../data/data_analysis/{:08d}_original_valid.json'.format(line_idx)
+            invalid_example_path = './../../data/data_analysis/{:08d}_original_invalid.json'.format(line_idx)
+            processed_example_path = './../../data/data_analysis/{:08d}_proc01.json'.format(line_idx)
+            event_example_path = './../../data/data_analysis/{:08d}_proc02.json'.format(line_idx)
+            kbsample_path = './../../data/data_analysis/{:08d}_kb.json'.format(line_idx)
             example = json.loads(line_data)
             kb = json.loads(line_kb)
 
