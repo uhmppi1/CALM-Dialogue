@@ -14,8 +14,5 @@ instruction_def = {
     'Ask price condition.':12,
     'Agree with requirements.':13,
     'Finish session politely.':14,
-    'book_data_exist':15,
-    'book_data_no_exist':16,
-    'change_data_exist':17,
-    'change_data_no_exist':18,
+    'Data Result':15,
 }

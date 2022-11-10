@@ -7,6 +7,9 @@ Official code for the paper "Context-Aware Language Modeling for Goal-Oriented D
 ## **setup**
 
 1. install requirements
+    * `conda create -n calm --file requirements.txt`
+    * `pip install -r pip_requirements.txt`
+    * `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
 2. `export PYTHONPATH="$PWD/offline_airdialogue"`
 3. Download the processed data and model checkpoints [here](https://drive.google.com/drive/folders/1mnAGcgqyQC3ygILwwf-llxLf70nT9AT9?usp=sharing). The `outputs/` folder contains checkpoints for our main model, our task pretrained model, and our customer bot.
 
