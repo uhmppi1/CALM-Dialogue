@@ -3,7 +3,7 @@ from torch.utils.data import IterableDataset, Dataset
 from ad.synthetic_iterator import AirDialogueIterator
 from utils.data_utils import ActionEnumerator
 import random
-from ad.airdialogue import Event, event_from_json, AirDialogue, Scene
+from ad.airdialogue import Event, event_from_json, AirDialogue, Scene, ADInstruction, InstructionScene
 from ad.query_table import get_true_action
 from copy import deepcopy
 
@@ -186,6 +186,21 @@ class RealSynthTableDataset2(IterableDataset):
     def __next__(self):
         sampled_scene = self._sample_scene_with_reward()
         return sampled_scene
+
+    @staticmethod
+    def collate(items):
+        return items
+
+class BasicInstructionDataset(Dataset):
+    def __init__(self, data: ADInstruction):
+        self.data = data
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __getitem__(self, i):
+        scene = self.data[i]
+        return scene
 
     @staticmethod
     def collate(items):

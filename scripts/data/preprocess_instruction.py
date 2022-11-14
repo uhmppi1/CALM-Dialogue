@@ -27,15 +27,28 @@ def instructions_from_file(file_path, f_out):
     with open(file_path) as f_data:
         line_data = f_data.read()
         example = json.loads(line_data)
+        #print(example)
         prev_line = None
 
         instructions_lines = []
+        label = 0
         for line in example['events']:
             # print('>>>'+str(line))
-            if line['agent'] in ('Instructor', 'Data'):
+            if line['agent'] == 'Instructor':
                 if len(instructions_lines) <= 0:
                     instructions_lines.append(prev_line)
-                    instructions_lines.append(line)
+                    if line['data'] in instruction_def:
+                        label = instruction_def[line['data']]
+                    else:
+                        label = -1  # undefined instruction : 이 경우에는 데이터에 반영하지 않는다. 
+                    #instructions_lines.append(line)
+                #else:
+                    #이 경우라면 check table 뒤에 data가 따라온 경우라고 생각된다. data는 생략해야!
+            elif line['agent'] == 'Data':
+                if len(instructions_lines) <= 0:
+                    instructions_lines.append(prev_line)
+                    label = instruction_def['Data Result']
+                    #instructions_lines.append(line)
                 #else:
                     #이 경우라면 check table 뒤에 data가 따라온 경우라고 생각된다. data는 생략해야!
             else:
@@ -43,9 +56,10 @@ def instructions_from_file(file_path, f_out):
                     prev_line = line
                 else:
                     instructions_lines.append(line)
-                    if len(instructions_lines) >= 4:
-                        print({'data':instructions_lines})
-                        f_out.write(str({'data':instructions_lines})+'\n')
+                    if len(instructions_lines) >= 3:
+                        if label >= 0:
+                            print(json.dumps({"data":instructions_lines, "label":label}))
+                            f_out.write(json.dumps({"data":instructions_lines, "label":label})+'\n')
                         instructions_lines.clear()
                         prev_line = line
 

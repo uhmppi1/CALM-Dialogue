@@ -272,3 +272,37 @@ class AirDialogue:
 
     def __getitem__(self, i):
         return self.scenes[i]
+
+@dataclass
+class InstructionScene:
+    data: List[Event]
+    label: int
+
+    @classmethod
+    def from_json(cls, val: Any) -> InstructionScene:
+        # create empty dummy scene
+        scene = cls(val['data'], val['label'])
+        return scene
+
+
+class ADInstruction:
+    def __init__(self, filepath: str, limit=None):
+        """Load a air dialogue dataset augmented with instructions
+        """
+        self.scenes = self._load_in_scenes(filepath, limit=limit)
+
+    def _load_in_scenes(self, filepath: str, limit=None) -> List[Scene]:
+        scenes = []
+        with open(filepath, "r") as f:
+            for i, line in tqdm(enumerate(f)):
+                if limit is not None and i >= limit:
+                    break
+                item = InstructionScene.from_json(json.loads(line.strip()))
+                scenes.append(item)
+        return scenes
+
+    def __len__(self):
+        return len(self.scenes)
+
+    def __getitem__(self, i):
+        return self.scenes[i]

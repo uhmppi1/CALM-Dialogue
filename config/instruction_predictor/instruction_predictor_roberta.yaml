@@ -1,0 +1,5 @@
+name: instruction_predictor_roberta
+roberta_type: "roberta-base"
+max_length: null
+checkpoint_path: null
+strict_load: true
