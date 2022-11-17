@@ -16,3 +16,8 @@ instruction_def = {
     'Finish session politely.':14,
     'Data Result':15,
 }
+
+label_to_instruction = {v:k for k, v in instruction_def.items()}
+
+def get_instruction_from_label(label):
+    return label_to_instruction[label]

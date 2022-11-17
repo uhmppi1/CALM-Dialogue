@@ -118,6 +118,12 @@ class InstructionPredictorRoberta(BaseTransformer, nn.Module):
 
         return loss, logs, []
         # return 0, {}, []
+
+    def predict(self, scenes: List[InstructionScene]):
+        tokens, attn_mask = self._tokenize_batch(scenes)
+        prediction_logits, _ = self(tokens, attn_mask, output_attentions=True)
+
+        return torch.argmax(prediction_logits['instruction_head'], dim=-1)
     
     # def top_k_constraint_sets(self, scenes: List[Scene], 
     #                           dialogue_events_list: List[List[Event]], 
