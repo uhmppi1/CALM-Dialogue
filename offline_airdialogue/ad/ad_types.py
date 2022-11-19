@@ -7,6 +7,8 @@ import enum
 class Agent(enum.Enum):
     AGENT = "Agent"
     CUSTOMER = "Customer"
+    INSTRUCTIOR = 'Instructor'
+    DATA = 'Data'
     SUBMIT = "Submit"
 
     def other_agent(self) -> Agent:
@@ -24,6 +26,10 @@ class Agent(enum.Enum):
             return "Customer"
         elif self == self.AGENT:
             return "Agent"
+        elif self == self.INSTRUCTIOR:
+            return "Instructor"
+        elif self == self.DATA:
+            return "Data"
         elif self == self.SUBMIT:
             return "Submit"
         else:
@@ -39,6 +45,18 @@ class Message:
     def kind_str(self):
         return 'message'
 
+@dataclass
+class Retrieval:
+    table: dict
+
+    def __str__(self):
+        str_table = ''
+        for key in self.table:
+            str_table += f' , {key} : {self.table[key]}'
+        return f'retrieval{str_table}'
+    
+    def kind_str(self):
+        return 'retrieval'
 
 @dataclass
 class Book:
@@ -124,7 +142,7 @@ class InvalidEvent:
         return 'invalid_event'
 
 
-EventType = Union[Message, Book, Change, NoFlightFound, NoReservation, Cancel, InvalidEvent]
+EventType = Union[Message, Book, Change, NoFlightFound, NoReservation, Cancel, InvalidEvent, Retrieval]
 
 def event_to_int(ev: EventType) -> int:
     if isinstance(ev, Message):
@@ -141,10 +159,13 @@ def event_to_int(ev: EventType) -> int:
         return 5
     elif isinstance(ev, InvalidEvent):
         return 6
+    elif isinstance(ev, Retrieval):
+        return 7
     else:
         raise NotImplementedError
 
 def event_from_json(json_obj):
+  
     if json_obj["status"] == "book":
         event = Book(json_obj["name"], json_obj["flight"][0])
     elif json_obj["status"] == "change":
@@ -157,4 +178,5 @@ def event_from_json(json_obj):
         event = Cancel(json_obj["name"])
     else:
         raise NotImplementedError
+
     return event
