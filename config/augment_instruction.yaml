@@ -15,19 +15,13 @@ dataset:
 
 model:
   checkpoint_path: outputs/instruction_predictor/model.pkl
-#  kind: beam
-
-# model:
-#   url: http://35.232.72.95:5000/api/message
 
 
-# evaluator:
-#   generation_kwargs:
-#     max_generation_len: null
-#     n: 1
-#   trunc_first: true
-
-data_dir: data/instruction_train
+data_dir: data/data_analysis_valid
+out_data_dir: data/instruction_train
+# if limit > 0, augmentation file count limited.
+limit: 0
+use_invalid: false
 
 dataloader_workers: 0
 bsize: 2
