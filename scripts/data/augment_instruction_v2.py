@@ -8,7 +8,7 @@ from datetime import datetime
 import os
 from ad.airdialogue import InstructionScene
 from utils.misc import convert_path
-from utils.instructions_v2 import instruction_def, get_instruction_from_label, get_query_from_label
+from utils.instructions_v2 import instruction_def, get_instruction_from_label
 
 
 def make_aug_samples(data_dir, out_data_dir, model, limit=0):
@@ -120,9 +120,9 @@ def make_query_event(is_booking, example,instruction_called):
             'db' : 'None',
             "return_month": "None", #6
             "return_day": "None", #6
-            "max_price": 0, #12 int
+            "max_price": -1, #12 int
             "departure_airport": "None", #5
-            "max_connections": 0, #4 int
+            "max_connections": -1, #4 int
             "departure_day": "None", # 6 
             "goal": "None", # 0
             "departure_month": "None", #6

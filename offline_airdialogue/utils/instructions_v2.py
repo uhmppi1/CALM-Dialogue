@@ -17,19 +17,13 @@ instruction_def = {
     'Ask for wait.':15,
 }
 
-query_def = {
-    'search' : 3,
-    'search' : 8
-}
-
 label_to_instruction = {v:k for k, v in instruction_def.items()}
-label_to_query = {v:k for k,v in query_def.items()}
+
 
 def get_instruction_from_label(label):
     return label_to_instruction[label]
 
-def get_query_from_label(label):
-    return label_to_query[label]
+
 
 
 
