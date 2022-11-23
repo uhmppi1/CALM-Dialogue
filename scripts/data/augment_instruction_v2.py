@@ -95,7 +95,7 @@ def augment_instructions_to_file(data_dir, path, out_data_dir, model):
             
             # 이부분을 v2로 수정?
             if scene.label in (3, 8):
-                query_event = make_query_event(is_booking, example, instruction_called)
+                query_event = make_query_event(example, instruction_called)
                 data_event = make_dataresult_event(is_booking, example)
                 events.append(query_event)
                 events.append(data_event)
@@ -112,7 +112,7 @@ def augment_instructions_to_file(data_dir, path, out_data_dir, model):
             f_out.write(json.dumps(example, indent=2))
 
 
-def make_query_event(is_booking, example,instruction_called):
+def make_query_event(example,instruction_called):
     query_event = {
         'agent' : 'Agent',
         'data' : {
@@ -151,9 +151,6 @@ def make_query_event(is_booking, example,instruction_called):
     for i in instruction_called:
         if i in cus_scenario_dic.keys():
             for j in range(len(cus_scenario_dic[i])):
-                if cus_scenario_dic[i][j] == 'max_price' or cus_scenario_dic[i][j] == 'max_connections':
-                    query_event['data'][cus_scenario_dic[i][j]] = int(cus_scenario[cus_scenario_dic[i][j]])
-                else:
                     query_event['data'][cus_scenario_dic[i][j]] = cus_scenario[cus_scenario_dic[i][j]]
     
     if query_event['data']['goal'] == 'book':
