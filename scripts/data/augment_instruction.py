@@ -26,7 +26,7 @@ def make_aug_samples(data_dir, model):
             augment_instructions_to_file(data_dir, path, model)
             res.append(os.path.join(data_dir, path))
             # print('--------')
-            #return  # TODO : 1줄만 처리하려고 임시로 넣었음. 제거할것. 
+            #return # TODO : 1줄만 처리하려고 임시로 넣었음. 제거할것. 
         #print(res)
 
 
@@ -101,6 +101,7 @@ def augment_instructions_to_file(data_dir, path, model):
 def make_dataresult_event(is_booking, example):
     instruction_event = {}
     final_event = example['events'][-1]
+    print(final_event)
     if is_booking:
         if len(final_event['data']['flight']) > 0:  # kb에서 가져올 매치된 운항정보가 있는경우
             flight = final_event['data']['flight'][0]
@@ -131,10 +132,12 @@ def make_dataresult_event(is_booking, example):
 def predict_instruction(scenes, model):
 
     result = model.predict(scenes)
+    print(model.get_loss(scenes))
+    #print(model.get_loss(scenes))
 
     print('@@@@@@@@@@@@@@@@@@@@@@@@@@')
-    print(scenes)
-    print(result)
+    print('this is scenes: ',scenes)
+    print('this is result: ',result)
     label = result.item()
     print(get_instruction_from_label(label))
 
