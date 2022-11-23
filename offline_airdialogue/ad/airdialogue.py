@@ -128,9 +128,11 @@ class Event:
     @classmethod
     def from_json(cls, val: Any, scene: Scene, idx: int=-1) -> Event:
         if val["action"] == "message":
-            event = Message(val["data"])
+            event = Message(val["data"])    
         elif val["action"] == "invalid_event":
             event = InvalidEvent(val["data"])
+        elif val['action'] == 'retrieval':
+            event = Retrieval(val["data"])
         else:
             event = event_from_json(val["data"])
         return cls(
@@ -167,6 +169,10 @@ class Event:
                 val['agent'] = 'Agent'
             elif speaker.lower() == 'customer':
                 val['agent'] = 'Customer'
+            elif speaker.lower() == 'instructor':
+                val['agent'] = 'Instructor'
+            elif speaker.lower() == 'data':
+                val['agent'] = 'Data'
             else:
                 val['agent'] = 'Submit'
                 val['action'] = "invalid_event"

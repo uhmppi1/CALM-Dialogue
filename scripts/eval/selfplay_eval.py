@@ -92,7 +92,7 @@ def selplay_eval(cfg):
     p.join()
     print('done.', data)
 
-@hydra.main(config_path="../../config", config_name="selplay_eval")
+@hydra.main(config_path="../../config", config_name="selplay_eval_instruction_basic_agent")
 def main(cfg : DictConfig):
     cfg = OmegaConf.to_container(cfg)
     selplay_eval(cfg)
