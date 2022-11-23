@@ -14,7 +14,7 @@ instruction_def = {
     'Ask price condition.':12,
     'Agree with requirements.':13,
     'Finish session politely.':14,
-    'Data Result':15,
+    'Ask for wait.':15,
 }
 
 label_to_instruction = {v:k for k, v in instruction_def.items()}
