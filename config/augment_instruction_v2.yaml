@@ -1,0 +1,31 @@
+defaults:
+ - instruction_predictor@model: instruction_predictor_roberta
+ - torch_dataset@dataset: basic_instruction_dataset
+#  - policy@model: gpt2_table_agent_policy
+#  - gpt2_LM@model: basic_agent_gpt2_LM
+#  - constraint_parser@model: constraint_parser_roberta
+# - evaluator: instruction_predictor_roberta_evaluator
+ - _self_
+
+dataset:
+  data:
+    filepath: data/instruction_ad/dev_instruction.json
+    heauristic_filter: false
+    filter_with_goal: false
+
+model:
+  checkpoint_path: outputs/instruction_predictor/model.pkl
+
+
+data_dir: data/original_data
+out_data_dir: data/instruction_train_v2
+# if limit > 0, augmentation file count limited.
+limit: 0
+use_invalid: false
+
+dataloader_workers: 0
+bsize: 2
+eval_batches: -1
+output_dir: outputs/instruction_predictor/instruction_prediction1.json
+call_get_loss: false
+loss: {}

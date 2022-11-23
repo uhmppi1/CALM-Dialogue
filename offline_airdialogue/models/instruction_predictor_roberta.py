@@ -82,7 +82,7 @@ class InstructionPredictorRoberta(BaseTransformer, nn.Module):
         # print(tokens.shape, attn_mask.shape)
         prediction_logits, model_output = self(tokens, attn_mask, output_attentions=True)
         transformer_logs = get_transformer_logs(model_output.attentions, self.model, attn_mask)
-
+        print('this is transformer_logs', print(transformer_logs))
         #labels = self._tokenize_customer_scenarios_batch([scene.customer_scenario for scene in scenes])
         labels = [float(scene.label) for scene in scenes]
         torch_labels = torch.tensor(labels).to(torch.int64).to(self.device) 

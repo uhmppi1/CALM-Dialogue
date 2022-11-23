@@ -1,3 +1,4 @@
+# 원본 데이터 분리
 from tqdm.auto import tqdm
 import json
 import argparse
