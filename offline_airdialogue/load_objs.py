@@ -1,14 +1,14 @@
-from ad.airdialogue import AirDialogue, ADInstruction
+from ad.airdialogue import AirDialogue
 from ad.synthetic_iterator import AirDialogueIterator
-from ad.torch_datasets import BasicDataset, RealSynthTableDataset, RealSynthTableDataset2, ToySynthTableDataset, ToySynthTableDataset2, BasicInstructionDataset
+from ad.torch_datasets import BasicDataset, RealSynthTableDataset, RealSynthTableDataset2, ToySynthTableDataset, ToySynthTableDataset2
 from bots.basic_policy_bot import BasicPolicyBot
 from bots.full_policy_bot import FullPolicyBot
 from bots.toy_customer_bot import ToyCustomerBot
 from models.base import ConstraintRewardFunction, GPT2LMPolicy, LanguageEvaluator, OracleConstraintParser, OracleRewardFunction, PPLEvaluator, RemotePolicy
 from models.basic_agent_gpt2 import BasicAgentGPT2, BasicAgentGPT2Evaluator
 from models.constraint_predictor_roberta import ConstraintPredictorRoberta, ConstraintPredictorRobertaEvaluator
-from models.instruction_predictor_roberta import InstructionPredictorRoberta, InstructionPredictorRobertaEvaluator
 from models.customer_gpt2 import CustomerGPT2, CustomerGPT2Evaluator
+from models.agent_gpt2 import AgentGPT2, AgentGPT2Evaluator
 from models.simplfied_aux_gpt2 import SimplifiedAuxGPT2Evaluator
 from models.simplfied_aux_gpt2 import SimplifiedAuxGPT2
 from models.table_agent_gpt2 import TableGPT2Agent, TableGPT2AgentEvaluator
@@ -48,23 +48,6 @@ def initalize_constraint_parser_roberta(config, device, verbose=True):
 @register('constraint_parser_roberta_evaluator')
 def initalize_constraint_parser_roberta_evaluator(config, device, verbose=True):
     return ConstraintPredictorRobertaEvaluator(k=config['k'])
-
-@register('instruction_predictor_roberta')
-def initalize_instruction_predictor_roberta(config, device, verbose=True):
-    model = InstructionPredictorRoberta(roberta_type=config['roberta_type'], 
-                                       device=device, 
-                                       max_length=config['max_length']).to(device)
-    if config['checkpoint_path'] is not None:
-        if verbose:
-            print(f'loading instruction_predictor_roberta state dict from: {convert_path(config["checkpoint_path"])}')
-        model.load_state_dict(torch.load(convert_path(config['checkpoint_path']), map_location='cpu'))
-        if verbose:
-            print('loaded.')
-    return model
-
-@register('instruction_predictor_roberta_evaluator')
-def initalize_instruction_predictor_roberta_evaluator(config, device, verbose=True):
-    return InstructionPredictorRobertaEvaluator()
 
 @register('table_gpt2_LM')
 def initalize_table_gpt2_LM(config, device, verbose=True):
@@ -158,6 +141,27 @@ def initalize_gpt2_customer_LM(config, device, verbose=True):
 @register('customer_gpt2_evaluator')
 def initalize_customer_gpt2_evaluator(config, device, verbose=True):
     return CustomerGPT2Evaluator(max_generation_len=config['max_generation_len'], 
+                                 temp=config['temp'], 
+                                 top_k=config['top_k'], 
+                                 top_p=config['top_p'], 
+                                 verbose=config['verbose'])
+
+@register('agent_gpt2_LM')
+def initalize_gpt2_customer_LM(config, device, verbose=True):
+    model = AgentGPT2(gpt2_type=config['gpt2_type'],
+                         device=device,
+                         max_length=config['max_length']).to(device)
+    if config['checkpoint_path'] is not None:
+        if verbose:
+            print(f'loading agent_gpt2 state dict from: {convert_path(config["checkpoint_path"])}')
+        model.load_state_dict(torch.load(convert_path(config['checkpoint_path']), map_location='cpu'), strict=config['strict_load'])
+        if verbose:
+            print('loaded.')
+    return model
+
+@register('agent_gpt2_evaluator')
+def initalize_customer_gpt2_evaluator(config, device, verbose=True):
+    return AgentGPT2Evaluator(max_generation_len=config['max_generation_len'], 
                                  temp=config['temp'], 
                                  top_k=config['top_k'], 
                                  top_p=config['top_p'], 
@@ -259,17 +263,6 @@ def initalize_real_synth_table_dataset2(config, verbose=True):
                                   max_retries=config['max_retries'], 
                                   original_prob=config['original_prob'], 
                                   verbose=config['verbose'])
-
-@register('adinstruction')
-def initalize_adinstruction(config, verbose=True):
-    return ADInstruction(convert_path(config['filepath']), limit=config['limit'])
-
-@register('basic_instruction_dataset')
-def initalize_basic_instruction_dataset(config, verbose=True):
-    print(config)
-    ad = load_item(config['data'], verbose=verbose)
-    return BasicInstructionDataset(ad)
-
 
 def load_item(config, *args, verbose=True):
     config = config.copy()

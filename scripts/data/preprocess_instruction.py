@@ -17,7 +17,6 @@ def make_samples(data_dir, out_path):
                 print('----%s----' % os.path.join(data_dir, path))
                 instructions_from_file(os.path.join(data_dir, path), f_out)
                 # res.append(os.path.join(data_dir, path))
-
         # print(res)
 
 
@@ -25,7 +24,6 @@ def instructions_from_file(file_path, f_out):
     with open(file_path) as f_data:
         line_data = f_data.read()
         example = json.loads(line_data)
-        #print(example)
         prev_line = None
 
         instructions_lines = []
@@ -43,9 +41,10 @@ def instructions_from_file(file_path, f_out):
                 #else:
                     #이 경우라면 check table 뒤에 data가 따라온 경우라고 생각된다. data는 생략해야!
             elif line['agent'] == 'Data':
-                if len(instructions_lines) <= 0:
-                    instructions_lines.append(prev_line)
-                    label = instruction_def['Data Result']
+                continue   # Data event는 고려하지 않고 생략!
+                # if len(instructions_lines) <= 0:
+                #     instructions_lines.append(prev_line)
+                #     label = instruction_def['Data Result']
                     #instructions_lines.append(line)
                 #else:
                     #이 경우라면 check table 뒤에 data가 따라온 경우라고 생각된다. data는 생략해야!

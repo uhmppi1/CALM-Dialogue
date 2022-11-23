@@ -11,32 +11,34 @@ from utils.misc import convert_path
 from utils.instructions import instruction_def, get_instruction_from_label
 
 
-def make_aug_samples(data_dir, model):
+def make_aug_samples(data_dir, out_data_dir, model, limit=0):
     # list to store files
-    res = []
+    #res = []
     data_dir = convert_path(data_dir)
+    out_data_dir = convert_path(out_data_dir)
 
     # Iterate directory
-    for path in os.listdir(data_dir):
+    for idx, path in enumerate(os.listdir(data_dir)):
         # check if current path is a file
         if os.path.isfile(os.path.join(data_dir, path)):
             print('----%s----' % os.path.join(data_dir, path))
             print('----%s----' % path.split('.')[0])
             # print('----%s----' % os.path.basename(os.path.join(data_dir, path)))
-            augment_instructions_to_file(data_dir, path, model)
-            res.append(os.path.join(data_dir, path))
+            augment_instructions_to_file(data_dir, path, out_data_dir, model)
+            #res.append(os.path.join(data_dir, path))
             # print('--------')
             #return # TODO : 1줄만 처리하려고 임시로 넣었음. 제거할것. 
         #print(res)
+        if limit > 0 and idx >= limit:
+            break
 
 
-def augment_instructions_to_file(data_dir, path, model):
+def augment_instructions_to_file(data_dir, path, out_data_dir, model):
     file_path = os.path.join(data_dir, path)
-    aug_file_path = os.path.join(data_dir, path.split('.')[0]+'_aug.json')
+    aug_file_path = os.path.join(out_data_dir, path.split('.')[0]+'_aug.json')
     with open(file_path) as f_data:
         example = json.loads(f_data.read())
 
-        # print(example)
         prev_customer_line = None
         prev_agent_line = None
         make_augment = False
@@ -54,45 +56,31 @@ def augment_instructions_to_file(data_dir, path, model):
                 prev_agent_line = line
                 make_augment = True
 
-        # 3, 8, 15번 라벨(데이터조회 관련)에 대한 예외처리 필요.
+        # 3, 8번 라벨(데이터조회 관련)에 대한 예외처리 필요.
         events = []
-        check_data = False
+        #check_data = False
         cur_scene = None
         is_booking = (example['customer_scenario']['goal'] == 'book')
         instruction_event = {}
-        label = -1
-        for scene in scenes:
-            if cur_scene: #두번째 이후의 scene일 때, 
-                # 3 or 8 이후 연속되는 data instruction이 들어오지 않을 경우, check table 이후 바로 data result가 이어지는 데이터셋.
-                if label in (3, 8) and scene.label not in (3, 8, 15):
-                    instruction_event = make_dataresult_event(is_booking, example)
-                    events.append(instruction_event)
-                events.append(cur_scene.data[1])
 
+        for scene in scenes:
             cur_scene = scene
-            label = scene.label
-            if label in (3, 8, 15):
-                if check_data:
-                    label = 15   # 15:Data로 취급!
-                else:
-                    check_data = True
-                    if is_booking:  # 8:check flight table로 취급!
-                        label = 8
-                    else :
-                        label = 3
-            if label == 15:
-                instruction_event = make_dataresult_event(is_booking, example)
-            else:
-                instruction_event = {
-                    "agent": "Instructor",
-                    "data": get_instruction_from_label(label),
-                    "action": "message"
-                }
             events.append(cur_scene.data[0])
+            instruction_event = {
+                "agent": "Instructor",
+                "data": get_instruction_from_label(scene.label),
+                "action": "message"
+            }
             events.append(instruction_event)
+            if scene.label in (3, 8):
+                data_event = make_dataresult_event(is_booking, example)
+                events.append(data_event)
+            events.append(cur_scene.data[1])
         
-        events.append(cur_scene.data[1])
-        events.append(cur_scene.data[2])
+        events.append(cur_scene.data[2])    
+        if not cur_scene.data[2]['agent'] == 'Submit':  
+            events.append(example['events'][-1])  #Submit 이 빠지지 않도록 예외처리
+
         example['events'] = events
 
         with open(aug_file_path, 'w') as f_out:
@@ -150,8 +138,10 @@ def main(cfg : DictConfig):
 
     model = load_item(cfg['model'], 'cuda')
     data_dir = cfg['data_dir']
+    out_data_dir = cfg['out_data_dir']
+    limit = cfg['limit']
 
-    make_aug_samples(data_dir, model)
+    make_aug_samples(data_dir, out_data_dir, model, limit)
     print('instruction augmentation completed...')
 
 if __name__ == "__main__":

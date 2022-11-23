@@ -20,8 +20,8 @@ dev_dataset:
   original_prob: 0.05
   verbose: false
 
-model:
-  checkpoint_path: outputs/constraint_parse_test/model.pkl
+# model:
+#   checkpoint_path: outputs/constraint_parse_test/model.pkl
 
 evaluator:
   k: 1
